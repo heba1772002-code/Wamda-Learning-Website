@@ -1,0 +1,1076 @@
+<!DOCTYPE html>
+
+<html dir="rtl" lang="ar">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="web_standard" name="shell-type" />
+    <title>أكاديمية البرمجة والتقنية | بإشراف المعلمة</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;600&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet" />
+    
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+        id="tailwind-config">tailwind.config = {darkMode: "class", theme: {extend: {"colors": {"on-tertiary-fixed": "#002113", "on-error": "#ffffff", "on-secondary-container": "#665f78", "on-primary-fixed": "#3e001e", "surface-container-highest": "#e9dff3", "primary-fixed": "#ffd9e2", "on-tertiary": "#ffffff", "surface-container": "#f4eaff", "inverse-primary": "#ffb0c9", "error-container": "#ffdad6", "on-secondary-fixed": "#1e182e", "tertiary-fixed": "#6ffbbe", "background": "#fef7ff", "on-background": "#1e1927", "on-primary-container": "#fffbff", "surface-variant": "#e9dff3", "surface": "#fef7ff", "on-primary-fixed-variant": "#81204b", "outline-variant": "#dac0c6", "error": "#ba1a1a", "tertiary": "#006947", "tertiary-container": "#00855b", "surface-container-high": "#efe4f9", "surface-container-lowest": "#ffffff", "secondary-fixed-dim": "#ccc2df", "outline": "#877177", "on-secondary": "#ffffff", "secondary-fixed": "#e8defc", "secondary": "#625b74", "inverse-surface": "#342e3d", "secondary-container": "#e5dbf9", "on-surface": "#1e1927", "surface-bright": "#fef7ff", "on-secondary-fixed-variant": "#4a435b", "surface-tint": "#a03962", "primary-fixed-dim": "#ffb0c9", "on-surface-variant": "#554247", "tertiary-fixed-dim": "#4edea3", "on-primary": "#ffffff", "primary-container": "#bc4f79", "surface-dim": "#e0d6eb", "on-error-container": "#93000a", "primary": "#9d3660", "surface-container-low": "#f9f0ff", "on-tertiary-fixed-variant": "#005236", "on-tertiary-container": "#f5fff6", "inverse-on-surface": "#f7edff"}, "borderRadius": {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"}, "spacing": {"margin-mobile": "1.25rem", "gutter-mobile": "1rem", "space-md": "1.25rem", "space-xl": "3.5rem", "space-xs": "0.375rem", "space-lg": "2rem", "margin": "3rem", "space-sm": "0.75rem", "gutter": "1.5rem"}, "fontFamily": {"display-hero": ["IBM Plex Sans"], "caption": ["IBM Plex Sans"], "headline-md": ["IBM Plex Sans"], "label-code-lg": ["JetBrains Mono"], "headline-lg": ["IBM Plex Sans"], "label-code-sm": ["JetBrains Mono"], "body-sm": ["IBM Plex Sans"], "body-lg": ["IBM Plex Sans"], "headline-lg-mobile": ["IBM Plex Sans"], "headline-sm": ["IBM Plex Sans"], "display-hero-mobile": ["IBM Plex Sans"], "body-md": ["IBM Plex Sans"]}, "fontSize": {"display-hero": ["48px", {"lineHeight": "60px", "letterSpacing": "-0.02em", "fontWeight": "700"}], "caption": ["12px", {"lineHeight": "18px", "fontWeight": "500"}], "headline-md": ["24px", {"lineHeight": "34px", "fontWeight": "600"}], "label-code-lg": ["15px", {"lineHeight": "24px", "fontWeight": "500"}], "headline-lg": ["32px", {"lineHeight": "44px", "fontWeight": "600"}], "label-code-sm": ["12px", {"lineHeight": "18px", "fontWeight": "400"}], "body-sm": ["14px", {"lineHeight": "22px", "fontWeight": "400"}], "body-lg": ["18px", {"lineHeight": "30px", "fontWeight": "400"}], "headline-lg-mobile": ["24px", {"lineHeight": "34px", "fontWeight": "600"}], "headline-sm": ["20px", {"lineHeight": "28px", "fontWeight": "600"}], "display-hero-mobile": ["32px", {"lineHeight": "42px", "letterSpacing": "-0.01em", "fontWeight": "700"}], "body-md": ["16px", {"lineHeight": "26px", "fontWeight": "400"}]}}}};</script>
+    <link rel="stylesheet" href="sytle/index.css" />
+</head>
+
+<body class="bg-background text-on-surface antialiased selection:bg-primary-fixed selection:text-on-primary-fixed">
+    <header
+        class="fixed top-0 inset-x-0 z-50 bg-surface-bright/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]">
+        <div class="h-20 w-full px-margin flex items-center justify-between">
+            <div class="flex items-center gap-space-lg"><a class="flex items-center gap-space-sm group" data-path="home"
+                    href="index.html"><img alt="Profile"
+                        class="w-8 h-8 rounded-full object-cover shadow-[0_2px_10px_rgba(157,54,96,0.2)]"
+                        src="sytle/images/logo.png" />
+                    <div class="flex flex-col text-right"><span
+                            class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">أكاديمية
+                            الحاسب</span><span class="font-caption text-caption text-on-surface-variant">بإشراف المعلمة
+                            المتخصصة</span></div>
+                </a>
+                <nav class="hidden lg:flex items-center gap-space-sm"
+                    data-active-classes="bg-primary-container text-on-primary font-bold"><a aria-current="page"
+                        class="px-space-sm py-space-xs rounded-lg transition-all nav-current"
+                        data-path="home" href="index.html">الرئيسية</a>
+                    <div class="relative group"><button
+                            class="flex items-center gap-space-xs px-space-sm py-space-xs rounded-lg font-body-md text-body-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all"
+                            type="button"><span>الصفوف والمناهج</span><span
+                                class="material-symbols-outlined text-[18px] transition-transform duration-200 group-hover:rotate-180">expand_more</span></button>
+                        <div class="absolute right-0 top-full pt-space-xs hidden group-hover:block w-64">
+                            <div
+                                class="bg-surface-container-lowest rounded-xl shadow-[0_12px_32px_-4px_rgba(157,54,96,0.12)] p-space-xs flex flex-col gap-1">
+                                <a class="px-space-sm py-space-xs rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container hover:text-primary transition-all text-right"
+                                    data-path="grade-first-secondary" href="courses.html">الصف الأول الثانوي</a><a
+                                    class="px-space-sm py-space-xs rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container hover:text-primary transition-all text-right"
+                                    data-path="grade-second-secondary" href="course.html">الصف الثاني الثانوي</a><a
+                                    class="px-space-sm py-space-xs rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container hover:text-primary transition-all text-right"
+                                    data-path="grade-third-secondary" href="courses.html">الصف الثالث الثانوي</a>
+                                <div class="my-1 h-px bg-surface-variant"></div><a
+                                    class="px-space-sm py-space-xs rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container hover:text-primary transition-all text-right"
+                                    data-path="coding-foundation" href="courses.html">مرحلة التأسيس البرمجي</a><a
+                                    class="px-space-sm py-space-xs rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container hover:text-primary transition-all text-right"
+                                    data-path="ai-python-track" href="courses.html">مسار الذكاء الاصطناعي وبايثون</a>
+                            </div>
+                        </div>
+                    </div><a
+                        class="px-space-sm py-space-xs rounded-lg font-body-md text-body-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all"
+                        data-path="how-to-subscribe" href="subscription-info.html">كيفية الاشتراك</a><a
+                        class="px-space-sm py-space-xs rounded-lg font-body-md text-body-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all"
+                        data-path="contact-us" href="contact.html">تواصل معنا</a>
+                </nav>
+            </div>
+            <div class="flex items-center gap-space-sm"><a
+                    class="hidden sm:flex items-center gap-space-xs px-space-md py-space-xs bg-primary text-on-primary rounded-full shadow-[0_4px_16px_rgba(157,54,96,0.25)] hover:bg-primary-container transition-all hover:scale-[0.98]"
+                    href="tel:01020937901"><span class="material-symbols-outlined text-[18px]">call</span><span
+                        class="font-label-code-lg text-label-code-lg font-bold tracking-wider"
+                        dir="ltr">01020937901</span><span class="hidden xl:inline-block font-body-sm text-body-sm mr-1">|
+                        دعم مباشر</span></a><a
+                    class="flex items-center gap-space-xs px-space-md py-space-xs bg-surface-container-high text-on-surface font-body-md text-body-md font-semibold rounded-full hover:bg-secondary-container hover:text-on-secondary-container transition-all"
+                    data-path="login" href="login.html"><span>حسابي</span><span
+                        class="material-symbols-outlined text-[20px]">account_circle</span></a></div>
+        </div>
+    </header>div>
+        </div>
+    </header>
+    <main class="w-full pt-20 bg-background min-h-screen">
+        <div class="flex flex-col w-full relative overflow-hidden font-body-md text-on-surface">
+            <!-- Ambient Glow Backgrounds -->
+            <div
+                class="absolute -top-32 right-1/4 w-96 h-96 bg-primary-fixed/40 rounded-full blur-3xl pointer-events-none -z-10">
+            </div>
+            <div
+                class="absolute top-96 left-10 w-80 h-80 bg-secondary-container/50 rounded-full blur-3xl pointer-events-none -z-10">
+            </div>
+            <div
+                class="absolute top-[1800px] right-5 w-96 h-96 bg-primary-fixed-dim/30 rounded-full blur-3xl pointer-events-none -z-10">
+            </div>
+            <!-- ==========================================
+       SECTION 1: HERO SECTION
+       ========================================== -->
+            <section class="w-full px-margin py-space-xl relative">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
+                    <!-- Hero Text Column -->
+                    <div class="lg:col-span-7 flex flex-col items-start gap-space-md text-right">
+                        <!-- Badge -->
+                        <div
+                            class="inline-flex items-center gap-space-xs px-space-md py-space-xs rounded-full bg-surface-container-high shadow-sm hover:shadow-md transition-shadow">
+                            <span class="flex h-2.5 w-2.5 rounded-full bg-primary animate-pulse"></span>
+                            <span class="font-caption text-caption text-primary font-bold">✨ المنصة الأولى المتخصصة في
+                                مناهج الحاسب والبرمجة للجيل الجديد</span>
+                        </div>
+                        <!-- Headline -->
+                        <h1 class="font-display-hero text-display-hero text-on-surface tracking-tight">
+                            تعلّم البرمجة وتفوّق في مادة <br />
+                            <span class="text-primary relative inline-block">
+                                الحاسب الآلي
+                                <svg class="absolute -bottom-2 right-0 w-full text-primary/30 h-3"
+                                    preserveaspectratio="none" viewbox="0 0 100 12">
+                                    <path d="M0,8 Q50,0 100,8" fill="none" stroke="currentColor" stroke-linecap="round"
+                                        stroke-width="4"></path>
+                                </svg>
+                            </span>
+                            بكل شغف وبساطة
+                        </h1>
+                        <!-- Subtitle -->
+                        <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl leading-relaxed">
+                            انضمي إلى بيئة تعليمية تفاعلية مصممة خصيصاً لمناهج التعليم الثانوي ومسارات المستقبل
+                            البرمجية. شرح مبسط خطوة بخطوة، مشاريع شيّقة، ومتابعة فورية ومباشرة من المعلمة الخبيرة لضمان
+                            العلامة الكاملة والتأسيس الاحترافي.
+                        </p>
+                        <!-- CTA Buttons -->
+                        <div class="flex flex-wrap items-center gap-space-sm pt-space-xs w-full sm:w-auto">
+                            <a class="inline-flex items-center justify-center gap-space-xs px-space-lg py-space-md rounded-full bg-primary text-on-primary font-headline-sm text-headline-sm font-bold shadow-xl shadow-primary/25 hover:bg-primary-container hover:scale-[0.98] transition-all duration-200"
+                                data-path="how-to-subscribe" href="#">
+                                <span>ابدأ الاشتراك في المنصة الآن</span>
+                                <span class="material-symbols-outlined text-[22px]">rocket_launch</span>
+                            </a>
+                            <a class="inline-flex items-center justify-center gap-space-xs px-space-md py-space-md rounded-full bg-surface-container-lowest text-primary font-body-md text-body-md font-semibold shadow-md hover:bg-surface-container hover:shadow-lg transition-all duration-200"
+                                href="#free-lessons">
+                                <span class="material-symbols-outlined text-[20px] text-primary">play_circle</span>
+                                <span>استكشف الدروس المجانية</span>
+                            </a>
+                            <button
+                                class="inline-flex items-center justify-center gap-space-xs px-space-sm py-space-md rounded-full text-secondary hover:text-on-surface transition-colors font-body-md text-body-md"
+                                type="button">
+                                <span class="material-symbols-outlined text-[18px]">explore</span>
+                                <span>جولة تفاعلية</span>
+                            </button>
+                        </div>
+                        <!-- Trust Mini Badges -->
+                        <div class="flex items-center gap-space-md pt-space-sm">
+                            <div class="flex -space-x-2 -space-x-reverse">
+                                <div
+                                    class="w-8 h-8 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center text-xs font-bold shadow-sm">
+                                    سـ</div>
+                                <div
+                                    class="w-8 h-8 rounded-full bg-tertiary-container text-on-tertiary-container flex items-center justify-center text-xs font-bold shadow-sm">
+                                    رغـ</div>
+                                <div
+                                    class="w-8 h-8 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center text-xs font-bold shadow-sm">
+                                    نو</div>
+                                <div
+                                    class="w-8 h-8 rounded-full bg-primary-fixed text-on-primary-fixed flex items-center justify-center text-xs font-bold shadow-sm">
+                                    +99</div>
+                            </div>
+                            <div class="flex flex-col text-right">
+                                <span class="font-body-sm text-body-sm text-on-surface font-semibold">أكثر من 14 ألف
+                                    طالبة وطالب مسجلين</span>
+                                <span class="font-caption text-caption text-on-surface-variant">مناهج مسارات والتعليم
+                                    العام 1446هـ</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Hero Visual / Code Editor Simulator Column -->
+                    <div class="lg:col-span-5 relative mt-space-lg lg:mt-0">
+                        <!-- Decorative Glow Disk -->
+                        <div
+                            class="absolute -top-10 -left-6 w-72 h-72 bg-primary-fixed-dim/40 rounded-full blur-2xl -z-10">
+                        </div>
+                        <!-- Main Simulated Coding Shell (Dark Tech Elevation) -->
+                        <div class="w-full bg-[#241e34] rounded-2xl shadow-2xl p-space-md text-left text-surface-bright relative z-10 overflow-hidden"
+                            dir="ltr">
+                            <!-- Editor Titlebar -->
+                            <div
+                                class="flex items-center justify-between pb-space-sm mb-space-sm border-b border-white/10">
+                                <div class="flex items-center gap-1.5">
+                                    <span class="w-3 h-3 rounded-full bg-[#ff5f56] inline-block"></span>
+                                    <span class="w-3 h-3 rounded-full bg-[#ffbd2e] inline-block"></span>
+                                    <span class="w-3 h-3 rounded-full bg-[#27c93f] inline-block"></span>
+                                </div>
+                                <div
+                                    class="flex items-center gap-space-xs font-label-code-sm text-label-code-sm text-surface-container-highest">
+                                    <span class="material-symbols-outlined text-[16px] text-tertiary-fixed">code</span>
+                                    <span>main.py • درس_المتغيرات</span>
+                                </div>
+                                <span
+                                    class="px-space-xs py-0.5 rounded text-[10px] font-bold bg-primary-container text-on-primary-container tracking-wider uppercase">Active
+                                    Run</span>
+                            </div>
+                            <!-- Code Snippet Body (JetBrains Mono) -->
+                            <div class="font-label-code-lg text-label-code-lg leading-relaxed space-y-1">
+                                <p class="text-secondary-fixed-dim"><span class="text-primary-fixed font-bold">#</span>
+                                    ترحيب المعلمة بالأذكياء الجدد</p>
+                                <p><span class="text-[#ffb0c9] font-bold">def</span> <span
+                                        class="text-tertiary-fixed font-semibold">welcome_student</span>(name, score):
+                                </p>
+                                <p class="pl-4"><span class="text-surface-container-highest">status</span> = <span
+                                        class="text-[#ffd9e2]">"متميز ومبدع 🌟"</span></p>
+                                <p class="pl-4"><span class="text-[#ffb0c9] font-bold">if</span> score &gt;= <span
+                                        class="text-tertiary-fixed font-bold">95</span>:</p>
+                                <p class="pl-8 text-tertiary-fixed font-semibold">return f<span
+                                        class="text-[#ffd9e2]">"تهانينا {name}! درجتك الكاملة مضمونة!"</span></p>
+                                <p class="pt-2"><span class="text-surface-container-highest">result</span> =
+                                    welcome_student(<span class="text-[#ffd9e2]">"هبة"</span>, <span
+                                        class="text-tertiary-fixed font-bold">100</span>)</p>
+                                <p><span class="text-[#ffb0c9] font-bold">print</span>(result)</p>
+                            </div>
+                            <!-- Output Terminal Box inside IDE -->
+                            <div class="mt-space-md p-space-sm bg-[#161224] rounded-lg font-label-code-sm text-label-code-sm flex flex-col gap-1 text-right"
+                                dir="rtl">
+                                <div class="flex items-center justify-between text-left text-on-surface-variant font-caption text-caption pb-1"
+                                    dir="ltr">
+                                    <span class="text-tertiary-fixed flex items-center gap-1 font-bold">
+                                        <span class="material-symbols-outlined text-[14px]">check_circle</span> Process
+                                        Completed
+                                    </span>
+                                    <span class="text-outline-variant font-mono">0.04s</span>
+                                </div>
+                                <div class="text-tertiary-fixed font-bold text-sm" dir="ltr">
+                                    &gt;&gt; تهانينا هبة! درجتك الكاملة مضمونة!
+                                </div>
+                            </div>
+                            <!-- Live Mentorship Float Badge -->
+                            <div class="mt-space-sm p-space-xs bg-surface-container/10 rounded-xl flex items-center justify-between gap-space-xs text-right"
+                                dir="rtl">
+                                <div class="flex items-center gap-space-xs">
+                                    <div
+                                        class="w-8 h-8 rounded-full bg-primary flex items-center justify-center text-on-primary font-bold shadow-md">
+                                        <span class="material-symbols-outlined text-[16px]">support_agent</span>
+                                    </div>
+                                    <div class="flex flex-col">
+                                        <span class="font-caption text-caption text-surface-bright font-bold">المعلمة
+                                            متواجدة للمراجعة</span>
+                                        <span class="text-[11px] text-tertiary-fixed font-medium">تم التحقق من تشغيل
+                                            الكود بنجاح</span>
+                                    </div>
+                                </div>
+                                <span class="material-symbols-outlined text-tertiary-fixed text-[20px]">verified</span>
+                            </div>
+                        </div>
+                        <!-- Overlapping Card Underneath -->
+                        <div
+                            class="absolute -bottom-6 -right-4 bg-surface-container-lowest p-space-sm rounded-xl shadow-xl flex items-center gap-space-sm z-20 max-w-xs">
+                            <div
+                                class="w-10 h-10 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center">
+                                <span class="material-symbols-outlined">psychology</span>
+                            </div>
+                            <div class="flex flex-col text-right">
+                                <span class="font-body-sm text-body-sm font-bold text-on-surface">متابعة دقيقة لكل
+                                    طالبة</span>
+                                <span class="font-caption text-caption text-on-surface-variant">مراجعة أسبوعية للواجبات
+                                    والتدريبات</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- ==========================================
+       SECTION 2: STATS BAR (SOCIAL PROOF)
+       ========================================== -->
+            <section class="w-full px-margin py-space-md">
+                <div class="bg-surface-container-lowest rounded-2xl shadow-md p-space-md sm:p-space-lg">
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-gutter text-center">
+                        <!-- Stat 1 -->
+                        <div class="flex flex-col items-center gap-space-xs p-space-xs">
+                            <div
+                                class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center text-primary mb-1 shadow-sm">
+                                <span class="material-symbols-outlined text-[24px]">menu_book</span>
+                            </div>
+                            <span
+                                class="font-display-hero text-headline-lg font-bold text-primary font-label-code-lg tracking-tight"
+                                dir="ltr">+65</span>
+                            <span class="font-body-md text-body-md font-semibold text-on-surface">كورس وحقيبة
+                                شاملة</span>
+                            <span class="font-caption text-caption text-on-surface-variant">تغطي كامل المقررات
+                                الوزارية</span>
+                        </div>
+                        <!-- Stat 2 -->
+                        <div class="flex flex-col items-center gap-space-xs p-space-xs">
+                            <div
+                                class="w-12 h-12 rounded-full bg-surface-container-high flex items-center justify-center text-primary mb-1 shadow-sm">
+                                <span class="material-symbols-outlined text-[24px]">school</span>
+                            </div>
+                            <span
+                                class="font-display-hero text-headline-lg font-bold text-primary font-label-code-lg tracking-tight"
+                                dir="ltr">+14,200</span>
+                            <span class="font-body-md text-body-md font-semibold text-on-surface">طالب وطالبة
+                                نشطين</span>
+                            <span class="font-caption text-caption text-on-surface-variant">يتعلمون معنا في بيئة
+                                محفزة</span>
+                        </div>
+                        <!-- Stat 3 -->
+                        <div class="flex flex-col items-center gap-space-xs p-space-xs">
+                            <div
+                                class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center text-primary mb-1 shadow-sm">
+                                <span class="material-symbols-outlined text-[24px] icon-filled">star</span>
+                            </div>
+                            <div class="flex items-center gap-1" dir="ltr">
+                                <span
+                                    class="font-display-hero text-headline-lg font-bold text-primary font-label-code-lg">4.9</span>
+                                <span class="text-on-surface-variant font-bold text-sm">/ 5</span>
+                            </div>
+                            <span class="font-body-md text-body-md font-semibold text-on-surface">تقييم الطلاب
+                                العام</span>
+                            <span class="font-caption text-caption text-on-surface-variant">أكثر من 3,800 رأي
+                                معتمد</span>
+                        </div>
+                        <!-- Stat 4 -->
+                        <div class="flex flex-col items-center gap-space-xs p-space-xs">
+                            <div
+                                class="w-12 h-12 rounded-full bg-secondary-container flex items-center justify-center text-primary mb-1 shadow-sm">
+                                <span class="material-symbols-outlined text-[24px]">emoji_events</span>
+                            </div>
+                            <span
+                                class="font-display-hero text-headline-lg font-bold text-primary font-label-code-lg tracking-tight"
+                                dir="ltr">98%</span>
+                            <span class="font-body-md text-body-md font-semibold text-on-surface">نسبة التفوق
+                                النهائي</span>
+                            <span class="font-caption text-caption text-on-surface-variant">في الاختبارات النظرية
+                                والعملية</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- ==========================================
+       SECTION 3: RECENT FREE EPISODES / LESSONS
+       ========================================== -->
+            <section class="w-full px-margin py-space-xl" id="free-lessons">
+                <!-- Section Header -->
+                <div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md mb-space-lg">
+                    <div class="flex flex-col items-start gap-space-xs text-right">
+                        <div
+                            class="inline-flex items-center gap-space-xs px-space-sm py-1 rounded-full bg-tertiary-container/15 text-tertiary font-bold font-caption text-caption">
+                            <span class="material-symbols-outlined text-[16px]">verified</span>
+                            <span>محتوى مجاني ومتاح للجميع للبدء فوراً</span>
+                        </div>
+                        <h2 class="font-headline-lg text-headline-lg text-on-surface font-bold">
+                            أحدث الحلقات والدروس المجانية المرفوعة 🎬
+                        </h2>
+                        <p class="font-body-md text-body-md text-on-surface-variant">
+                            شاهدي الدروس النموذجية وتعرّفي على طريقة شرح المعلمة السلسة قبل الاشتراك الكامل.
+                        </p>
+                    </div>
+                    <div class="hidden md:flex items-center gap-space-xs">
+                        <span class="font-body-sm text-body-sm text-on-surface-variant">تحديث أسبوعي مستمر</span>
+                        <span class="w-2 h-2 rounded-full bg-tertiary"></span>
+                    </div>
+                </div>
+                <!-- Free Lessons Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter">
+                    <!-- Video Card 1 -->
+                    <div
+                        class="bg-surface-container-lowest rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col overflow-hidden group">
+                        <div class="relative w-full aspect-video overflow-hidden bg-surface-container-high">
+                            <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                data-alt="Female teacher presenting a vibrant Python programming slide on a digital tablet with sleek code graphics in warm rose and deep plum tones"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuALaQ3v9G9ftsI8aLAZz-ubmjvoeMUVGZBiTf4gvxStAJftnyDOwXEuk94dvmWK3n4wiys2_JjvBWv5wX0Zjp08YStc6d9e2eoCvnK74YUG4v1OkDvDr-_iKTqa3C4FQxUjtyaxq4nTTmp-810oWWSYOgPzDEV4e3Ue3gvA5WRT-KDYNaofA6ewfNdx6jGR8HefmFH6gwuG_AY_iwia-sosDog_xD5IG4Bz9kTY0SX9ADMYfzcvVUg" />
+                            <div
+                                class="absolute inset-0 bg-inverse-surface/30 group-hover:bg-inverse-surface/10 transition-colors flex items-center justify-center">
+                                <div
+                                    class="w-12 h-12 rounded-full bg-primary text-on-primary flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
+                                    <span class="material-symbols-outlined text-[28px] icon-filled">play_arrow</span>
+                                </div>
+                            </div>
+                            <span
+                                class="absolute bottom-2 left-2 px-space-xs py-0.5 rounded bg-inverse-surface/80 text-surface-bright font-label-code-sm text-label-code-sm"
+                                dir="ltr">18:45</span>
+                            <span
+                                class="absolute top-2 right-2 px-space-xs py-0.5 rounded-full bg-primary-container text-on-primary-container font-caption text-caption font-bold">مجاني</span>
+                        </div>
+                        <div class="p-space-md flex flex-col flex-grow justify-between gap-space-sm text-right">
+                            <div class="flex flex-col gap-space-xs">
+                                <div class="flex items-center gap-2">
+                                    <span
+                                        class="px-space-xs py-0.5 rounded bg-surface-container font-caption text-caption text-primary font-semibold">بايثون</span>
+                                    <span class="font-caption text-caption text-on-surface-variant">الصف الأول
+                                        الثانوي</span>
+                                </div>
+                                <h3
+                                    class="font-headline-sm text-headline-sm text-on-surface font-semibold group-hover:text-primary transition-colors line-clamp-2">
+                                    مراجعة شاملة لأساسيات بايثون وحل تدريبات الكتاب
+                                </h3>
+                            </div>
+                            <div
+                                class="pt-space-xs border-t border-surface-container-high flex items-center justify-between">
+                                <span class="font-caption text-caption text-on-surface-variant flex items-center gap-1">
+                                    <span class="material-symbols-outlined text-[16px] text-primary">person</span>
+                                    إشراف المعلمة
+                                </span>
+                                <a class="font-body-sm text-body-sm font-bold text-primary hover:text-primary-container flex items-center gap-0.5"
+                                    href="#">
+                                    <span>مشاهدة الآن</span>
+                                    <span class="material-symbols-outlined text-[16px]">arrow_back</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Video Card 2 -->
+                    <div
+                        class="bg-surface-container-lowest rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col overflow-hidden group">
+                        <div class="relative w-full aspect-video overflow-hidden bg-surface-container-high">
+                            <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                data-alt="Hands of a tech educator holding a stylus over interactive database schema diagrams and SQL queries on screen with soft ambient studio lighting"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDpOB6HOM39C-Kk26lR-eeaMA0bhnMR08umipqpCX7zHW5LI7jVBWP4FgsnfGBt-gX8GtdmG28-Ggne5HIA7gZKleh9m8CWvh_vItV5EmbcnhX2KuZ143mKrPh6MN5_aYQuFkJyK0rdZf25IpLsqHrtfdrkapjo2BK7-mR8UWkkVvKKlWCdtgx-9RegqVwRtKyXSs5TXSx5ftNUCoXMZfwUIcHJ_rsoIsAT3gcgguCSXfCKc_EPutA" />
+                            <div
+                                class="absolute inset-0 bg-inverse-surface/30 group-hover:bg-inverse-surface/10 transition-colors flex items-center justify-center">
+                                <div
+                                    class="w-12 h-12 rounded-full bg-primary text-on-primary flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
+                                    <span class="material-symbols-outlined text-[28px] icon-filled">play_arrow</span>
+                                </div>
+                            </div>
+                            <span
+                                class="absolute bottom-2 left-2 px-space-xs py-0.5 rounded bg-inverse-surface/80 text-surface-bright font-label-code-sm text-label-code-sm"
+                                dir="ltr">22:10</span>
+                            <span
+                                class="absolute top-2 right-2 px-space-xs py-0.5 rounded-full bg-primary-container text-on-primary-container font-caption text-caption font-bold">مجاني</span>
+                        </div>
+                        <div class="p-space-md flex flex-col flex-grow justify-between gap-space-sm text-right">
+                            <div class="flex flex-col gap-space-xs">
+                                <div class="flex items-center gap-2">
+                                    <span
+                                        class="px-space-xs py-0.5 rounded bg-surface-container font-caption text-caption text-primary font-semibold">قواعد
+                                        البيانات</span>
+                                    <span class="font-caption text-caption text-on-surface-variant">الصف الثاني
+                                        الثانوي</span>
+                                </div>
+                                <h3
+                                    class="font-headline-sm text-headline-sm text-on-surface font-semibold group-hover:text-primary transition-colors line-clamp-2">
+                                    أساسيات لغة SQL وتصميم الجداول بخطوات عملية بسيطة
+                                </h3>
+                            </div>
+                            <div
+                                class="pt-space-xs border-t border-surface-container-high flex items-center justify-between">
+                                <span class="font-caption text-caption text-on-surface-variant flex items-center gap-1">
+                                    <span class="material-symbols-outlined text-[16px] text-primary">person</span>
+                                    إشراف المعلمة
+                                </span>
+                                <a class="font-body-sm text-body-sm font-bold text-primary hover:text-primary-container flex items-center gap-0.5"
+                                    href="#">
+                                    <span>مشاهدة الآن</span>
+                                    <span class="material-symbols-outlined text-[16px]">arrow_back</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Video Card 3 -->
+                    <div
+                        class="bg-surface-container-lowest rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col overflow-hidden group">
+                        <div class="relative w-full aspect-video overflow-hidden bg-surface-container-high">
+                            <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                data-alt="Close up of modern mechanical keyboard with warm pink RGB backlighting and monitor screen displaying algorithm flowcharts in Arabic and Python code"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAKntu4ftyDhvG4Ws0yAt1CzdqWuHKlfdzRH0Lt9VS-mu2rg2pS0fsuvaQITcuzVLOtRs6vNk4wk0qDrWJ9T-Sf0T73Xmeh8ppI_BlrimYrTQrLT_qz9T1kV_Sbm98EV3aAelyihWYHViz2XqUE9Yyn46iu8vHrLpamu-i7bmWaCEjycrM8xhyHW-x_UAEAr6XgxwwUgjCiys4BAKqODiW59lrFcBE18mSdLXyL5sq4GSDDh5HXIUg" />
+                            <div
+                                class="absolute inset-0 bg-inverse-surface/30 group-hover:bg-inverse-surface/10 transition-colors flex items-center justify-center">
+                                <div
+                                    class="w-12 h-12 rounded-full bg-primary text-on-primary flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
+                                    <span class="material-symbols-outlined text-[28px] icon-filled">play_arrow</span>
+                                </div>
+                            </div>
+                            <span
+                                class="absolute bottom-2 left-2 px-space-xs py-0.5 rounded bg-inverse-surface/80 text-surface-bright font-label-code-sm text-label-code-sm"
+                                dir="ltr">15:30</span>
+                            <span
+                                class="absolute top-2 right-2 px-space-xs py-0.5 rounded-full bg-primary-container text-on-primary-container font-caption text-caption font-bold">مجاني</span>
+                        </div>
+                        <div class="p-space-md flex flex-col flex-grow justify-between gap-space-sm text-right">
+                            <div class="flex flex-col gap-space-xs">
+                                <div class="flex items-center gap-2">
+                                    <span
+                                        class="px-space-xs py-0.5 rounded bg-surface-container font-caption text-caption text-primary font-semibold">حل
+                                        المسائل</span>
+                                    <span class="font-caption text-caption text-on-surface-variant">مهارات التفكير
+                                        الحاسوبي</span>
+                                </div>
+                                <h3
+                                    class="font-headline-sm text-headline-sm text-on-surface font-semibold group-hover:text-primary transition-colors line-clamp-2">
+                                    استراتيجيات التفكير الخوارزمي وحل مشكلات الكود عملياً
+                                </h3>
+                            </div>
+                            <div
+                                class="pt-space-xs border-t border-surface-container-high flex items-center justify-between">
+                                <span class="font-caption text-caption text-on-surface-variant flex items-center gap-1">
+                                    <span class="material-symbols-outlined text-[16px] text-primary">person</span>
+                                    إشراف المعلمة
+                                </span>
+                                <a class="font-body-sm text-body-sm font-bold text-primary hover:text-primary-container flex items-center gap-0.5"
+                                    href="#">
+                                    <span>مشاهدة الآن</span>
+                                    <span class="material-symbols-outlined text-[16px]">arrow_back</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Video Card 4 -->
+                    <div
+                        class="bg-surface-container-lowest rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col overflow-hidden group">
+                        <div class="relative w-full aspect-video overflow-hidden bg-surface-container-high">
+                            <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                data-alt="Futuristic clean workstation with neural network graphs, AI concepts and machine learning visualization in subtle pastel magenta and cool violet tones"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBHJXEwNuoz3wgeudr-oTSRLAYyQerVrnT_gBwTU9jKeCVh75lpPjQhD7AjJlDquZqUtWF_woY3zt-pkCarUbNcbyTasK85UlRyEfXUlQy3Z7P-R3QkxmGsopaUj1Sr6bzSmF0-a8CUt1ACKQFfE5RWuas6Yf8WWsT3k9SrxosnMPNrr354QTfj5QvT4NdH8CofWDTEZfGxMEjGEGTH8XKeEaFabsycUfaFLf8F9uLvilzx6R5wVF0" />
+                            <div
+                                class="absolute inset-0 bg-inverse-surface/30 group-hover:bg-inverse-surface/10 transition-colors flex items-center justify-center">
+                                <div
+                                    class="w-12 h-12 rounded-full bg-primary text-on-primary flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
+                                    <span class="material-symbols-outlined text-[28px] icon-filled">play_arrow</span>
+                                </div>
+                            </div>
+                            <span
+                                class="absolute bottom-2 left-2 px-space-xs py-0.5 rounded bg-inverse-surface/80 text-surface-bright font-label-code-sm text-label-code-sm"
+                                dir="ltr">27:50</span>
+                            <span
+                                class="absolute top-2 right-2 px-space-xs py-0.5 rounded-full bg-primary-container text-on-primary-container font-caption text-caption font-bold">مجاني</span>
+                        </div>
+                        <div class="p-space-md flex flex-col flex-grow justify-between gap-space-sm text-right">
+                            <div class="flex flex-col gap-space-xs">
+                                <div class="flex items-center gap-2">
+                                    <span
+                                        class="px-space-xs py-0.5 rounded bg-surface-container font-caption text-caption text-primary font-semibold">ذكاء
+                                        اصطناعي</span>
+                                    <span class="font-caption text-caption text-on-surface-variant">مسار متقدم</span>
+                                </div>
+                                <h3
+                                    class="font-headline-sm text-headline-sm text-on-surface font-semibold group-hover:text-primary transition-colors line-clamp-2">
+                                    مدخل مشوق إلى تقنيات الذكاء الاصطناعي وبناء نموذج التوقع
+                                </h3>
+                            </div>
+                            <div
+                                class="pt-space-xs border-t border-surface-container-high flex items-center justify-between">
+                                <span class="font-caption text-caption text-on-surface-variant flex items-center gap-1">
+                                    <span class="material-symbols-outlined text-[16px] text-primary">person</span>
+                                    إشراف المعلمة
+                                </span>
+                                <a class="font-body-sm text-body-sm font-bold text-primary hover:text-primary-container flex items-center gap-0.5"
+                                    href="#">
+                                    <span>مشاهدة الآن</span>
+                                    <span class="material-symbols-outlined text-[16px]">arrow_back</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Bottom Action for Free Videos -->
+                <div class="mt-space-lg flex justify-center">
+                    <button
+                        class="inline-flex items-center gap-space-xs px-space-lg py-space-sm rounded-full bg-surface-container text-primary font-headline-sm text-headline-sm font-bold hover:bg-surface-container-high hover:scale-[0.99] transition-all shadow-sm"
+                        type="button">
+                        <span>عرض المزيد من الحلقات المجانية</span>
+                        <span class="material-symbols-outlined text-[20px]">add_circle</span>
+                    </button>
+                </div>
+            </section>
+            <!-- ==========================================
+       SECTION 4: COURSES & TRACKS
+       ========================================== -->
+            <section class="w-full px-margin py-space-xl bg-surface-container-low/50" id="courses-section">
+                <div class="flex flex-col items-center text-center gap-space-xs mb-space-lg max-w-3xl mx-auto">
+                    <span
+                        class="px-space-sm py-1 rounded-full bg-primary-fixed text-on-primary-fixed-variant font-caption text-caption font-bold">
+                        المناهج والمسارات المتكاملة
+                    </span>
+                    <h2 class="font-headline-lg text-headline-lg text-on-surface font-bold">
+                        اختر مسارك التعليمي وانطلق نحو التفوق البرمجي 📚
+                    </h2>
+                    <p class="font-body-md text-body-md text-on-surface-variant">
+                        حقائب تعليمية شاملة تغطي الشرح النظري، التطبيق العملي، بنوك الأسئلة، ونماذج اختبارات الفترات
+                        والنهائي مع تصحيح مشاريعك البرمجية أولاً بأول.
+                    </p>
+                    <!-- Filter Buttons Tabs -->
+                    <div class="flex flex-wrap items-center justify-center gap-space-xs pt-space-sm">
+                        <button
+                            class="px-space-md py-space-xs rounded-full bg-primary text-on-primary font-body-sm text-body-sm font-bold shadow-md"
+                            type="button">الكل</button>
+                        <button
+                            class="px-space-md py-space-xs rounded-full bg-surface-container-lowest text-on-surface-variant hover:text-primary hover:bg-surface-container transition-all font-body-sm text-body-sm font-medium"
+                            type="button">الصف الأول الثانوي</button>
+                        <button
+                            class="px-space-md py-space-xs rounded-full bg-surface-container-lowest text-on-surface-variant hover:text-primary hover:bg-surface-container transition-all font-body-sm text-body-sm font-medium"
+                            type="button">الصف الثاني الثانوي</button>
+                        <button
+                            class="px-space-md py-space-xs rounded-full bg-surface-container-lowest text-on-surface-variant hover:text-primary hover:bg-surface-container transition-all font-body-sm text-body-sm font-medium"
+                            type="button">الصف الثالث الثانوي</button>
+                        <button
+                            class="px-space-md py-space-xs rounded-full bg-surface-container-lowest text-on-surface-variant hover:text-primary hover:bg-surface-container transition-all font-body-sm text-body-sm font-medium"
+                            type="button">مسار بايثون والذكاء الاصطناعي</button>
+                    </div>
+                </div>
+                <!-- Courses Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+                    <!-- Course 1: Free Course Card -->
+                    <div
+                        class="bg-surface-container-lowest rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 p-space-md flex flex-col justify-between gap-space-md border-t-4 border-tertiary">
+                        <div class="flex flex-col gap-space-sm text-right">
+                            <div class="flex items-center justify-between">
+                                <span
+                                    class="inline-flex items-center gap-1 px-space-sm py-1 rounded-full bg-tertiary-container/20 text-tertiary font-caption text-caption font-bold">
+                                    <span class="material-symbols-outlined text-[14px]">check_circle</span>
+                                    مجاني بالكامل
+                                </span>
+                                <span class="font-label-code-sm text-label-code-sm text-on-surface-variant">مرحلة
+                                    تأسيسية</span>
+                            </div>
+                            <h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">
+                                أساسيات المنطق البرمجي وتراكيب البيانات للمبتدئات
+                            </h3>
+                            <p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+                                كورس مدخلي لشرح مفاهيم الحلقات التكرارية، الشروط المنطقية، وبناء التفكير الرياضي السليم
+                                قبل الخوض في لغات البرمجة المتقدمة.
+                            </p>
+                            <!-- Course Specs -->
+                            <div
+                                class="grid grid-cols-3 gap-2 py-space-xs bg-surface-container-low rounded-xl text-center">
+                                <div class="flex flex-col items-center">
+                                    <span class="font-caption text-caption text-on-surface-variant">المدة</span>
+                                    <span class="font-label-code-sm text-label-code-sm font-bold text-on-surface">8
+                                        ساعات</span>
+                                </div>
+                                <div class="flex flex-col items-center border-x border-surface-container-high">
+                                    <span class="font-caption text-caption text-on-surface-variant">الدروس</span>
+                                    <span class="font-label-code-sm text-label-code-sm font-bold text-on-surface">14
+                                        درساً</span>
+                                </div>
+                                <div class="flex flex-col items-center">
+                                    <span class="font-caption text-caption text-on-surface-variant">المشاريع</span>
+                                    <span class="font-label-code-sm text-label-code-sm font-bold text-on-surface">3
+                                        مشاريع</span>
+                                </div>
+                            </div>
+                            <!-- Progress Preview -->
+                            <div class="flex flex-col gap-1 text-right">
+                                <div class="flex justify-between font-caption text-caption text-on-surface-variant">
+                                    <span>نسبة الإتاحة الفورية</span>
+                                    <span class="font-label-code-sm text-label-code-sm font-bold text-tertiary">100%
+                                        مفتوح</span>
+                                </div>
+                                <div class="w-full h-2 rounded-full bg-surface-container overflow-hidden">
+                                    <div class="h-full bg-tertiary rounded-full w-full"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="flex items-center justify-between pt-space-xs border-t border-surface-container-high">
+                            <div
+                                class="flex items-center gap-1 text-tertiary font-bold font-headline-sm text-headline-sm">
+                                <span>0 ر.س</span>
+                            </div>
+                            <a class="px-space-md py-space-xs rounded-full bg-tertiary text-on-tertiary font-body-sm text-body-sm font-bold hover:bg-tertiary-container transition-all"
+                                href="#">
+                                الدخول للكورس مباشرة
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Course 2: Paid Locked Course (Grade 1 Secondary) -->
+                    <div
+                        class="bg-surface-container-lowest rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 p-space-md flex flex-col justify-between gap-space-md relative overflow-hidden group">
+                        <div class="absolute top-0 right-0 left-0 h-1.5 bg-primary"></div>
+                        <div class="flex flex-col gap-space-sm text-right">
+                            <div class="flex items-center justify-between">
+                                <span
+                                    class="inline-flex items-center gap-1 px-space-sm py-1 rounded-full bg-primary-fixed text-on-primary-fixed-variant font-caption text-caption font-bold">
+                                    <span class="material-symbols-outlined text-[14px]">lock</span>
+                                    متاح للمشتركين / كورس مدفوع
+                                </span>
+                                <span
+                                    class="px-space-xs py-0.5 rounded bg-surface-container font-caption text-caption text-primary font-bold">الأكثر
+                                    طلباً ⭐</span>
+                            </div>
+                            <h3
+                                class="font-headline-sm text-headline-sm text-on-surface font-bold group-hover:text-primary transition-colors">
+                                الحقيبة الذهبية: تقنية رقمية 1 (الصف الأول الثانوي)
+                            </h3>
+                            <p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+                                شرح شامل ومطابق لمنهج وزارة التعليم 1446هـ: شبكات، خوارزميات بايثون، تصميم الويب
+                                HTML/CSS، ومراجعات ليلة الاختبار.
+                            </p>
+                            <!-- Course Specs -->
+                            <div
+                                class="grid grid-cols-3 gap-2 py-space-xs bg-surface-container-low rounded-xl text-center">
+                                <div class="flex flex-col items-center">
+                                    <span class="font-caption text-caption text-on-surface-variant">المدة</span>
+                                    <span class="font-label-code-sm text-label-code-sm font-bold text-on-surface">32
+                                        ساعة</span>
+                                </div>
+                                <div class="flex flex-col items-center border-x border-surface-container-high">
+                                    <span class="font-caption text-caption text-on-surface-variant">الدروس</span>
+                                    <span class="font-label-code-sm text-label-code-sm font-bold text-on-surface">48
+                                        درساً</span>
+                                </div>
+                                <div class="flex flex-col items-center">
+                                    <span class="font-caption text-caption text-on-surface-variant">شهادة</span>
+                                    <span class="font-label-code-sm text-label-code-sm font-bold text-tertiary">معتمدة
+                                        ✓</span>
+                                </div>
+                            </div>
+                            <!-- Feature Bullets -->
+                            <ul class="flex flex-col gap-1 font-body-sm text-body-sm text-on-surface-variant pr-1">
+                                <li class="flex items-center gap-space-xs">
+                                    <span class="material-symbols-outlined text-[16px] text-primary">check</span>
+                                    <span>حل كامل تدريبات كتاب الطالب والنشاط</span>
+                                </li>
+                                <li class="flex items-center gap-space-xs">
+                                    <span class="material-symbols-outlined text-[16px] text-primary">check</span>
+                                    <span>قروب تليجرام خاص للمتابعة اليومية مع المعلمة</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div
+                            class="flex items-center justify-between pt-space-xs border-t border-surface-container-high">
+                            <div class="flex flex-col text-right">
+                                <span class="font-caption text-caption line-through text-outline">199 ر.س</span>
+                                <div
+                                    class="flex items-center gap-1 text-primary font-bold font-headline-sm text-headline-sm">
+                                    <span>149</span>
+                                    <span class="text-xs">ر.س / ترم كامل</span>
+                                </div>
+                            </div>
+                            <a class="px-space-md py-space-xs rounded-full bg-primary text-on-primary font-body-sm text-body-sm font-bold shadow-md hover:bg-primary-container transition-all"
+                                data-path="how-to-subscribe" href="#">
+                                اشترك الآن لفتح المحتوى 🔒
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Course 3: Paid Locked Course (Grade 2 Secondary - Software) -->
+                    <div
+                        class="bg-surface-container-lowest rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 p-space-md flex flex-col justify-between gap-space-md relative overflow-hidden group">
+                        <div class="absolute top-0 right-0 left-0 h-1.5 bg-secondary"></div>
+                        <div class="flex flex-col gap-space-sm text-right">
+                            <div class="flex items-center justify-between">
+                                <span
+                                    class="inline-flex items-center gap-1 px-space-sm py-1 rounded-full bg-surface-container-high text-secondary font-caption text-caption font-bold">
+                                    <span class="material-symbols-outlined text-[14px]">lock</span>
+                                    متاح للمشتركين / كورس مدفوع
+                                </span>
+                                <span class="font-label-code-sm text-label-code-sm text-on-surface-variant">مسار علوم
+                                    الحاسب</span>
+                            </div>
+                            <h3
+                                class="font-headline-sm text-headline-sm text-on-surface font-bold group-hover:text-primary transition-colors">
+                                هندسة البرمجيات وقواعد البيانات (الصف الثاني الثانوي)
+                            </h3>
+                            <p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+                                تطبيقات عملية على لغة البرمجة وإدارة المشاريع البرمجية وتصميم واجهات المستخدم الحديثة
+                                بالخطوات المفصلة.
+                            </p>
+                            <!-- Course Specs -->
+                            <div
+                                class="grid grid-cols-3 gap-2 py-space-xs bg-surface-container-low rounded-xl text-center">
+                                <div class="flex flex-col items-center">
+                                    <span class="font-caption text-caption text-on-surface-variant">المدة</span>
+                                    <span class="font-label-code-sm text-label-code-sm font-bold text-on-surface">36
+                                        ساعة</span>
+                                </div>
+                                <div class="flex flex-col items-center border-x border-surface-container-high">
+                                    <span class="font-caption text-caption text-on-surface-variant">الدروس</span>
+                                    <span class="font-label-code-sm text-label-code-sm font-bold text-on-surface">52
+                                        درساً</span>
+                                </div>
+                                <div class="flex flex-col items-center">
+                                    <span class="font-caption text-caption text-on-surface-variant">شهادة</span>
+                                    <span class="font-label-code-sm text-label-code-sm font-bold text-tertiary">معتمدة
+                                        ✓</span>
+                                </div>
+                            </div>
+                            <!-- Feature Bullets -->
+                            <ul class="flex flex-col gap-1 font-body-sm text-body-sm text-on-surface-variant pr-1">
+                                <li class="flex items-center gap-space-xs">
+                                    <span class="material-symbols-outlined text-[16px] text-secondary">check</span>
+                                    <span>تسليم مشاريع برمجية جاهزة للتقييم الصفي</span>
+                                </li>
+                                <li class="flex items-center gap-space-xs">
+                                    <span class="material-symbols-outlined text-[16px] text-secondary">check</span>
+                                    <span>بنك أسئلة لأكثر من 300 سؤال اختياري ومقالي</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div
+                            class="flex items-center justify-between pt-space-xs border-t border-surface-container-high">
+                            <div class="flex flex-col text-right">
+                                <span class="font-caption text-caption line-through text-outline">210 ر.س</span>
+                                <div
+                                    class="flex items-center gap-1 text-primary font-bold font-headline-sm text-headline-sm">
+                                    <span>169</span>
+                                    <span class="text-xs">ر.س / ترم كامل</span>
+                                </div>
+                            </div>
+                            <a class="px-space-md py-space-xs rounded-full bg-primary text-on-primary font-body-sm text-body-sm font-bold shadow-md hover:bg-primary-container transition-all"
+                                data-path="how-to-subscribe" href="#">
+                                اشترك الآن لفتح المحتوى 🔒
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Wide Explore All Courses Button -->
+                <div class="mt-space-lg flex justify-center">
+                    <a class="inline-flex items-center justify-center gap-space-xs w-full max-w-md py-space-md rounded-2xl bg-surface-container-lowest text-primary font-headline-sm text-headline-sm font-bold shadow-md hover:bg-surface-container hover:shadow-xl transition-all"
+                        href="#">
+                        <span>استعراض جميع الكورسات والحقائب المتاحة</span>
+                        <span class="material-symbols-outlined text-[24px]">library_books</span>
+                    </a>
+                </div>
+            </section>
+            <!-- ==========================================
+       SECTION 5: TESTIMONIALS & REVIEWS
+       ========================================== -->
+            <section class="w-full px-margin py-space-xl">
+                <div class="flex flex-col items-center text-center gap-space-xs mb-space-lg max-w-2xl mx-auto">
+                    <div
+                        class="w-10 h-10 rounded-full bg-primary-fixed flex items-center justify-center text-primary mb-1">
+                        <span class="material-symbols-outlined">rate_review</span>
+                    </div>
+                    <h2 class="font-headline-lg text-headline-lg text-on-surface font-bold">
+                        ماذا يقول طلابنا وطالباتنا عن تجربة التعلم مع المعلمة؟
+                    </h2>
+                    <p class="font-body-md text-body-md text-on-surface-variant">
+                        شهادات فخر واعتزاز نعتز بها من الطالبات وأولياء الأمور الذين حققوا الدرجات النهائية وتغلبوا على
+                        رهبة البرمجة.
+                    </p>
+                </div>
+                <!-- Testimonials Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-gutter items-stretch">
+                    <!-- Review Card 1 -->
+                    <div
+                        class="bg-surface-container-lowest p-space-lg rounded-2xl shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between text-right gap-space-md">
+                        <div class="flex flex-col gap-space-sm">
+                            <!-- Stars -->
+                            <div class="flex items-center gap-1 text-primary">
+                                <span class="material-symbols-outlined text-[20px] icon-filled">star</span>
+                                <span class="material-symbols-outlined text-[20px] icon-filled">star</span>
+                                <span class="material-symbols-outlined text-[20px] icon-filled">star</span>
+                                <span class="material-symbols-outlined text-[20px] icon-filled">star</span>
+                                <span class="material-symbols-outlined text-[20px] icon-filled">star</span>
+                            </div>
+                            <p class="font-body-md text-body-md text-on-surface leading-relaxed">
+                                "كنت أجد لغة بايثون معقدة جداً ومخيفة، ولكن بفضل أسلوب المعلمة الرائع وشرحها الممتع
+                                المعتمد على الأمثلة الحياتية، حصلت على 100% في الاختبار العملي والنهائي. شكراً من القلب
+                                لأفضل معلمة!"
+                            </p>
+                        </div>
+                        <div class="flex items-center gap-space-sm pt-space-sm border-t border-surface-container-high">
+                            <div
+                                class="w-11 h-11 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center font-bold text-sm">
+                                ريـ
+                            </div>
+                            <div class="flex flex-col text-right">
+                                <span class="font-body-md text-body-md font-bold text-on-surface">ريما الدوسري</span>
+                                <span class="font-caption text-caption text-on-surface-variant">طالبة - الصف الأول
+                                    الثانوي</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Review Card 2 -->
+                    <div
+                        class="bg-surface-container-lowest p-space-lg rounded-2xl shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between text-right gap-space-md border-t-2 border-primary">
+                        <div class="flex flex-col gap-space-sm">
+                            <!-- Stars -->
+                            <div class="flex items-center gap-1 text-primary">
+                                <span class="material-symbols-outlined text-[20px] icon-filled">star</span>
+                                <span class="material-symbols-outlined text-[20px] icon-filled">star</span>
+                                <span class="material-symbols-outlined text-[20px] icon-filled">star</span>
+                                <span class="material-symbols-outlined text-[20px] icon-filled">star</span>
+                                <span class="material-symbols-outlined text-[20px] icon-filled">star</span>
+                            </div>
+                            <p class="font-body-md text-body-md text-on-surface leading-relaxed">
+                                "بصفتي ولي أمر، لمست اهتماماً ومتابعة غير مسبوقة من المعلمة في قروب المشتركين، إجاباتها
+                                على أسئلة ابنتي سريعة وواضحة جداً وتصميم الحقيبة يغني تماماً عن أي دروس خصوصية مكلفة."
+                            </p>
+                        </div>
+                        <div class="flex items-center gap-space-sm pt-space-sm border-t border-surface-container-high">
+                            <div
+                                class="w-11 h-11 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center font-bold text-sm">
+                                أ.م
+                            </div>
+                            <div class="flex flex-col text-right">
+                                <span class="font-body-md text-body-md font-bold text-on-surface">أبو محمد
+                                    الغامدي</span>
+                                <span class="font-caption text-caption text-on-surface-variant">ولي أمر طالبة في المرحلة
+                                    الثانوية</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Review Card 3 -->
+                    <div
+                        class="bg-surface-container-lowest p-space-lg rounded-2xl shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between text-right gap-space-md">
+                        <div class="flex flex-col gap-space-sm">
+                            <!-- Stars -->
+                            <div class="flex items-center gap-1 text-primary">
+                                <span class="material-symbols-outlined text-[20px] icon-filled">star</span>
+                                <span class="material-symbols-outlined text-[20px] icon-filled">star</span>
+                                <span class="material-symbols-outlined text-[20px] icon-filled">star</span>
+                                <span class="material-symbols-outlined text-[20px] icon-filled">star</span>
+                                <span class="material-symbols-outlined text-[20px] icon-filled">star</span>
+                            </div>
+                            <p class="font-body-md text-body-md text-on-surface leading-relaxed">
+                                "المشاريع العملية في مسار هندسة البرمجيات ساعدتني أصمم مشروعي الصفي وأتميز بين زميلاتي،
+                                حتى معلمات المدرسة أشادوا بدقة الكود وترتيبه. منصة لا غنى عنها لأي طالبة تبحث عن
+                                التميز."
+                            </p>
+                        </div>
+                        <div class="flex items-center gap-space-sm pt-space-sm border-t border-surface-container-high">
+                            <div
+                                class="w-11 h-11 rounded-full bg-tertiary-container text-on-tertiary-container flex items-center justify-center font-bold text-sm">
+                                شهـ
+                            </div>
+                            <div class="flex flex-col text-right">
+                                <span class="font-body-md text-body-md font-bold text-on-surface">شهد العتيبي</span>
+                                <span class="font-caption text-caption text-on-surface-variant">طالبة - الصف الثاني
+                                    الثانوي مسارات</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Student Feedback Callout Banner -->
+                <div
+                    class="mt-space-lg p-space-md bg-surface-container rounded-2xl flex flex-col sm:flex-row items-center justify-between gap-space-md">
+                    <div class="flex items-center gap-space-md text-right">
+                        <div
+                            class="w-12 h-12 rounded-xl bg-surface-container-lowest flex items-center justify-center text-primary shadow-sm shrink-0">
+                            <span class="material-symbols-outlined text-[26px]">reviews</span>
+                        </div>
+                        <div class="flex flex-col">
+                            <span class="font-body-md text-body-md font-bold text-on-surface">أكملتِ أحد الكورسات أو
+                                الدروس؟</span>
+                            <span class="font-caption text-caption text-on-surface-variant">شاركينا رأيك وتجربتك ليتم
+                                نشرها في لوحة شرف المنصة والحصول على وسام الطالب المتميز.</span>
+                        </div>
+                    </div>
+                    <button
+                        class="shrink-0 px-space-md py-space-xs rounded-full bg-surface-container-lowest text-primary font-body-sm text-body-sm font-semibold hover:bg-primary hover:text-on-primary transition-all shadow-sm"
+                        type="button">
+                        إرسال تقييمك الآن
+                    </button>
+                </div>
+            </section>
+            <!-- ==========================================
+       SECTION 6: FINAL CONVERTING CTA BANNER
+       ========================================== -->
+            <section class="w-full px-margin pb-space-xl">
+                <div
+                    class="w-full bg-gradient-to-r from-primary to-primary-container text-on-primary rounded-3xl p-space-lg md:p-space-xl shadow-2xl relative overflow-hidden text-right">
+                    <!-- Decorative Backdrop Circles -->
+                    <div
+                        class="absolute -bottom-20 -left-20 w-80 h-80 rounded-full bg-white/10 blur-xl pointer-events-none">
+                    </div>
+                    <div
+                        class="absolute -top-16 -right-16 w-60 h-60 rounded-full bg-white/10 blur-xl pointer-events-none">
+                    </div>
+                    <div class="relative z-10 max-w-3xl flex flex-col items-start gap-space-md">
+                        <div
+                            class="inline-flex items-center gap-space-xs px-space-sm py-1 rounded-full bg-white/20 backdrop-blur-sm text-on-primary font-caption text-caption font-bold">
+                            <span class="material-symbols-outlined text-[16px]">celebration</span>
+                            <span>عرض بداية الفصل الدراسي الجديد - خصم إضافي 20%</span>
+                        </div>
+                        <h2
+                            class="font-display-hero text-display-hero-mobile sm:text-display-hero font-bold leading-tight">
+                            جاهزة لتصبحي نجمة البرمجة والحاسب في فصلك الدراسي؟
+                        </h2>
+                        <p class="font-body-lg text-body-lg text-on-primary/90 leading-relaxed max-w-2xl">
+                            انضمي اليوم إلى مئات الطالبات والطلاب المتفوقين، واستفيدي من الشرح المباشر بإشراف المعلمة،
+                            وحل التمارين التفاعلية مع ضمان استرجاع كامل الرسوم خلال 7 أيام إن لم تحققي الفائدة المرجوة.
+                        </p>
+                        <!-- CTAs Inside Banner -->
+                        <div class="flex flex-wrap items-center gap-space-sm pt-space-xs w-full sm:w-auto">
+                            <a class="inline-flex items-center justify-center gap-space-xs px-space-lg py-space-md rounded-full bg-surface-container-lowest text-primary font-headline-sm text-headline-sm font-bold shadow-xl hover:bg-surface-bright hover:scale-[0.98] transition-all"
+                                data-path="how-to-subscribe" href="#">
+                                <span>اشتركي الآن في الكورس الكامل 🚀</span>
+                                <span class="material-symbols-outlined text-[20px]">arrow_back</span>
+                            </a>
+                            <a class="inline-flex items-center justify-center gap-space-xs px-space-md py-space-md rounded-full bg-white/15 hover:bg-white/25 text-on-primary font-body-md text-body-md font-semibold transition-all"
+                                href="https://wa.me/966500000000">
+                                <span class="material-symbols-outlined text-[20px]">chat</span>
+                                <span>استفسري عبر واتساب المعلمة مباشرة</span>
+                            </a>
+                        </div>
+                        <!-- Guarantee Check -->
+                        <div class="flex items-center gap-space-xs text-white/80 font-caption text-caption pt-space-xs">
+                            <span class="material-symbols-outlined text-[16px]">verified_user</span>
+                            <span>دفع آمن 100% عبر مدى، آبل باي، وفيزا | دعم فني متواصل طيلة أيام الأسبوع</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer class="w-full bg-surface-container-lowest text-on-surface shadow-[0_-1px_12px_rgba(0,0,0,0.03)]">
+        <div class="w-full px-margin py-space-xl">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-gutter">
+                <div class="lg:col-span-4 flex flex-col gap-space-sm">
+                    <div class="flex items-center gap-space-sm">
+                        <div
+                            class="w-10 h-10 rounded-full bg-primary-container flex items-center justify-center text-on-primary-container font-headline-md text-headline-md">
+                            <span class="material-symbols-outlined">code</span></div><span
+                            class="font-headline-sm text-headline-sm text-primary font-bold">أكاديمية علوم الحاسب</span>
+                    </div>
+                    <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed text-right">بيئة تعليمية
+                        تفاعلية بإشراف معلمة متخصصة، تهدف إلى تمكين الطالبات والطلاب من إتقان مفاهيم علوم الحاسب
+                        والبرمجة الحديثة بأسلوب تطبيقي ميسر وبناء جيل تقني واعد.</p>
+                    <div class="flex items-center gap-space-xs pt-space-xs"><span
+                            class="px-space-sm py-space-xs rounded-full bg-surface-container font-caption text-caption text-primary font-semibold">إشراف
+                            أكاديمي مباشر</span><span
+                            class="px-space-sm py-space-xs rounded-full bg-surface-container-high font-caption text-caption text-secondary font-semibold">مشاريع
+                            عملية</span></div>
+                </div>
+                <div class="lg:col-span-3 flex flex-col gap-space-sm"><span
+                        class="font-headline-sm text-headline-sm text-on-surface font-semibold">المسارات والصفوف</span>
+                    <ul class="flex flex-col gap-space-xs font-body-sm text-body-sm text-on-surface-variant">
+                        <li class="hover:text-primary transition-colors"><a data-path="grade-first-secondary"
+                                href="#">الصف الأول الثانوي (تقنية 1)</a></li>
+                        <li class="hover:text-primary transition-colors"><a data-path="grade-second-secondary"
+                                href="#">الصف الثاني الثانوي (هندسة برمجيات)</a></li>
+                        <li class="hover:text-primary transition-colors"><a data-path="grade-third-secondary"
+                                href="#">الصف الثالث الثانوي (علم البيانات والذكاء)</a></li>
+                        <li class="hover:text-primary transition-colors"><a data-path="coding-foundation" href="#">مسار
+                                التأسيس البرمجي الشامل</a></li>
+                        <li class="hover:text-primary transition-colors"><a data-path="ai-python-track" href="#">معسكر
+                                بايثون والذكاء الاصطناعي</a></li>
+                    </ul>
+                </div>
+                <div class="lg:col-span-2 flex flex-col gap-space-sm"><span
+                        class="font-headline-sm text-headline-sm text-on-surface font-semibold">روابط سريعة</span>
+                    <ul class="flex flex-col gap-space-xs font-body-sm text-body-sm text-on-surface-variant">
+                        <li class="hover:text-primary transition-colors"><a data-path="home" href="#">الصفحة
+                                الرئيسية</a></li>
+                        <li class="hover:text-primary transition-colors"><a data-path="how-to-subscribe" href="#">طريقة
+                                التسجيل والاشتراك</a></li>
+                        <li class="hover:text-primary transition-colors"><a data-path="terms-and-policies"
+                                href="#">الشروط وسياسة الخصوصية</a></li>
+                        <li class="hover:text-primary transition-colors"><a data-path="support-and-complaints"
+                                href="#">مركز المساعدة والشكاوى</a></li>
+                        <li class="hover:text-primary transition-colors"><a data-path="contact-us" href="#">معلومات
+                                التواصل المباشر</a></li>
+                    </ul>
+                </div>
+                <div class="lg:col-span-3 flex flex-col gap-space-sm"><span
+                        class="font-headline-sm text-headline-sm text-on-surface font-semibold">تواصل مع المعلمة وفريق
+                        الدعم</span>
+                    <p class="font-body-sm text-body-sm text-on-surface-variant">نسعد بإجابة كافة استفساراتكم الأكاديمية
+                        والتقنية عبر القنوات الرسمية:</p>
+                    <div class="flex flex-col gap-space-xs"><a
+                            class="flex items-center gap-space-xs p-space-xs bg-surface-container rounded-lg hover:bg-surface-container-high text-on-surface transition-all"
+                            href="tel:01020937901"><span
+                                class="material-symbols-outlined text-primary">support_agent</span>
+                            <div class="flex flex-col text-right"><span
+                                    class="font-caption text-caption text-on-surface-variant">الهاتف الموحد والدعم
+                                    السريع</span><span class="font-label-code-lg text-label-code-lg font-semibold"
+                                    dir="ltr">01020937901</span></div>
+                        </a><a
+                            class="flex items-center gap-space-xs p-space-xs bg-surface-container rounded-lg hover:bg-surface-container-high text-on-surface transition-all"
+                            href="https://wa.me/966500000000"><span
+                                class="material-symbols-outlined text-tertiary">chat</span>
+                            <div class="flex flex-col text-right"><span
+                                    class="font-caption text-caption text-on-surface-variant">واتساب المعلمة
+                                    للإشراف</span><span class="font-label-code-lg text-label-code-lg font-semibold"
+                                    dir="ltr">01020937901</span></div>
+                        </a></div>
+                </div>
+            </div>
+            <div
+                class="mt-space-xl pt-space-md bg-surface-container-high/40 rounded-xl px-space-md flex flex-col sm:flex-row items-center justify-between gap-space-sm">
+                <span class="font-body-sm text-body-sm text-on-surface-variant text-center sm:text-right">جميع الحقوق
+                    محفوظة © 2025 منصة علوم الحاسب والبرمجة | إشراف المعلمة</span>
+                <div class="flex items-center gap-space-md"><a
+                        class="font-caption text-caption text-on-surface-variant hover:text-primary transition-colors"
+                        data-path="terms-and-policies" href="#">الخصوصية والشروط</a><span
+                        class="text-outline-variant">•</span><a
+                        class="font-caption text-caption text-on-surface-variant hover:text-primary transition-colors"
+                        data-path="support-and-complaints" href="#">المساعدة والدعم</a></div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

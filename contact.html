@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+
+<html dir="rtl" lang="ar">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="web_standard" name="shell-type" />
+    <title>أكاديمية البرمجة والتقنية | بإشراف المعلمة</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;600&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet" />
+    
+    
+    
+    
+    
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+        id="tailwind-config">tailwind.config = {darkMode: "class", theme: {extend: {"colors": {"on-tertiary-fixed": "#002113", "on-error": "#ffffff", "on-secondary-container": "#665f78", "on-primary-fixed": "#3e001e", "surface-container-highest": "#e9dff3", "primary-fixed": "#ffd9e2", "on-tertiary": "#ffffff", "surface-container": "#f4eaff", "inverse-primary": "#ffb0c9", "error-container": "#ffdad6", "on-secondary-fixed": "#1e182e", "tertiary-fixed": "#6ffbbe", "background": "#fef7ff", "on-background": "#1e1927", "on-primary-container": "#fffbff", "surface-variant": "#e9dff3", "surface": "#fef7ff", "on-primary-fixed-variant": "#81204b", "outline-variant": "#dac0c6", "error": "#ba1a1a", "tertiary": "#006947", "tertiary-container": "#00855b", "surface-container-high": "#efe4f9", "surface-container-lowest": "#ffffff", "secondary-fixed-dim": "#ccc2df", "outline": "#877177", "on-secondary": "#ffffff", "secondary-fixed": "#e8defc", "secondary": "#625b74", "inverse-surface": "#342e3d", "secondary-container": "#e5dbf9", "on-surface": "#1e1927", "surface-bright": "#fef7ff", "on-secondary-fixed-variant": "#4a435b", "surface-tint": "#a03962", "primary-fixed-dim": "#ffb0c9", "on-surface-variant": "#554247", "tertiary-fixed-dim": "#4edea3", "on-primary": "#ffffff", "primary-container": "#bc4f79", "surface-dim": "#e0d6eb", "on-error-container": "#93000a", "primary": "#9d3660", "surface-container-low": "#f9f0ff", "on-tertiary-fixed-variant": "#005236", "on-tertiary-container": "#f5fff6", "inverse-on-surface": "#f7edff"}, "borderRadius": {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"}, "spacing": {"margin-mobile": "1.25rem", "gutter-mobile": "1rem", "space-md": "1.25rem", "space-xl": "3.5rem", "space-xs": "0.375rem", "space-lg": "2rem", "margin": "3rem", "space-sm": "0.75rem", "gutter": "1.5rem"}, "fontFamily": {"display-hero": ["IBM Plex Sans"], "caption": ["IBM Plex Sans"], "headline-md": ["IBM Plex Sans"], "label-code-lg": ["JetBrains Mono"], "headline-lg": ["IBM Plex Sans"], "label-code-sm": ["JetBrains Mono"], "body-sm": ["IBM Plex Sans"], "body-lg": ["IBM Plex Sans"], "headline-lg-mobile": ["IBM Plex Sans"], "headline-sm": ["IBM Plex Sans"], "display-hero-mobile": ["IBM Plex Sans"], "body-md": ["IBM Plex Sans"]}, "fontSize": {"display-hero": ["48px", {"lineHeight": "60px", "letterSpacing": "-0.02em", "fontWeight": "700"}], "caption": ["12px", {"lineHeight": "18px", "fontWeight": "500"}], "headline-md": ["24px", {"lineHeight": "34px", "fontWeight": "600"}], "label-code-lg": ["15px", {"lineHeight": "24px", "fontWeight": "500"}], "headline-lg": ["32px", {"lineHeight": "44px", "fontWeight": "600"}], "label-code-sm": ["12px", {"lineHeight": "18px", "fontWeight": "400"}], "body-sm": ["14px", {"lineHeight": "22px", "fontWeight": "400"}], "body-lg": ["18px", {"lineHeight": "30px", "fontWeight": "400"}], "headline-lg-mobile": ["24px", {"lineHeight": "34px", "fontWeight": "600"}], "headline-sm": ["20px", {"lineHeight": "28px", "fontWeight": "600"}], "display-hero-mobile": ["32px", {"lineHeight": "42px", "letterSpacing": "-0.01em", "fontWeight": "700"}], "body-md": ["16px", {"lineHeight": "26px", "fontWeight": "400"}]}}}};</script>
+    <link rel="stylesheet" href="sytle/index.css" />
+</head>
+
+<body class="bg-background text-on-surface antialiased selection:bg-primary-fixed selection:text-on-primary-fixed">
+    <header
+        class="fixed top-0 inset-x-0 z-50 bg-surface-bright/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]">
+        <div class="h-20 w-full px-margin flex items-center justify-between">
+            <div class="flex items-center gap-space-lg"><a class="flex items-center gap-space-sm group" data-path="home"
+                    href="index.html"><img alt="Profile"
+                        class="w-8 h-8 rounded-full object-cover shadow-[0_2px_10px_rgba(157,54,96,0.2)]"
+                        src="sytle/images/logo.png" />
+                    <div class="flex flex-col text-right"><span
+                            class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">أكاديمية
+                            الحاسب</span><span class="font-caption text-caption text-on-surface-variant">بإشراف المعلمة
+                            المتخصصة</span></div>
+                </a>
+                <nav class="hidden lg:flex items-center gap-space-sm"
+                    data-active-classes="bg-primary-container text-on-primary font-bold"><a
+                        class="px-space-sm py-space-xs rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container hover:text-primary transition-all text-right"
+                        data-path="home" href="index.html">الرئيسية</a>
+                    <div class="relative group"><button
+                            class="flex items-center gap-space-xs px-space-sm py-space-xs rounded-lg font-body-md text-body-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all"
+                            type="button"><span>الصفوف والمناهج</span><span
+                                class="material-symbols-outlined text-[18px] transition-transform duration-200 group-hover:rotate-180">expand_more</span></button>
+                        <div class="absolute right-0 top-full pt-space-xs hidden group-hover:block w-64">
+                            <div
+                                class="bg-surface-container-lowest rounded-xl shadow-[0_12px_32px_-4px_rgba(157,54,96,0.12)] p-space-xs flex flex-col gap-1">
+                                <a class="px-space-sm py-space-xs rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container hover:text-primary transition-all text-right"
+                                    data-path="grade-first-secondary" href="courses.html">الصف الأول الثانوي</a><a
+                                    class="px-space-sm py-space-xs rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container hover:text-primary transition-all text-right"
+                                    data-path="grade-second-secondary" href="course.html">الصف الثاني الثانوي</a><a
+                                    class="px-space-sm py-space-xs rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container hover:text-primary transition-all text-right"
+                                    data-path="grade-third-secondary" href="courses.html">الصف الثالث الثانوي</a>
+                                <div class="my-1 h-px bg-surface-variant"></div><a
+                                    class="px-space-sm py-space-xs rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container hover:text-primary transition-all text-right"
+                                    data-path="coding-foundation" href="courses.html">مرحلة التأسيس البرمجي</a><a
+                                    class="px-space-sm py-space-xs rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container hover:text-primary transition-all text-right"
+                                    data-path="ai-python-track" href="courses.html">مسار الذكاء الاصطناعي وبايثون</a>
+                            </div>
+                        </div>
+                    </div><a
+                        class="px-space-sm py-space-xs rounded-lg font-body-md text-body-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all"
+                        data-path="how-to-subscribe" href="subscription-info.html">كيفية الاشتراك</a><a aria-current="page"
+                        class="px-space-sm py-space-xs rounded-lg font-body-md text-body-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all nav-current"
+                        data-path="contact-us" href="contact.html">تواصل معنا</a>
+                </nav>
+            </div>
+            <div class="flex items-center gap-space-sm"><a
+                    class="hidden sm:flex items-center gap-space-xs px-space-md py-space-xs bg-primary text-on-primary rounded-full shadow-[0_4px_16px_rgba(157,54,96,0.25)] hover:bg-primary-container transition-all hover:scale-[0.98]"
+                    href="tel:01020937901"><span class="material-symbols-outlined text-[18px]">call</span><span
+                        class="font-label-code-lg text-label-code-lg font-bold tracking-wider"
+                        dir="ltr">01020937901</span><span class="hidden xl:inline-block font-body-sm text-body-sm mr-1">|
+                        دعم مباشر</span></a><a
+                    class="flex items-center gap-space-xs px-space-md py-space-xs bg-surface-container-high text-on-surface font-body-md text-body-md font-semibold rounded-full hover:bg-secondary-container hover:text-on-secondary-container transition-all"
+                    data-path="login" href="login.html"><span>حسابي</span><span
+                        class="material-symbols-outlined text-[20px]">account_circle</span></a></div>
+        </div>
+    </header>bg-background min-h-screen">
+        <div class="flex flex-col w-full">
+            <!-- Top Decorative Glow Atmosphere -->
+            <div class="relative w-full overflow-hidden">
+                <div
+                    class="absolute -top-32 right-1/4 w-96 h-96 bg-primary-fixed opacity-40 blur-3xl pointer-events-none rounded-full">
+                </div>
+                <div
+                    class="absolute -top-20 left-10 w-80 h-80 bg-secondary-container opacity-50 blur-3xl pointer-events-none rounded-full">
+                </div>
+                <!-- Page Header Section -->
+                <div class="w-full px-margin-mobile md:px-margin pt-space-lg pb-space-lg">
+                    <div class="max-w-4xl mx-auto text-center flex flex-col items-center gap-space-sm">
+                        <!-- Top Badge -->
+                        <div
+                            class="inline-flex items-center gap-space-xs px-space-md py-space-xs rounded-full bg-surface-container-high text-primary shadow-sm hover:shadow-md transition-shadow">
+                            <span class="material-symbols-outlined text-[18px] icon-filled">support_agent</span>
+                            <span class="font-caption text-caption font-semibold">فريق الدعم والمعلمة دائماً في
+                                خدمتك</span>
+                            <span class="w-2 h-2 rounded-full bg-tertiary animate-pulse"></span>
+                        </div>
+                        <!-- Primary Heading -->
+                        <h1
+                            class="font-display-hero text-display-hero-mobile md:text-display-hero text-on-surface tracking-tight">
+                            يسعدنا تواصلكم والاستماع <span class="text-primary font-bold">لملاحظاتكم واقتراحاتكم</span>
+                        </h1>
+                        <!-- Contextual Subtitle -->
+                        <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl leading-relaxed">
+                            سواءً كنت طالباً تبحث عن توجيه برمجي، أو ولي أمر يتابع المسار التعليمي، نضع بين يديك قنوات
+                            تواصل مهنية ومباشرة تضمن الاستجابة السريعة وحل أي معوقات أكاديمية أو تقنية.
+                        </p>
+                        <!-- Dynamic Status Bar Strip -->
+                        <div
+                            class="flex flex-wrap items-center justify-center gap-space-sm pt-space-xs font-caption text-caption text-secondary">
+                            <div
+                                class="flex items-center gap-1 bg-surface-container-lowest px-space-sm py-1 rounded-full shadow-sm">
+                                <span class="material-symbols-outlined text-[16px] text-tertiary">verified</span>
+                                <span>متوسط زمن الرد: أقل من ساعتين</span>
+                            </div>
+                            <span class="text-outline-variant hidden sm:inline">•</span>
+                            <div
+                                class="flex items-center gap-1 bg-surface-container-lowest px-space-sm py-1 rounded-full shadow-sm">
+                                <span class="material-symbols-outlined text-[16px] text-primary">psychology</span>
+                                <span>إشراف أكاديمي بإشراف المعلمة مباشرة</span>
+                            </div>
+                            <span class="text-outline-variant hidden sm:inline">•</span>
+                            <div
+                                class="flex items-center gap-1 bg-surface-container-lowest px-space-sm py-1 rounded-full shadow-sm">
+                                <span class="material-symbols-outlined text-[16px] text-secondary">lock</span>
+                                <span>نظام تذاكر مشفر وسري بالكامل</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Quick Direct Channels Grid (4 Responsive Bento Cards) -->
+                <div class="w-full px-margin-mobile md:px-margin pb-space-xl">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-gutter">
+                        <!-- Card 1: Phone Support -->
+                        <div
+                            class="group relative bg-surface-container-lowest rounded-xl p-space-md shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between overflow-hidden">
+                            <div
+                                class="absolute -left-6 -bottom-6 w-24 h-24 bg-primary-fixed/30 rounded-full blur-xl group-hover:scale-125 transition-transform">
+                            </div>
+                            <div class="flex flex-col gap-space-xs">
+                                <div class="flex items-center justify-between">
+                                    <div
+                                        class="w-12 h-12 rounded-xl bg-surface-container flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-on-primary transition-colors">
+                                        <span class="material-symbols-outlined text-[24px]">call</span>
+                                    </div>
+                                    <span
+                                        class="px-space-xs py-0.5 rounded font-caption text-caption bg-tertiary-fixed text-on-tertiary-fixed font-bold">متاح
+                                        الآن</span>
+                                </div>
+                                <h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold pt-2">الهاتف
+                                    الموحد السريع</h3>
+                                <p class="font-body-sm text-body-sm text-on-surface-variant">خط مباشر للدعم الفني
+                                    والاستفسارات العاجلة يومياً.</p>
+                                <div class="my-2 p-space-xs bg-surface-container-low rounded-lg text-center" dir="ltr">
+                                    <span
+                                        class="font-label-code-lg text-label-code-lg text-primary font-bold">01020937901</span>
+                                </div>
+                                <span class="font-caption text-caption text-on-surface-variant">ساعات العمل: 8:00 ص -
+                                    10:00 م</span>
+                            </div>
+                            <div class="pt-space-sm">
+                                <a class="w-full flex items-center justify-center gap-space-xs py-space-xs px-space-sm rounded-lg bg-primary text-on-primary font-body-sm text-body-sm font-semibold hover:bg-primary-container transition-all hover:scale-[0.98]"
+                                    href="tel:01020937901">
+                                    <span>اتصال مباشر</span>
+                                    <span class="material-symbols-outlined text-[18px]">phone_in_talk</span>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Card 2: Teacher WhatsApp -->
+                        <div
+                            class="group relative bg-surface-container-lowest rounded-xl p-space-md shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between overflow-hidden">
+                            <div
+                                class="absolute -left-6 -bottom-6 w-24 h-24 bg-tertiary-fixed/30 rounded-full blur-xl group-hover:scale-125 transition-transform">
+                            </div>
+                            <div class="flex flex-col gap-space-xs">
+                                <div class="flex items-center justify-between">
+                                    <div
+                                        class="w-12 h-12 rounded-xl bg-tertiary-fixed/40 flex items-center justify-center text-tertiary group-hover:bg-tertiary group-hover:text-on-tertiary transition-colors">
+                                        <span class="material-symbols-outlined text-[24px]">chat</span>
+                                    </div>
+                                    <span
+                                        class="px-space-xs py-0.5 rounded font-caption text-caption bg-surface-container text-primary font-bold">إشراف
+                                        أكاديمي</span>
+                                </div>
+                                <h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold pt-2">واتساب
+                                    المعلمة</h3>
+                                <p class="font-body-sm text-body-sm text-on-surface-variant">لمناقشة المهام البرمجية
+                                    المعقدة وأكواد المشاريع.</p>
+                                <div class="my-2 p-space-xs bg-surface-container-low rounded-lg text-center" dir="ltr">
+                                    <span class="font-label-code-lg text-label-code-lg text-tertiary font-bold">01020937901</span>
+                                </div>
+                                <span class="font-caption text-caption text-on-surface-variant">الرد خلال ساعات الحصة
+                                    والمكتب الأكاديمي</span>
+                            </div>
+                            <div class="pt-space-sm">
+                                <a class="w-full flex items-center justify-center gap-space-xs py-space-xs px-space-sm rounded-lg bg-tertiary text-on-tertiary font-body-sm text-body-sm font-semibold hover:bg-tertiary-container transition-all hover:scale-[0.98]"
+                                    href="https://wa.me/966500000000" rel="noopener" target="_blank">
+                                    <span>محادثة واتساب فورية</span>
+                                    <span class="material-symbols-outlined text-[18px]">send</span>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Card 3: Email Support -->
+                        <div
+                            class="group relative bg-surface-container-lowest rounded-xl p-space-md shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between overflow-hidden">
+                            <div
+                                class="absolute -left-6 -bottom-6 w-24 h-24 bg-secondary-fixed/30 rounded-full blur-xl group-hover:scale-125 transition-transform">
+                            </div>
+                            <div class="flex flex-col gap-space-xs">
+                                <div class="flex items-center justify-between">
+                                    <div
+                                        class="w-12 h-12 rounded-xl bg-secondary-container flex items-center justify-center text-on-secondary-container group-hover:bg-secondary group-hover:text-on-secondary transition-colors">
+                                        <span class="material-symbols-outlined text-[24px]">mail</span>
+                                    </div>
+                                    <span
+                                        class="px-space-xs py-0.5 rounded font-caption text-caption bg-surface-container-high text-secondary font-bold">رسمي
+                                        وموثق</span>
+                                </div>
+                                <h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold pt-2">البريد
+                                    الإلكتروني</h3>
+                                <p class="font-body-sm text-body-sm text-on-surface-variant">للخطابات والشكاوى الإدارية
+                                    والتعاقدات المدرسية.</p>
+                                <div class="my-2 p-space-xs bg-surface-container-low rounded-lg text-center" dir="ltr">
+                                    <span
+                                        class="font-label-code-sm text-label-code-sm text-secondary font-semibold select-all">heba1772002@gmail.com</span>
+                                </div>
+                                <span class="font-caption text-caption text-on-surface-variant">المعالجة خلال 4 ساعات
+                                    عمل رسمية</span>
+                            </div>
+                            <div class="pt-space-sm">
+                                <a class="w-full flex items-center justify-center gap-space-xs py-space-xs px-space-sm rounded-lg bg-secondary text-on-secondary font-body-sm text-body-sm font-semibold hover:bg-on-secondary-container transition-all hover:scale-[0.98]"
+                                    href="mailto:heba1772002@gmail.com">
+                                    <span>إرسال بريد إلكتروني</span>
+                                    <span class="material-symbols-outlined text-[18px]">forward_to_inbox</span>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Card 4: Virtual Office Session -->
+                        <div
+                            class="group relative bg-surface-container-lowest rounded-xl p-space-md shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between overflow-hidden">
+                            <div
+                                class="absolute -left-6 -bottom-6 w-24 h-24 bg-primary-fixed-dim/40 rounded-full blur-xl group-hover:scale-125 transition-transform">
+                            </div>
+                            <div class="flex flex-col gap-space-xs">
+                                <div class="flex items-center justify-between">
+                                    <div
+                                        class="w-12 h-12 rounded-xl bg-primary-fixed flex items-center justify-center text-on-primary-fixed-variant group-hover:bg-primary-container group-hover:text-on-primary transition-colors">
+                                        <span class="material-symbols-outlined text-[24px]">video_camera_front</span>
+                                    </div>
+                                    <span
+                                        class="px-space-xs py-0.5 rounded font-caption text-caption bg-secondary-fixed text-on-secondary-fixed font-bold">جلسات
+                                        1-to-1</span>
+                                </div>
+                                <h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold pt-2">المكتب
+                                    الافتراضي</h3>
+                                <p class="font-body-sm text-body-sm text-on-surface-variant">حجز جلسة مرئية مباشرة عبر
+                                    Teams لمراجعة الأكواد.</p>
+                                <div class="my-2 p-space-xs bg-surface-container-low rounded-lg text-center">
+                                    <span class="font-label-code-sm text-label-code-sm text-primary font-bold">جلسات
+                                        تفاعلية 20 دقيقة</span>
+                                </div>
+                                <span class="font-caption text-caption text-on-surface-variant">متاحة أيام الأحد
+                                    والثلاثاء والخميس</span>
+                            </div>
+                            <div class="pt-space-sm">
+                                <button
+                                    class="w-full flex items-center justify-center gap-space-xs py-space-xs px-space-sm rounded-lg bg-surface-container-high text-primary font-body-sm text-body-sm font-bold hover:bg-primary hover:text-on-primary transition-all">
+                                    <span>حجز موعد مرئي</span>
+                                    <span class="material-symbols-outlined text-[18px]">calendar_month</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Interactive Dual Main Workspace (Form + Workflow Sidepanel) -->
+            <div class="w-full px-margin-mobile md:px-margin pb-space-xl">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-start">
+                    <!-- Right Side: Contact & Complaint Ticket Form (7 Cols) -->
+                    <div
+                        class="lg:col-span-7 bg-surface-container-lowest rounded-xl p-space-md md:p-space-lg shadow-sm">
+                        <div class="flex flex-col gap-space-xs pb-space-md">
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center gap-space-xs">
+                                    <span class="w-3 h-8 rounded-full bg-primary"></span>
+                                    <h2 class="font-headline-md text-headline-md text-on-surface font-semibold">فتح
+                                        تذكرة استفسار أو شكوى</h2>
+                                </div>
+                                <span
+                                    class="font-label-code-sm text-label-code-sm text-on-surface-variant bg-surface-container px-space-sm py-1 rounded-full">نظام
+                                    Helpdesk 2.4</span>
+                            </div>
+                            <p class="font-body-sm text-body-sm text-on-surface-variant">
+                                يرجى تحديد مسار ونوع الطلب بدقة لنتمكن من توجيهه للمعلمة المشرفة أو مهندس المنصة المعني
+                                فوراً.
+                            </p>
+                        </div>
+                        <!-- Request Type Tabs -->
+                        <div class="mb-space-md">
+                            <label class="block font-caption text-caption font-semibold text-on-surface pb-space-xs">نوع
+                                الموضوع / التصنيف العام:</label>
+                            <div class="grid grid-cols-2 sm:grid-cols-4 gap-space-xs" id="categorySelector">
+                                <button
+                                    class="category-btn active px-space-xs py-space-xs rounded-lg text-center font-caption text-caption font-semibold transition-all bg-primary text-on-primary shadow-sm flex flex-col items-center gap-1" type="button">
+                                    <span class="material-symbols-outlined text-[20px]">school</span>
+                                    <span>استفسار مناهج</span>
+                                </button>
+                                <button
+                                    class="category-btn px-space-xs py-space-xs rounded-lg text-center font-caption text-caption font-semibold transition-all bg-surface-container text-on-surface-variant hover:bg-surface-container-high flex flex-col items-center gap-1" type="button">
+                                    <span class="material-symbols-outlined text-[20px]">terminal</span>
+                                    <span>مساعدة برمجية</span>
+                                </button>
+                                <button
+                                    class="category-btn px-space-xs py-space-xs rounded-lg text-center font-caption text-caption font-semibold transition-all bg-surface-container text-on-surface-variant hover:bg-surface-container-high flex flex-col items-center gap-1" type="button">
+                                    <span class="material-symbols-outlined text-[20px]">report_problem</span>
+                                    <span>شكوى أو اشتراك</span>
+                                </button>
+                                <button
+                                    class="category-btn px-space-xs py-space-xs rounded-lg text-center font-caption text-caption font-semibold transition-all bg-surface-container text-on-surface-variant hover:bg-surface-container-high flex flex-col items-center gap-1" type="button">
+                                    <span class="material-symbols-outlined text-[20px]">lightbulb</span>
+                                    <span>اقتراح كورس</span>
+                                </button>
+                            </div>
+                        </div>
+                        <!-- The Interactive Form -->
+                        <form class="flex flex-col gap-space-md" id="ticketSubmissionForm">
+                            <!-- Row 1: Name & Phone -->
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm">
+                                <div class="flex flex-col gap-1">
+                                    <label
+                                        class="font-caption text-caption text-on-surface font-semibold flex items-center justify-between"
+                                        for="senderName">
+                                        <span>اسم الطالب / ولي الأمر <span class="text-error">*</span></span>
+                                    </label>
+                                    <div class="relative">
+                                        <input
+                                            class="w-full bg-surface-container-low text-on-surface placeholder:text-outline-variant font-body-sm text-body-sm rounded-lg px-space-sm py-space-xs focus:outline-none focus:ring-2 focus:ring-primary/40 transition-all text-right"
+                                            id="senderName" placeholder="مثال: هبة العتيبي" required="" type="text" />
+                                        <span
+                                            class="material-symbols-outlined absolute left-3 top-2.5 text-on-surface-variant text-[18px]">person</span>
+                                    </div>
+                                </div>
+                                <div class="flex flex-col gap-1">
+                                    <label
+                                        class="font-caption text-caption text-on-surface font-semibold flex items-center justify-between"
+                                        for="senderPhone">
+                                        <span>رقم الجوال للتواصل والرسائل <span class="text-error">*</span></span>
+                                    </label>
+                                    <div
+                                        class="relative flex items-center bg-surface-container-low rounded-lg focus-within:ring-2 focus-within:ring-primary/40 transition-all">
+                                        <input
+                                            class="w-full bg-transparent text-on-surface placeholder:text-outline-variant font-label-code-sm text-label-code-sm rounded-lg px-space-sm py-space-xs focus:outline-none text-left"
+                                            dir="ltr" id="senderPhone" placeholder="50 123 4567" required=""
+                                            type="tel" />
+                                        <span
+                                            class="px-space-xs font-label-code-sm text-label-code-sm text-on-surface-variant font-semibold select-none border-l border-outline-variant/30"
+                                            dir="ltr">+966</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Row 2: Email & Course Stage Selection -->
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm">
+                                <div class="flex flex-col gap-1">
+                                    <label class="font-caption text-caption text-on-surface font-semibold"
+                                        for="senderEmail">البريد الإلكتروني المسجل بالمنصة <span
+                                            class="text-error">*</span></label>
+                                    <div class="relative">
+                                        <input
+                                            class="w-full bg-surface-container-low text-on-surface placeholder:text-outline-variant font-body-sm text-body-sm rounded-lg px-space-sm py-space-xs focus:outline-none focus:ring-2 focus:ring-primary/40 transition-all text-left"
+                                            dir="ltr" id="senderEmail" placeholder="name@example.com" required=""
+                                            type="email" />
+                                        <span
+                                            class="material-symbols-outlined absolute right-3 top-2.5 text-on-surface-variant text-[18px]">mail</span>
+                                    </div>
+                                </div>
+                                <div class="flex flex-col gap-1">
+                                    <label class="font-caption text-caption text-on-surface font-semibold"
+                                        for="courseSelect">المرحلة الدراسية / الكورس المرتبط</label>
+                                    <div class="relative">
+                                        <select
+                                            class="w-full bg-surface-container-low text-on-surface font-body-sm text-body-sm rounded-lg px-space-sm py-space-xs focus:outline-none focus:ring-2 focus:ring-primary/40 transition-all appearance-none text-right cursor-pointer"
+                                            id="courseSelect">
+                                            <option value="first-secondary">الصف الأول الثانوي </option>
+                                            <option value="second-secondary">الصف الثاني الثانوي (مسار هندسة البرمجيات)
+                                            </option>
+                                            <option value="third-secondary">الصف الثالث الثانوي (علم البيانات والذكاء
+                                                الاصطناعي)</option>
+                                            <option value="foundation">مسار التأسيس البرمجي الشامل (بايثون والخوارزميات)
+                                            </option>
+                                            <option value="ai-track">معسكر الذكاء الاصطناعي والمشاريع</option>
+                                            <option value="general">استفسار عام / غير مسجل في مقرر حالياً</option>
+                                        </select>
+                                        <span
+                                            class="material-symbols-outlined absolute left-3 top-2.5 text-on-surface-variant text-[20px] pointer-events-none">expand_more</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Row 3: Optional Reference / Subscription ID -->
+                            <div class="flex flex-col gap-1" id="optionalOrderField">
+                                <div class="flex items-center justify-between">
+                                    <label class="font-caption text-caption text-on-surface font-semibold"
+                                        for="orderReference">رقم التذكرة السابقة / رقم الاشتراك أو الفاتورة
+                                        (اختياري)</label>
+                                    <span class="font-caption text-caption text-secondary">يفيد في تسريع تتبع مشكلات
+                                        الدفع</span>
+                                </div>
+                                <div class="relative">
+                                    <input
+                                        class="w-full bg-surface-container-low text-on-surface placeholder:text-outline-variant font-label-code-sm text-label-code-sm rounded-lg px-space-sm py-space-xs focus:outline-none focus:ring-2 focus:ring-primary/40 transition-all text-left"
+                                        dir="ltr" id="orderReference" placeholder="مثال: SUB-98234 أو INV-2025"
+                                        type="text" />
+                                    <span
+                                        class="material-symbols-outlined absolute right-3 top-2.5 text-on-surface-variant text-[18px]">tag</span>
+                                </div>
+                            </div>
+                            <!-- Row 4: Subject Line -->
+                            <div class="flex flex-col gap-1">
+                                <label class="font-caption text-caption text-on-surface font-semibold"
+                                    for="ticketSubject">عنوان الموضوع أو خلاصة المشكلة <span
+                                        class="text-error">*</span></label>
+                                <div class="relative">
+                                    <input
+                                        class="w-full bg-surface-container-low text-on-surface placeholder:text-outline-variant font-body-sm text-body-sm rounded-lg px-space-sm py-space-xs focus:outline-none focus:ring-2 focus:ring-primary/40 transition-all text-right"
+                                        id="ticketSubject"
+                                        placeholder="مثال: خطأ في حزمة بايثون داخل مختبر الفصل الثالث" required=""
+                                        type="text" />
+                                    <span
+                                        class="material-symbols-outlined absolute left-3 top-2.5 text-on-surface-variant text-[18px]">edit_note</span>
+                                </div>
+                            </div>
+                            <!-- Row 5: Detailed Message -->
+                            <div class="flex flex-col gap-1">
+                                <div class="flex items-center justify-between">
+                                    <label class="font-caption text-caption text-on-surface font-semibold"
+                                        for="ticketDetails">تفاصيل الرسالة أو الشكوى أو كود الخطأ <span
+                                            class="text-error">*</span></label>
+                                    <span class="font-caption text-caption text-on-surface-variant" id="charCounter">0 /
+                                        1000 حرف</span>
+                                </div>
+                                <textarea
+                                    class="w-full bg-surface-container-low text-on-surface placeholder:text-outline-variant font-body-sm text-body-sm rounded-lg p-space-sm focus:outline-none focus:ring-2 focus:ring-primary/40 transition-all text-right resize-none"
+                                    id="ticketDetails" maxlength="1000"
+                                    placeholder="يرجى كتابة كافة التفاصيل لمساعدتنا في فحص الطلب بدقة.. إذا كان هناك كود أضفه هنا أو ارفق صورة من شاشة المحرر البرمجي."
+                                    required="" rows="4"></textarea>
+                            </div>
+                            <!-- Row 6: Interactive Attachment Box -->
+                            <div class="flex flex-col gap-1">
+                                <label class="font-caption text-caption text-on-surface font-semibold">إرفاق لقطة شاشة
+                                    للخطأ البرمجي أو إيصال السداد (اختياري)</label>
+                                <div class="relative w-full p-space-md rounded-xl bg-surface-container-low/70 hover:bg-surface-container transition-colors cursor-pointer text-center group">
+                                    <input accept=".png,.jpg,.jpeg,.pdf" class="hidden" id="fileUploadInput" type="file" />
+                                    <div class="flex flex-col items-center justify-center gap-space-xs">
+                                        <div
+                                            class="w-10 h-10 rounded-full bg-surface-container-high group-hover:bg-primary-fixed flex items-center justify-center text-primary transition-colors">
+                                            <span class="material-symbols-outlined text-[22px]">cloud_upload</span>
+                                        </div>
+                                        <div class="flex items-center gap-1">
+                                            <span class="font-body-sm text-body-sm font-semibold text-primary">اضغط هنا
+                                                لرفع الملف</span>
+                                            <span class="font-body-sm text-body-sm text-on-surface-variant">أو اسحب
+                                                وأفلت الملف داخل المربع</span>
+                                        </div>
+                                        <p class="font-caption text-caption text-on-surface-variant"
+                                            id="fileNamePreview">
+                                            الملفات المدعومة: PNG, JPG, PDF (بحد أقصى 15 ميجابايت)
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Submit CTA & Privacy Assurance -->
+                            <div class="flex flex-col gap-space-sm pt-space-xs">
+                                <button
+                                    class="w-full py-space-sm px-space-md rounded-xl bg-primary text-on-primary font-headline-sm text-headline-sm font-semibold shadow-lg shadow-primary/20 hover:bg-primary-container transition-all hover:scale-[0.99] flex items-center justify-center gap-space-xs"
+                                    id="submitBtn" type="submit">
+                                    <span id="submitBtnText">إرسال التذكرة ومتابعة الطلب</span>
+                                    <span class="material-symbols-outlined text-[20px]" id="submitBtnIcon">send</span>
+                                </button>
+                                <!-- Confidentiality Notice -->
+                                <div class="p-space-sm bg-surface-container rounded-lg flex items-start gap-space-xs">
+                                    <span class="material-symbols-outlined text-primary text-[20px] shrink-0 mt-0.5 icon-filled">security</span>
+                                    <p class="font-caption text-caption text-on-surface-variant leading-relaxed">
+                                        <strong class="text-on-surface font-semibold">تنبيه الخصوصية والسرية:</strong>
+                                        يتم التعامل مع كافة الاستفسارات والشكاوى بسرية تامة ومطابقتها لمعايير الأمان
+                                        التعليمية، مع تصعيد مباشر للمعلمة وإدارة الأكاديمية خلال ساعتين كحد أقصى.
+                                    </p>
+                                </div>
+                            </div>
+                        </form>
+                        <!-- Form Success State Box (Hidden by default) -->
+                        <div class="hidden mt-space-md p-space-md rounded-xl bg-tertiary-fixed text-on-tertiary-fixed flex flex-col gap-space-xs shadow-md"
+                            id="formSuccessMessage">
+                            <div class="flex items-center gap-space-xs">
+                                <span class="material-symbols-outlined text-tertiary text-[26px]">check_circle</span>
+                                <span class="font-headline-sm text-headline-sm font-bold">تم استلام طلبك بنجاح!</span>
+                            </div>
+                            <p class="font-body-sm text-body-sm leading-relaxed">
+                                رقم التذكرة الخاص بك هو: <span class="font-label-code-lg text-label-code-lg font-bold"
+                                    dir="ltr">#TCK-89241</span>. تم إرسال رسالة تأكيد لرقم جوالك والبريد، وستقوم المعلمة
+                                أو مسؤول الدعم بالرد خلال الساعتين القادمتين.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Left Side: Workflow, SLA & Quick Solutions (5 Cols) -->
+                    <div class="lg:col-span-5 flex flex-col gap-space-md">
+                        <!-- Workflow Timeline Card -->
+                        <div
+                            class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-sm">
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center gap-space-xs">
+                                    <span class="material-symbols-outlined text-primary text-[22px]">alt_route</span>
+                                    <h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">مسار
+                                        معالجة الشكاوى والاستفسارات</h3>
+                                </div>
+                                <span
+                                    class="px-2 py-0.5 rounded-full bg-surface-container font-caption text-caption text-primary font-bold">شفافية
+                                    تامة</span>
+                            </div>
+                            <p class="font-body-sm text-body-sm text-on-surface-variant">
+                                آلية عمل منضبطة تضمن عدم إهمال أي تذكرة أو سؤال يخص مسيرتك التعليمية:
+                            </p>
+                            <!-- Steps Progress -->
+                            <div class="flex flex-col gap-space-sm pt-space-xs relative">
+                                <div class="absolute top-3 bottom-3 right-4 w-0.5 bg-surface-container-highest"></div>
+                                <!-- Step 1 -->
+                                <div class="relative flex items-start gap-space-sm pr-9">
+                                    <div
+                                        class="absolute right-2 top-0.5 w-5 h-5 rounded-full bg-primary text-on-primary flex items-center justify-center font-caption text-caption font-bold shadow-sm">
+                                        1</div>
+                                    <div class="flex flex-col">
+                                        <span class="font-body-md text-body-md font-semibold text-on-surface">استلام
+                                            التذكرة وإصدار رقم التتبع</span>
+                                        <span class="font-caption text-caption text-on-surface-variant">إشعار فوري عبر
+                                            الرسائل النصية القصيرة والواتساب يحتوي رابط التتبع الحي.</span>
+                                    </div>
+                                </div>
+                                <!-- Step 2 -->
+                                <div class="relative flex items-start gap-space-sm pr-9">
+                                    <div
+                                        class="absolute right-2 top-0.5 w-5 h-5 rounded-full bg-surface-container-high text-primary flex items-center justify-center font-caption text-caption font-bold shadow-sm">
+                                        2</div>
+                                    <div class="flex flex-col">
+                                        <span class="font-body-md text-body-md font-semibold text-on-surface">التدقيق من
+                                            المعلمة أو مهندس الأكواد</span>
+                                        <span class="font-caption text-caption text-on-surface-variant">مراجعة نص الخطأ
+                                            البرمجي، تصحيح الملفات، وفحص السجل الأكاديمي للطالب.</span>
+                                    </div>
+                                </div>
+                                <!-- Step 3 -->
+                                <div class="relative flex items-start gap-space-sm pr-9">
+                                    <div
+                                        class="absolute right-2 top-0.5 w-5 h-5 rounded-full bg-surface-container-high text-primary flex items-center justify-center font-caption text-caption font-bold shadow-sm">
+                                        3</div>
+                                    <div class="flex flex-col">
+                                        <span class="font-body-md text-body-md font-semibold text-on-surface">التواصل
+                                            المباشر والحل التطبيقي</span>
+                                        <span class="font-caption text-caption text-on-surface-variant">مكالمة هاتفية أو
+                                            تسجيل شاشة فيديو يشرح الحل خطوة بخطوة خلال ساعتين إلى 24 ساعة.</span>
+                                    </div>
+                                </div>
+                                <!-- Step 4 -->
+                                <div class="relative flex items-start gap-space-sm pr-9">
+                                    <div
+                                        class="absolute right-2 top-0.5 w-5 h-5 rounded-full bg-tertiary text-on-tertiary flex items-center justify-center font-caption text-caption font-bold shadow-sm">
+                                        4</div>
+                                    <div class="flex flex-col">
+                                        <span class="font-body-md text-body-md font-semibold text-on-surface">إغلاق
+                                            التذكرة وقياس جودة الخدمة</span>
+                                        <span class="font-caption text-caption text-on-surface-variant">التأكد التام من
+                                            فهم الطالب وإمكانية تصعيد الطلب للمشرف العام إذا لزم الأمر.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- SLA Response Timing Metric Card -->
+                        <div
+                            class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-xs">
+                            <div class="flex items-center justify-between pb-space-xs">
+                                <span class="font-headline-sm text-headline-sm text-on-surface font-semibold">معدل
+                                    الاستجابة المعتمد (SLA)</span>
+                                <span class="material-symbols-outlined text-secondary text-[20px]">timer</span>
+                            </div>
+                            <div class="space-y-2">
+                                <!-- Metric 1 -->
+                                <div
+                                    class="flex items-center justify-between p-space-xs rounded-lg bg-surface-container-low">
+                                    <div class="flex items-center gap-space-xs">
+                                        <span class="material-symbols-outlined text-primary text-[18px]">phone</span>
+                                        <span class="font-body-sm text-body-sm text-on-surface font-medium">الهاتف
+                                            الموحد</span>
+                                    </div>
+                                    <span class="font-label-code-sm text-label-code-sm font-bold text-tertiary">استجابة
+                                        فورية (أقل من دقيقتين)</span>
+                                </div>
+                                <!-- Metric 2 -->
+                                <div
+                                    class="flex items-center justify-between p-space-xs rounded-lg bg-surface-container-low">
+                                    <div class="flex items-center gap-space-xs">
+                                        <span class="material-symbols-outlined text-tertiary text-[18px]">chat</span>
+                                        <span class="font-body-sm text-body-sm text-on-surface font-medium">واتساب
+                                            المعلمة الأكاديمي</span>
+                                    </div>
+                                    <span class="font-label-code-sm text-label-code-sm font-bold text-tertiary">من فوري
+                                        إلى 60 دقيقة</span>
+                                </div>
+                                <!-- Metric 3 -->
+                                <div
+                                    class="flex items-center justify-between p-space-xs rounded-lg bg-surface-container-low">
+                                    <div class="flex items-center gap-space-xs">
+                                        <span
+                                            class="material-symbols-outlined text-secondary text-[18px]">confirmation_number</span>
+                                        <span class="font-body-sm text-body-sm text-on-surface font-medium">نظام التذاكر
+                                            والنماذج</span>
+                                    </div>
+                                    <span class="font-label-code-sm text-label-code-sm font-bold text-primary">خلال
+                                        ساعتين (كحد أقصى 24 ساعة)</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- FAQ Quick Accordion Card -->
+                        <div
+                            class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-xs">
+                            <div class="flex items-center gap-space-xs pb-space-xs">
+                                <span class="material-symbols-outlined text-primary text-[22px]">quiz</span>
+                                <h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">حلول سريعة
+                                    قبل المراسلة</h3>
+                            </div>
+                            <div class="flex flex-col gap-space-xs" id="quickFaqGroup">
+                                <!-- Question 1 -->
+                                <div class="rounded-lg bg-surface-container-low overflow-hidden">
+                                    <button
+                                        class="w-full flex items-center justify-between p-space-xs text-right font-body-sm text-body-sm font-semibold text-on-surface hover:text-primary transition-colors" type="button">
+                                        <span>واجهت مشكلة في تشغيل بيئة بايثون التفاعلية؟</span>
+                                        <span
+                                            class="material-symbols-outlined text-[18px] transition-transform duration-200">expand_more</span>
+                                    </button>
+                                    <div
+                                        class="faq-content hidden px-space-xs pb-space-xs font-caption text-caption text-on-surface-variant leading-relaxed">
+                                        تأكد من تعطيل أدوات حظر الإعلانات (AdBlock) وتحديث صفحة المختبر بالضغط على
+                                        Ctrl+F5، أو جرب فتح الرابط عبر متصفح Chrome/Edge المحدث.
+                                    </div>
+                                </div>
+                                <!-- Question 2 -->
+                                <div class="rounded-lg bg-surface-container-low overflow-hidden">
+                                    <button
+                                        class="w-full flex items-center justify-between p-space-xs text-right font-body-sm text-body-sm font-semibold text-on-surface hover:text-primary transition-colors" type="button">
+                                        <span>كيف أسترد الرسوم إذا لم يناسبني المقرر؟</span>
+                                        <span
+                                            class="material-symbols-outlined text-[18px] transition-transform duration-200">expand_more</span>
+                                    </button>
+                                    <div
+                                        class="faq-content hidden px-space-xs pb-space-xs font-caption text-caption text-on-surface-variant leading-relaxed">
+                                        يمكنك طلب استرداد كامل المبلغ خلال أول 72 ساعة من تاريخ الاشتراك شريطة عدم تجاوز
+                                        15% من مشاهدة الدروس المسجلة عبر إرسال تذكرة "شكوى أو اشتراك".
+                                    </div>
+                                </div>
+                                <!-- Question 3 -->
+                                <div class="rounded-lg bg-surface-container-low overflow-hidden">
+                                    <button
+                                        class="w-full flex items-center justify-between p-space-xs text-right font-body-sm text-body-sm font-semibold text-on-surface hover:text-primary transition-colors" type="button">
+                                        <span>هل تتوفر خيارات الدفع بالأقساط (تابي / تمارا)؟</span>
+                                        <span
+                                            class="material-symbols-outlined text-[18px] transition-transform duration-200">expand_more</span>
+                                    </button>
+                                    <div
+                                        class="faq-content hidden px-space-xs pb-space-xs font-caption text-caption text-on-surface-variant leading-relaxed">
+                                        نعم، تدعم بوابة الدفع تقسيم الرسوم إلى 4 دفعات بدون أي فوائد إضافية عند إتمام
+                                        خطوة الدفع الإلكتروني في صفحة الاشتراك.
+                                    </div>
+                                </div>
+                                <!-- Question 4 -->
+                                <div class="rounded-lg bg-surface-container-low overflow-hidden">
+                                    <button
+                                        class="w-full flex items-center justify-between p-space-xs text-right font-body-sm text-body-sm font-semibold text-on-surface hover:text-primary transition-colors" type="button">
+                                        <span>كيف يتم إصدار شهادة إتمام المسار التدريبي؟</span>
+                                        <span
+                                            class="material-symbols-outlined text-[18px] transition-transform duration-200">expand_more</span>
+                                    </button>
+                                    <div
+                                        class="faq-content hidden px-space-xs pb-space-xs font-caption text-caption text-on-surface-variant leading-relaxed">
+                                        تصدر الشهادة المعتمدة تلقائياً برقم تحقق رقمي فور تسليم وموافقة المعلمة على
+                                        المشروع النهائي وحضور ما لا يقل عن 80% من محتوى المقرر.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Visual Trust Banner with Teacher Presence -->
+                        <div
+                            class="relative overflow-hidden rounded-xl bg-gradient-to-l from-surface-container to-surface-container-highest p-space-md flex items-center gap-space-md">
+                            <img class="w-16 h-16 rounded-full object-cover shadow-md shrink-0"
+                                data-alt="A warm, professional Arab female computer science educator sitting at a modern minimalist desk with laptop, showing soft friendly smile, dressed in elegant modest attire, surrounded by soft pink and lilac ambient lighting and clean tech books in a bright room."
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBqHwAsqF8z2YbmY93jqO198BtcXl6w2dD-FE3vbeAyrdySKaFZg-cscjhNVarSOSYQQQofLXo2wWKU7lu31OpkiY4Cdun1_U2K45BfIO8uhZHgt-avC-LMql6UTQgaG3zab_KAaDRJ1SZdF6KDOhK98yOuUS3LbZ1bKK2cMkSfpssnE08PqqRXa7VOFJBhZaox1mEnatkJ01pgcyS-eyuVlJdTHpxvOWIJMrqucXVXFOgdqTNT-8A" />
+                            <div class="flex flex-col">
+                                <span class="font-headline-sm text-headline-sm text-on-surface font-semibold">المعلمة
+                                    معكم دائماً</span>
+                                <p class="font-caption text-caption text-on-surface-variant leading-relaxed">
+                                    "هدفنا أن لا يقف أي عائق تقني أو استفسار مفاهيمي في طريق إبداعكم البرمجي. لا تترددوا
+                                    أبداً في السؤال."
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Bottom Notification Banner for Enrolled Students -->
+            <div class="w-full px-margin-mobile md:px-margin pb-space-lg">
+                <div
+                    class="w-full bg-secondary-fixed/50 rounded-xl p-space-md flex flex-col md:flex-row items-center justify-between gap-space-sm shadow-sm">
+                    <div class="flex items-center gap-space-sm text-right">
+                        <div
+                            class="w-10 h-10 rounded-full bg-secondary text-on-secondary flex items-center justify-center shrink-0">
+                            <span class="material-symbols-outlined text-[20px]">send_and_archive</span>
+                        </div>
+                        <div class="flex flex-col">
+                            <span class="font-body-md text-body-md text-on-secondary-fixed font-bold">هل أنت طالب مسجل
+                                حالياً في إحدى المجموعات التفاعلية؟</span>
+                            <span class="font-body-sm text-body-sm text-on-secondary-fixed-variant">يمكنك التواصل
+                                المباشر مع المعلمة وزملاء الدفعة عبر مجموعة التيلجرام الحصرية لمقررك للحصول على إجابات
+                                لحظية.</span>
+                        </div>
+                    </div>
+                    <a class="shrink-0 flex items-center gap-space-xs px-space-md py-space-xs rounded-full bg-secondary text-on-secondary font-body-sm text-body-sm font-semibold hover:bg-on-secondary-fixed-variant transition-colors"
+                        href="#">
+                        <span>الانتقال لمجتمع التيليجرام</span>
+                        <span class="material-symbols-outlined text-[16px]">open_in_new</span>
+                    </a>
+                </div>
+            </div>
+            <!-- Virtual Office Modal Dialog (Simple Vanilla Interactive Element) -->
+            <div class="hidden fixed inset-0 z-50 flex items-center justify-center bg-inverse-surface/40 backdrop-blur-sm p-4"
+                id="officeHoursModal">
+                <div
+                    class="bg-surface-container-lowest rounded-xl max-w-md w-full p-space-lg shadow-2xl flex flex-col gap-space-md text-right">
+                    <div class="flex items-center justify-between pb-space-xs">
+                        <h4 class="font-headline-sm text-headline-sm font-bold text-on-surface">حجز جلسة مكتب افتراضي
+                        </h4>
+                        <button class="p-1 rounded-lg hover:bg-surface-container text-on-surface-variant">
+                            <span class="material-symbols-outlined text-[20px]">close</span>
+                        </button>
+                    </div>
+                    <p class="font-body-sm text-body-sm text-on-surface-variant">
+                        احجز لقاءً مرئياً فردياً (1-to-1) لمدة 20 دقيقة مع المعلمة أو مساعدة التدريس عبر Microsoft Teams
+                        لمراجعة الكود البرمجي لمشروعك.
+                    </p>
+                    <div class="flex flex-col gap-2">
+                        <label class="font-caption text-caption font-semibold text-on-surface">اختر اليوم والوقت
+                            المناسب:</label>
+                        <select
+                            class="w-full bg-surface-container-low rounded-lg p-space-xs font-body-sm text-body-sm text-on-surface">
+                            <option>الأحد القادم - 04:30 مساءً</option>
+                            <option>الأحد القادم - 05:00 مساءً</option>
+                            <option>الثلاثاء القادم - 06:00 مساءً</option>
+                            <option>الخميس القادم - 07:30 مساءً</option>
+                        </select>
+                    </div>
+                    <div class="flex items-center gap-space-xs pt-space-xs">
+                        <button
+                            class="flex-1 py-space-xs rounded-lg bg-primary text-on-primary font-body-sm text-body-sm font-semibold hover:bg-primary-container transition-all">
+                            تأكيد الحجز
+                        </button>
+                        <button
+                            class="px-space-md py-space-xs rounded-lg bg-surface-container text-on-surface font-body-sm text-body-sm">
+                            إلغاء
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Vanilla JS Interactions -->
+        
+    </main>
+    <footer class="w-full bg-surface-container-lowest text-on-surface shadow-[0_-1px_12px_rgba(0,0,0,0.03)]">
+        <div class="w-full px-margin py-space-xl">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-gutter">
+                <div class="lg:col-span-4 flex flex-col gap-space-sm">
+                    <div class="flex items-center gap-space-sm">
+                        <div
+                            class="w-10 h-10 rounded-full bg-primary-container flex items-center justify-center text-on-primary-container font-headline-md text-headline-md">
+                            <span class="material-symbols-outlined">code</span></div><span
+                            class="font-headline-sm text-headline-sm text-primary font-bold">أكاديمية علوم الحاسب</span>
+                    </div>
+                    <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed text-right">بيئة تعليمية
+                        تفاعلية بإشراف معلمة متخصصة، تهدف إلى تمكين الطالبات والطلاب من إتقان مفاهيم علوم الحاسب
+                        والبرمجة الحديثة بأسلوب تطبيقي ميسر وبناء جيل تقني واعد.</p>
+                    <div class="flex items-center gap-space-xs pt-space-xs"><span
+                            class="px-space-sm py-space-xs rounded-full bg-surface-container font-caption text-caption text-primary font-semibold">إشراف
+                            أكاديمي مباشر</span><span
+                            class="px-space-sm py-space-xs rounded-full bg-surface-container-high font-caption text-caption text-secondary font-semibold">مشاريع
+                            عملية</span></div>
+                </div>
+                <div class="lg:col-span-3 flex flex-col gap-space-sm"><span
+                        class="font-headline-sm text-headline-sm text-on-surface font-semibold">المسارات والصفوف</span>
+                    <ul class="flex flex-col gap-space-xs font-body-sm text-body-sm text-on-surface-variant">
+                        <li class="hover:text-primary transition-colors"><a data-path="grade-first-secondary"
+                                href="#">الصف الأول الثانوي (تقنية 1)</a></li>
+                        <li class="hover:text-primary transition-colors"><a data-path="grade-second-secondary"
+                                href="#">الصف الثاني الثانوي (هندسة برمجيات)</a></li>
+                        <li class="hover:text-primary transition-colors"><a data-path="grade-third-secondary"
+                                href="#">الصف الثالث الثانوي (علم البيانات والذكاء)</a></li>
+                        <li class="hover:text-primary transition-colors"><a data-path="coding-foundation" href="#">مسار
+                                التأسيس البرمجي الشامل</a></li>
+                        <li class="hover:text-primary transition-colors"><a data-path="ai-python-track" href="#">معسكر
+                                بايثون والذكاء الاصطناعي</a></li>
+                    </ul>
+                </div>
+                <div class="lg:col-span-2 flex flex-col gap-space-sm"><span
+                        class="font-headline-sm text-headline-sm text-on-surface font-semibold">روابط سريعة</span>
+                    <ul class="flex flex-col gap-space-xs font-body-sm text-body-sm text-on-surface-variant">
+                        <li class="hover:text-primary transition-colors"><a data-path="home" href="#">الصفحة
+                                الرئيسية</a></li>
+                        <li class="hover:text-primary transition-colors"><a data-path="how-to-subscribe" href="#">طريقة
+                                التسجيل والاشتراك</a></li>
+                        <li class="hover:text-primary transition-colors"><a data-path="terms-and-policies"
+                                href="#">الشروط وسياسة الخصوصية</a></li>
+                        <li class="hover:text-primary transition-colors"><a data-path="support-and-complaints"
+                                href="#">مركز المساعدة والشكاوى</a></li>
+                        <li class="hover:text-primary transition-colors"><a data-path="contact-us" href="#">معلومات
+                                التواصل المباشر</a></li>
+                    </ul>
+                </div>
+                <div class="lg:col-span-3 flex flex-col gap-space-sm"><span
+                        class="font-headline-sm text-headline-sm text-on-surface font-semibold">تواصل مع المعلمة وفريق
+                        الدعم</span>
+                    <p class="font-body-sm text-body-sm text-on-surface-variant">نسعد بإجابة كافة استفساراتكم الأكاديمية
+                        والتقنية عبر القنوات الرسمية:</p>
+                    <div class="flex flex-col gap-space-xs"><a
+                            class="flex items-center gap-space-xs p-space-xs bg-surface-container rounded-lg hover:bg-surface-container-high text-on-surface transition-all"
+                            href="tel:01020937901"><span
+                                class="material-symbols-outlined text-primary">support_agent</span>
+                            <div class="flex flex-col text-right"><span
+                                    class="font-caption text-caption text-on-surface-variant">الهاتف الموحد والدعم
+                                    السريع</span><span class="font-label-code-lg text-label-code-lg font-semibold"
+                                    dir="ltr">01020937901</span></div>
+                        </a><a
+                            class="flex items-center gap-space-xs p-space-xs bg-surface-container rounded-lg hover:bg-surface-container-high text-on-surface transition-all"
+                            href="https://wa.me/966500000000"><span
+                                class="material-symbols-outlined text-tertiary">chat</span>
+                            <div class="flex flex-col text-right"><span
+                                    class="font-caption text-caption text-on-surface-variant">واتساب المعلمة
+                                    للإشراف</span><span class="font-label-code-lg text-label-code-lg font-semibold"
+                                    dir="ltr">01020937901</span></div>
+                        </a></div>
+                </div>
+            </div>
+            <div
+                class="mt-space-xl pt-space-md bg-surface-container-high/40 rounded-xl px-space-md flex flex-col sm:flex-row items-center justify-between gap-space-sm">
+                <span class="font-body-sm text-body-sm text-on-surface-variant text-center sm:text-right">جميع الحقوق
+                    محفوظة © 2025 منصة علوم الحاسب والبرمجة | إشراف المعلمة</span>
+                <div class="flex items-center gap-space-md"><a
+                        class="font-caption text-caption text-on-surface-variant hover:text-primary transition-colors"
+                        data-path="terms-and-policies" href="#">الخصوصية والشروط</a><span
+                        class="text-outline-variant">•</span><a
+                        class="font-caption text-caption text-on-surface-variant hover:text-primary transition-colors"
+                        data-path="support-and-complaints" href="#">المساعدة والدعم</a></div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

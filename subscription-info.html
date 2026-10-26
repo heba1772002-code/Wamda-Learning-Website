@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+
+<html dir="rtl" lang="ar">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="web_standard" name="shell-type" />
+    <title>أكاديمية البرمجة والتقنية | بإشراف المعلمة</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;600&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet" />
+    
+    
+    
+    
+    
+    
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+        id="tailwind-config">tailwind.config = {darkMode: "class", theme: {extend: {"colors": {"on-tertiary-fixed": "#002113", "on-error": "#ffffff", "on-secondary-container": "#665f78", "on-primary-fixed": "#3e001e", "surface-container-highest": "#e9dff3", "primary-fixed": "#ffd9e2", "on-tertiary": "#ffffff", "surface-container": "#f4eaff", "inverse-primary": "#ffb0c9", "error-container": "#ffdad6", "on-secondary-fixed": "#1e182e", "tertiary-fixed": "#6ffbbe", "background": "#fef7ff", "on-background": "#1e1927", "on-primary-container": "#fffbff", "surface-variant": "#e9dff3", "surface": "#fef7ff", "on-primary-fixed-variant": "#81204b", "outline-variant": "#dac0c6", "error": "#ba1a1a", "tertiary": "#006947", "tertiary-container": "#00855b", "surface-container-high": "#efe4f9", "surface-container-lowest": "#ffffff", "secondary-fixed-dim": "#ccc2df", "outline": "#877177", "on-secondary": "#ffffff", "secondary-fixed": "#e8defc", "secondary": "#625b74", "inverse-surface": "#342e3d", "secondary-container": "#e5dbf9", "on-surface": "#1e1927", "surface-bright": "#fef7ff", "on-secondary-fixed-variant": "#4a435b", "surface-tint": "#a03962", "primary-fixed-dim": "#ffb0c9", "on-surface-variant": "#554247", "tertiary-fixed-dim": "#4edea3", "on-primary": "#ffffff", "primary-container": "#bc4f79", "surface-dim": "#e0d6eb", "on-error-container": "#93000a", "primary": "#9d3660", "surface-container-low": "#f9f0ff", "on-tertiary-fixed-variant": "#005236", "on-tertiary-container": "#f5fff6", "inverse-on-surface": "#f7edff"}, "borderRadius": {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"}, "spacing": {"margin-mobile": "1.25rem", "gutter-mobile": "1rem", "space-md": "1.25rem", "space-xl": "3.5rem", "space-xs": "0.375rem", "space-lg": "2rem", "margin": "3rem", "space-sm": "0.75rem", "gutter": "1.5rem"}, "fontFamily": {"display-hero": ["IBM Plex Sans"], "caption": ["IBM Plex Sans"], "headline-md": ["IBM Plex Sans"], "label-code-lg": ["JetBrains Mono"], "headline-lg": ["IBM Plex Sans"], "label-code-sm": ["JetBrains Mono"], "body-sm": ["IBM Plex Sans"], "body-lg": ["IBM Plex Sans"], "headline-lg-mobile": ["IBM Plex Sans"], "headline-sm": ["IBM Plex Sans"], "display-hero-mobile": ["IBM Plex Sans"], "body-md": ["IBM Plex Sans"]}, "fontSize": {"display-hero": ["48px", {"lineHeight": "60px", "letterSpacing": "-0.02em", "fontWeight": "700"}], "caption": ["12px", {"lineHeight": "18px", "fontWeight": "500"}], "headline-md": ["24px", {"lineHeight": "34px", "fontWeight": "600"}], "label-code-lg": ["15px", {"lineHeight": "24px", "fontWeight": "500"}], "headline-lg": ["32px", {"lineHeight": "44px", "fontWeight": "600"}], "label-code-sm": ["12px", {"lineHeight": "18px", "fontWeight": "400"}], "body-sm": ["14px", {"lineHeight": "22px", "fontWeight": "400"}], "body-lg": ["18px", {"lineHeight": "30px", "fontWeight": "400"}], "headline-lg-mobile": ["24px", {"lineHeight": "34px", "fontWeight": "600"}], "headline-sm": ["20px", {"lineHeight": "28px", "fontWeight": "600"}], "display-hero-mobile": ["32px", {"lineHeight": "42px", "letterSpacing": "-0.01em", "fontWeight": "700"}], "body-md": ["16px", {"lineHeight": "26px", "fontWeight": "400"}]}}}};</script>
+    <link rel="stylesheet" href="sytle/index.css" />
+</head>
+
+<body class="bg-background text-on-surface antialiased selection:bg-primary-fixed selection:text-on-primary-fixed">
+    <header
+        class="fixed top-0 inset-x-0 z-50 bg-surface-bright/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]">
+        <div class="h-20 w-full px-margin flex items-center justify-between">
+            <div class="flex items-center gap-space-lg"><a class="flex items-center gap-space-sm group" data-path="home"
+                    href="index.html"><img alt="Profile"
+                        class="w-8 h-8 rounded-full object-cover shadow-[0_2px_10px_rgba(157,54,96,0.2)]"
+                        src="sytle/images/logo.png" />
+                    <div class="flex flex-col text-right"><span
+                            class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">أكاديمية
+                            الحاسب</span><span class="font-caption text-caption text-on-surface-variant">بإشراف المعلمة
+                            المتخصصة</span></div>
+                </a>
+                <nav class="hidden lg:flex items-center gap-space-sm"
+                    data-active-classes="bg-primary-container text-on-primary font-bold"><a
+                        class="px-space-sm py-space-xs rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container hover:text-primary transition-all text-right"
+                        data-path="home" href="index.html">الرئيسية</a>
+                    <div class="relative group"><button
+                            class="flex items-center gap-space-xs px-space-sm py-space-xs rounded-lg font-body-md text-body-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all"
+                            type="button"><span>الصفوف والمناهج</span><span
+                                class="material-symbols-outlined text-[18px] transition-transform duration-200 group-hover:rotate-180">expand_more</span></button>
+                        <div class="absolute right-0 top-full pt-space-xs hidden group-hover:block w-64">
+                            <div
+                                class="bg-surface-container-lowest rounded-xl shadow-[0_12px_32px_-4px_rgba(157,54,96,0.12)] p-space-xs flex flex-col gap-1">
+                                <a class="px-space-sm py-space-xs rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container hover:text-primary transition-all text-right"
+                                    data-path="grade-first-secondary" href="courses.html">الصف الأول الثانوي</a><a
+                                    class="px-space-sm py-space-xs rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container hover:text-primary transition-all text-right"
+                                    data-path="grade-second-secondary" href="course.html">الصف الثاني الثانوي</a><a
+                                    class="px-space-sm py-space-xs rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container hover:text-primary transition-all text-right"
+                                    data-path="grade-third-secondary" href="courses.html">الصف الثالث الثانوي</a>
+                                <div class="my-1 h-px bg-surface-variant"></div><a
+                                    class="px-space-sm py-space-xs rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container hover:text-primary transition-all text-right"
+                                    data-path="coding-foundation" href="courses.html">مرحلة التأسيس البرمجي</a><a
+                                    class="px-space-sm py-space-xs rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container hover:text-primary transition-all text-right"
+                                    data-path="ai-python-track" href="courses.html">مسار الذكاء الاصطناعي وبايثون</a>
+                            </div>
+                        </div>
+                    </div><a aria-current="page"
+                        class="px-space-sm py-space-xs rounded-lg font-body-md text-body-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all nav-current"
+                        data-path="how-to-subscribe" href="subscription-info.html">كيفية الاشتراك</a><a
+                        class="px-space-sm py-space-xs rounded-lg font-body-md text-body-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all"
+                        data-path="contact-us" href="contact.html">تواصل معنا</a>
+                </nav>
+            </div>
+            <div class="flex items-center gap-space-sm"><a
+                    class="hidden sm:flex items-center gap-space-xs px-space-md py-space-xs bg-primary text-on-primary rounded-full shadow-[0_4px_16px_rgba(157,54,96,0.25)] hover:bg-primary-container transition-all hover:scale-[0.98]"
+                    href="tel:01020937901"><span class="material-symbols-outlined text-[18px]">call</span><span
+                        class="font-label-code-lg text-label-code-lg font-bold tracking-wider"
+                        dir="ltr">01020937901</span><span class="hidden xl:inline-block font-body-sm text-body-sm mr-1">|
+                        دعم مباشر</span></a><a
+                    class="flex items-center gap-space-xs px-space-md py-space-xs bg-surface-container-high text-on-surface font-body-md text-body-md font-semibold rounded-full hover:bg-secondary-container hover:text-on-secondary-container transition-all"
+                    data-path="login" href="login.html"><span>حسابي</span><span
+                        class="material-symbols-outlined text-[20px]">account_circle</span></a></div>
+        </div>
+    </header>bg-background min-h-screen">
+        <div class="flex flex-col w-full">
+            <!-- Subtle Ambient Tech Background Blobs (Constrained) -->
+            <div class="relative w-full overflow-hidden">
+                <div
+                    class="absolute -top-24 right-10 w-96 h-96 bg-primary-fixed/30 rounded-full blur-3xl pointer-events-none">
+                </div>
+                <div
+                    class="absolute top-1/2 left-0 w-80 h-80 bg-secondary-container/40 rounded-full blur-3xl pointer-events-none">
+                </div>
+                <!-- Section 1: Hero Header & Quick Navigation -->
+                <section class="relative w-full px-margin-mobile md:px-margin pt-space-lg pb-space-xl">
+                    <div class="max-w-5xl mx-auto flex flex-col items-center text-center">
+                        <!-- Glow Badge -->
+                        <div
+                            class="inline-flex items-center gap-space-xs px-space-md py-space-xs rounded-full bg-surface-container-high shadow-sm mb-space-md">
+                            <span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+                            <span class="font-caption text-caption text-primary font-semibold tracking-wide">دليل الطالب
+                                وولي الأمر الشامل • إرشادات واضحة وشفافة</span>
+                        </div>
+                        <!-- Hero Title -->
+                        <h1 class="font-display-hero text-display-hero text-on-surface mb-space-sm max-w-3xl">
+                            خطوات الانضمام وشروط الاستخدام في منصة <span class="text-primary">كود أكاديمي</span>
+                        </h1>
+                        <!-- Subtitle -->
+                        <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mb-space-lg">
+                            كل ما تحتاج معرفته عن آلية الاشتراك، حقوق الملكية الفكرية، وسياسة الاسترجاع وضمان الجودة
+                            التعليمية لتجربة تعليمية آمنة ومتميزة تحت إشراف أكاديمي معتمد.
+                        </p>
+                        <!-- Quick Interactive Anchors Pill Container -->
+                        <div
+                            class="w-full flex flex-wrap items-center justify-center gap-space-xs p-space-xs bg-surface-container-lowest/80 backdrop-blur-md rounded-2xl shadow-sm">
+                            <a class="px-space-md py-space-xs rounded-xl font-body-sm text-body-sm text-on-surface-variant hover:text-primary hover:bg-surface-container transition-all flex items-center gap-space-xs"
+                                href="#how-to-join">
+                                <span class="material-symbols-outlined text-[18px] text-primary">looks_one</span>
+                                <span>دليل خطوات الاشتراك</span>
+                            </a>
+                            <a class="px-space-md py-space-xs rounded-xl font-body-sm text-body-sm text-on-surface-variant hover:text-tertiary hover:bg-surface-container transition-all flex items-center gap-space-xs"
+                                href="#refund-guarantee">
+                                <span class="material-symbols-outlined text-[18px] text-tertiary">verified_user</span>
+                                <span>الضمان الذهبي والاسترجاع</span>
+                            </a>
+                            <a class="px-space-md py-space-xs rounded-xl font-body-sm text-body-sm text-on-surface-variant hover:text-primary hover:bg-surface-container transition-all flex items-center gap-space-xs"
+                                href="#terms-legal">
+                                <span class="material-symbols-outlined text-[18px] text-secondary">gavel</span>
+                                <span>الشروط والملكية الفكرية</span>
+                            </a>
+                            <a class="px-space-md py-space-xs rounded-xl font-body-sm text-body-sm text-on-surface-variant hover:text-primary hover:bg-surface-container transition-all flex items-center gap-space-xs"
+                                href="#faq-section">
+                                <span
+                                    class="material-symbols-outlined text-[18px] text-primary-container">help_outline</span>
+                                <span>الأسئلة الشائعة</span>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+                <!-- Section 2: Visual 4-Step Subscription Flow -->
+                <section class="w-full px-margin-mobile md:px-margin py-space-xl bg-surface-container-low/60 relative"
+                    id="how-to-join">
+                    <div class="max-w-6xl mx-auto flex flex-col gap-space-lg">
+                        <!-- Section Header -->
+                        <div class="flex flex-col md:flex-row md:items-end justify-between gap-space-sm text-right">
+                            <div>
+                                <div
+                                    class="flex items-center gap-space-xs text-primary font-caption text-caption uppercase tracking-wider mb-space-xs">
+                                    <span class="material-symbols-outlined text-[16px]">timeline</span>
+                                    <span>مسار الانضمام السلس</span>
+                                </div>
+                                <h2 class="font-headline-lg text-headline-lg text-on-surface">أربع خطوات ميسرة لبدء
+                                    رحلتك التقنية</h2>
+                            </div>
+                            <p class="font-body-md text-body-md text-on-surface-variant max-w-md">
+                                تمت هندسة منصتنا لتضمن لك انضماماً فورياً دون أي تعقيدات، مع تفعيل حسابك وحجز مقعدك في
+                                أقل من دقيقتين.
+                            </p>
+                        </div>
+                        <!-- Visual Step Cards Grid -->
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter pt-space-xs">
+                            <!-- Step 1 -->
+                            <div
+                                class="flex flex-col justify-between p-space-md rounded-2xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-all hover:-translate-y-1">
+                                <div class="flex flex-col gap-space-sm">
+                                    <div class="flex items-center justify-between">
+                                        <span
+                                            class="w-12 h-12 rounded-xl bg-primary-fixed flex items-center justify-center font-label-code-lg text-label-code-lg font-bold text-on-primary-fixed">01</span>
+                                        <span
+                                            class="material-symbols-outlined text-primary text-[24px]">menu_book</span>
+                                    </div>
+                                    <h3 class="font-headline-sm text-headline-sm text-on-surface">استعراض المسار والكورس
+                                    </h3>
+                                    <p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                                        تصفح مناهج المرحلة الثانوية أو مسارات بايثون والذكاء الاصطناعي، واطلع على الدروس
+                                        المجانية التجريبية وفهرس الموضوعات التفاعلية.
+                                    </p>
+                                </div>
+                                <div
+                                    class="mt-space-md pt-space-xs flex items-center gap-space-xs text-primary font-body-sm text-body-sm">
+                                    <span class="material-symbols-outlined text-[16px]">check_circle</span>
+                                    <span>معاينة مجانية متاحة</span>
+                                </div>
+                            </div>
+                            <!-- Step 2 -->
+                            <div
+                                class="flex flex-col justify-between p-space-md rounded-2xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-all hover:-translate-y-1">
+                                <div class="flex flex-col gap-space-sm">
+                                    <div class="flex items-center justify-between">
+                                        <span
+                                            class="w-12 h-12 rounded-xl bg-secondary-fixed flex items-center justify-center font-label-code-lg text-label-code-lg font-bold text-on-secondary-fixed">02</span>
+                                        <span
+                                            class="material-symbols-outlined text-secondary text-[24px]">fingerprint</span>
+                                    </div>
+                                    <h3 class="font-headline-sm text-headline-sm text-on-surface">إنشاء الحساب الموحد
+                                    </h3>
+                                    <p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                                        سجل برقم الجوال أو البريد الإلكتروني لتأسيس ملف الطالب البرمجي، ومتابعة لوحة
+                                        الإنجاز وتقارير المتابعة الدورية الخاصة بك.
+                                    </p>
+                                </div>
+                                <div
+                                    class="mt-space-md pt-space-xs flex items-center gap-space-xs text-secondary font-body-sm text-body-sm">
+                                    <span class="material-symbols-outlined text-[16px]">verified</span>
+                                    <span>تسجيل سريع في 30 ثانية</span>
+                                </div>
+                            </div>
+                            <!-- Step 3 -->
+                            <div
+                                class="flex flex-col justify-between p-space-md rounded-2xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-all hover:-translate-y-1">
+                                <div class="flex flex-col gap-space-sm">
+                                    <div class="flex items-center justify-between">
+                                        <span
+                                            class="w-12 h-12 rounded-xl bg-primary-fixed-dim flex items-center justify-center font-label-code-lg text-label-code-lg font-bold text-on-primary-fixed-variant">03</span>
+                                        <span
+                                            class="material-symbols-outlined text-primary-container text-[24px]">payments</span>
+                                    </div>
+                                    <h3 class="font-headline-sm text-headline-sm text-on-surface">تأكيد الدفع الآمن</h3>
+                                    <p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                                        ادفع بأمان عبر مدى، Apple Pay، فيزا، أو قسّم الرسوم إلى 4 دفعات ميسرة عبر تابي
+                                        وتمارا بدون أي فوائد إضافية، مع إمكانية إدخال كود الخصم.
+                                    </p>
+                                </div>
+                                <div
+                                    class="mt-space-md pt-space-xs flex items-center gap-space-xs text-on-surface-variant font-label-code-sm text-label-code-sm">
+                                    <span class="px-2 py-0.5 rounded bg-surface-container font-semibold">Mada</span>
+                                    <span class="px-2 py-0.5 rounded bg-surface-container font-semibold">Apple
+                                        Pay</span>
+                                    <span class="px-2 py-0.5 rounded bg-surface-container font-semibold">Tabby</span>
+                                </div>
+                            </div>
+                            <!-- Step 4 -->
+                            <div
+                                class="flex flex-col justify-between p-space-md rounded-2xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-all hover:-translate-y-1">
+                                <div class="flex flex-col gap-space-sm">
+                                    <div class="flex items-center justify-between">
+                                        <span
+                                            class="w-12 h-12 rounded-xl bg-tertiary-fixed flex items-center justify-center font-label-code-lg text-label-code-lg font-bold text-on-tertiary-fixed">04</span>
+                                        <span
+                                            class="material-symbols-outlined text-tertiary text-[24px]">rocket_launch</span>
+                                    </div>
+                                    <h3 class="font-headline-sm text-headline-sm text-on-surface">التفعيل الفوري للتعلم
+                                    </h3>
+                                    <p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                                        تُفتح مكتبة الدروس تلقائياً، وتصلك دعوة الانضمام لمجموعة تيليجرام التفاعلية مع
+                                        المعلمة لاستقبال أول مشروع ومتابعة الحلول.
+                                    </p>
+                                </div>
+                                <div
+                                    class="mt-space-md pt-space-xs flex items-center gap-space-xs text-tertiary font-body-sm text-body-sm">
+                                    <span class="material-symbols-outlined text-[16px]">sensors</span>
+                                    <span>تفعيل لحظي ومباشر</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Step CTA Banner -->
+                        <div
+                            class="flex flex-col sm:flex-row items-center justify-between p-space-md rounded-2xl bg-primary text-on-primary shadow-lg gap-space-sm">
+                            <div class="flex items-center gap-space-sm text-right">
+                                <div
+                                    class="w-10 h-10 rounded-full bg-primary-container flex items-center justify-center shrink-0">
+                                    <span class="material-symbols-outlined text-[22px]">school</span>
+                                </div>
+                                <div>
+                                    <p class="font-headline-sm text-headline-sm">مستعد لبدء التعلّم العملي مع المعلمة؟
+                                    </p>
+                                    <p class="font-body-sm text-body-sm text-on-primary/80">استكشف الكورسات المتاحة الآن
+                                        واختر المسار الأكاديمي المناسب لك.</p>
+                                </div>
+                            </div>
+                            <a class="shrink-0 px-space-lg py-space-xs bg-surface-container-lowest text-primary font-body-md text-body-md font-semibold rounded-full shadow-sm hover:bg-surface-container transition-all"
+                                data-path="courses" href="#">
+                                استكشف الكورسات المتاحة
+                            </a>
+                        </div>
+                    </div>
+                </section>
+                <!-- Section 3: Golden Money-Back Guarantee & Policy -->
+                <section class="w-full px-margin-mobile md:px-margin py-space-xl" id="refund-guarantee">
+                    <div class="max-w-5xl mx-auto">
+                        <div
+                            class="p-space-lg md:p-space-xl rounded-3xl bg-surface-container-low shadow-sm flex flex-col md:flex-row gap-space-lg items-center relative overflow-hidden">
+                            <!-- Graphic Shield & Visual Element -->
+                            <div
+                                class="shrink-0 flex flex-col items-center justify-center w-48 h-48 md:w-56 md:h-56 rounded-2xl bg-surface-container-lowest p-space-md shadow-md text-center relative">
+                                <div
+                                    class="w-20 h-20 rounded-full bg-tertiary-fixed flex items-center justify-center text-on-tertiary-fixed mb-space-xs">
+                                    <span class="material-symbols-outlined text-[44px]">verified</span>
+                                </div>
+                                <span class="font-headline-sm text-headline-sm text-on-surface font-bold">ضمان
+                                    ذهبي</span>
+                                <span class="font-caption text-caption text-tertiary font-semibold">استرداد كامل
+                                    100%</span>
+                                <span class="font-label-code-sm text-label-code-sm text-on-surface-variant mt-1"
+                                    dir="ltr">7 DAYS GUARANTEE</span>
+                            </div>
+                            <!-- Content Details -->
+                            <div class="flex flex-col gap-space-sm text-right flex-1">
+                                <div
+                                    class="inline-flex items-center gap-space-xs px-space-sm py-space-xs rounded-full bg-tertiary-container/10 text-tertiary w-fit">
+                                    <span class="material-symbols-outlined text-[16px]">thumb_up</span>
+                                    <span class="font-caption text-caption font-semibold">ثقة تامة بجودة المحتوى
+                                        والشرح</span>
+                                </div>
+                                <h2 class="font-headline-lg text-headline-lg text-on-surface">
+                                    ضمان استرجاع الرسوم خلال 7 أيام بدون أي تعقيد
+                                </h2>
+                                <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                                    نلتزم في منصة كود أكاديمي بتقديم تجربة تعليمية برمجية استثنائية وبأعلى المعايير
+                                    الأكاديمية. إن لم تجد أسلوب الشرح والتطبيق مناسباً لك، يحق لك استرداد كامل المبلغ
+                                    المدفوع بكل يسر وشفافية خلال 7 أيام من تاريخ الاشتراك.
+                                </p>
+                                <!-- Rules Grid -->
+                                <div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm pt-space-xs">
+                                    <div
+                                        class="p-space-sm rounded-xl bg-surface-container-lowest flex items-start gap-space-xs">
+                                        <span
+                                            class="material-symbols-outlined text-primary text-[20px] shrink-0 mt-0.5">pie_chart</span>
+                                        <div class="flex flex-col">
+                                            <span class="font-body-md text-body-md font-semibold text-on-surface">نسبة
+                                                المشاهدة العادلة</span>
+                                            <span class="font-body-sm text-body-sm text-on-surface-variant">ألا تتجاوز
+                                                نسبة الحضور والمشاهدة 20% من إجمالي المحتوى.</span>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="p-space-sm rounded-xl bg-surface-container-lowest flex items-start gap-space-xs">
+                                        <span
+                                            class="material-symbols-outlined text-primary text-[20px] shrink-0 mt-0.5">download_done</span>
+                                        <div class="flex flex-col">
+                                            <span
+                                                class="font-body-md text-body-md font-semibold text-on-surface">المذكرات
+                                                البرمجية</span>
+                                            <span class="font-body-sm text-body-sm text-on-surface-variant">عدم تنزيل
+                                                المستندات الشاملة أو أكواد المشاريع النهائية.</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Refund Trigger -->
+                                <div class="flex flex-wrap items-center gap-space-sm pt-space-xs">
+                                    <span
+                                        class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-space-xs">
+                                        <span class="material-symbols-outlined text-tertiary text-[18px]">bolt</span>
+                                        <span>التقديم بضغطة زر من لوحة التحكم أو بمحادثة المعلمة مباشرة</span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Section 4: Terms & Conditions Accordion / Document Layout -->
+                <section class="w-full px-margin-mobile md:px-margin py-space-xl bg-surface-container-low/40"
+                    id="terms-legal">
+                    <div class="max-w-5xl mx-auto flex flex-col gap-space-lg">
+                        <div class="text-right">
+                            <div
+                                class="flex items-center gap-space-xs text-primary font-caption text-caption uppercase tracking-wider mb-space-xs">
+                                <span class="material-symbols-outlined text-[16px]">balance</span>
+                                <span>الاتفاقية التعليمية والسياسات</span>
+                            </div>
+                            <h2 class="font-headline-lg text-headline-lg text-on-surface">الشروط والأحكام العامة وحقوق
+                                الملكية</h2>
+                            <p class="font-body-md text-body-md text-on-surface-variant max-w-2xl mt-1">
+                                تهدف هذه الضوابط إلى حماية حقوق الطالب والمعلمة، والحفاظ على بيئة دراسية محفزة وآمنة
+                                لجميع المشتركين.
+                            </p>
+                        </div>
+                        <!-- Accordion Stack -->
+                        <div class="flex flex-col gap-space-sm" id="terms-container">
+                            <!-- Clause 1 -->
+                            <div
+                                class="term-card bg-surface-container-lowest rounded-2xl shadow-sm transition-all overflow-hidden">
+                                <button
+                                    class="term-toggle w-full px-space-lg py-space-md flex items-center justify-between text-right gap-space-sm cursor-pointer select-none"
+                                    type="button">
+                                    <div class="flex items-center gap-space-sm">
+                                        <div
+                                            class="w-10 h-10 rounded-xl bg-surface-container flex items-center justify-center text-primary shrink-0">
+                                            <span class="material-symbols-outlined text-[22px]">badge</span>
+                                        </div>
+                                        <div>
+                                            <span
+                                                class="font-label-code-sm text-label-code-sm text-on-surface-variant">البند
+                                                01</span>
+                                            <h3 class="font-headline-sm text-headline-sm text-on-surface">أهلية
+                                                الاستخدام وخصوصية الحسابات التعليمية</h3>
+                                        </div>
+                                    </div>
+                                    <span
+                                        class="material-symbols-outlined text-on-surface-variant transition-transform duration-300 transform rotate-180 term-arrow">expand_more</span>
+                                </button>
+                                <div
+                                    class="term-body px-space-lg pb-space-md text-right text-on-surface-variant font-body-md text-body-md leading-relaxed">
+                                    <div
+                                        class="p-space-md bg-surface-container-low rounded-xl flex flex-col gap-space-xs">
+                                        <p>• يُعتبر الاشتراك حقاً شخصياً وفردياً للطالب أو الطالبة المسجلة بياناتهم في
+                                            المنصة، ولا يحق بأي حال من الأحوال مشاركة بيانات الدخول مع أطراف أخرى أو
+                                            تداولها جماعياً.</p>
+                                        <p>• تقوم المنصة بتطبيق أنظمة تقنية ذكية تكتشف تكرار الدخول المتزامن من أكثر من
+                                            موقع جغرافي مختلف، مما قد يؤدي لإيقاف الحساب تلقائياً لأسباب أمنية لحماية
+                                            الحساب من الاختراق.</p>
+                                        <p>• يتحمل ولي الأمر أو الطالب مسؤولية دقة البيانات المدخلة عند التسجيل (الاسم
+                                            الثلاثي، رقم الجوال الفعال، والبريد الإلكتروني)، لاعتمادها رسمياً في
+                                            الشهادات الممنوحة.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Clause 2 -->
+                            <div
+                                class="term-card bg-surface-container-lowest rounded-2xl shadow-sm transition-all overflow-hidden">
+                                <button
+                                    class="term-toggle w-full px-space-lg py-space-md flex items-center justify-between text-right gap-space-sm cursor-pointer select-none"
+                                    type="button">
+                                    <div class="flex items-center gap-space-sm">
+                                        <div
+                                            class="w-10 h-10 rounded-xl bg-surface-container flex items-center justify-center text-primary shrink-0">
+                                            <span class="material-symbols-outlined text-[22px]">copyright</span>
+                                        </div>
+                                        <div>
+                                            <span
+                                                class="font-label-code-sm text-label-code-sm text-on-surface-variant">البند
+                                                02</span>
+                                            <h3 class="font-headline-sm text-headline-sm text-on-surface">حقوق الملكية
+                                                الفكرية والعلامة التجارية</h3>
+                                        </div>
+                                    </div>
+                                    <span
+                                        class="material-symbols-outlined text-on-surface-variant transition-transform duration-300 term-arrow">expand_more</span>
+                                </button>
+                                <div
+                                    class="term-body px-space-lg pb-space-md text-right text-on-surface-variant font-body-md text-body-md leading-relaxed hidden">
+                                    <div
+                                        class="p-space-md bg-surface-container-low rounded-xl flex flex-col gap-space-xs">
+                                        <p>• جميع المحتويات المرفوعة داخل المنصة (مقاطع الفيديو التدريبية، الأكواد
+                                            المصدرية، حلول الأسئلة الوزارية، العروض التقديمية، والملخصات) مسجلة ومملوكة
+                                            حصرياً للأكاديمية وللمعلمة المشرفة بموجب قوانين حماية الملكية الفكرية.</p>
+                                        <p>• يُحظر منعاً باتاً تسجيل الشاشة أو إعادة رفع الفيديوهات على أي قنوات عامة
+                                            (يوتيوب، تيليجرام، تيك توك) أو بيعها تجارياً، وتتخذ المنصة كافة الإجراءات
+                                            النظامية والقانونية بحق أي مخالفة.</p>
+                                        <p>• يحق للمشترك الاستفادة من الأكواد المعطاة وبناء مشاريعه البرمجية الشخصية
+                                            وتطويرها ووضعها في ملف أعماله (Portfolio) دون قيود.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Clause 3 -->
+                            <div
+                                class="term-card bg-surface-container-lowest rounded-2xl shadow-sm transition-all overflow-hidden">
+                                <button
+                                    class="term-toggle w-full px-space-lg py-space-md flex items-center justify-between text-right gap-space-sm cursor-pointer select-none"
+                                    type="button">
+                                    <div class="flex items-center gap-space-sm">
+                                        <div
+                                            class="w-10 h-10 rounded-xl bg-surface-container flex items-center justify-center text-primary shrink-0">
+                                            <span class="material-symbols-outlined text-[22px]">groups</span>
+                                        </div>
+                                        <div>
+                                            <span
+                                                class="font-label-code-sm text-label-code-sm text-on-surface-variant">البند
+                                                03</span>
+                                            <h3 class="font-headline-sm text-headline-sm text-on-surface">آداب التواصل
+                                                في المجموعات ومجتمع الطلاب</h3>
+                                        </div>
+                                    </div>
+                                    <span
+                                        class="material-symbols-outlined text-on-surface-variant transition-transform duration-300 term-arrow">expand_more</span>
+                                </button>
+                                <div
+                                    class="term-body px-space-lg pb-space-md text-right text-on-surface-variant font-body-md text-body-md leading-relaxed hidden">
+                                    <div
+                                        class="p-space-md bg-surface-container-low rounded-xl flex flex-col gap-space-xs">
+                                        <p>• مجتمعات النقاش وقنوات التيليجرام التفاعلية هي بيئة مخصصة حصراً للدعم
+                                            الأكاديمي، تصحيح الأخطاء البرمجية، وتبادل الخبرات المعرفية بين الزملاء.</p>
+                                        <p>• يلتزم جميع المشتركين بالاحترام المتبادل في التخاطب مع المعلمة والزملاء،
+                                            ويمنع منعاً باتاً نشر أي محتوى إعلاني، سياسي، أو خارج الإطار التعليمي للدرس.
+                                        </p>
+                                        <p>• تحتفظ الإدارة بالحق في تعليق مشاركة أي طالب في المجموعات التفاعلية عند
+                                            تكرار مخالفة آداب الحوار، مع ضمان استمرار وصوله للدروس المسجلة داخل المنصة.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Clause 4 -->
+                            <div
+                                class="term-card bg-surface-container-lowest rounded-2xl shadow-sm transition-all overflow-hidden">
+                                <button
+                                    class="term-toggle w-full px-space-lg py-space-md flex items-center justify-between text-right gap-space-sm cursor-pointer select-none"
+                                    type="button">
+                                    <div class="flex items-center gap-space-sm">
+                                        <div
+                                            class="w-10 h-10 rounded-xl bg-surface-container flex items-center justify-center text-primary shrink-0">
+                                            <span class="material-symbols-outlined text-[22px]">workspace_premium</span>
+                                        </div>
+                                        <div>
+                                            <span
+                                                class="font-label-code-sm text-label-code-sm text-on-surface-variant">البند
+                                                04</span>
+                                            <h3 class="font-headline-sm text-headline-sm text-on-surface">إصدار الشهادات
+                                                والتقييم الأكاديمي</h3>
+                                        </div>
+                                    </div>
+                                    <span
+                                        class="material-symbols-outlined text-on-surface-variant transition-transform duration-300 term-arrow">expand_more</span>
+                                </button>
+                                <div
+                                    class="term-body px-space-lg pb-space-md text-right text-on-surface-variant font-body-md text-body-md leading-relaxed hidden">
+                                    <div
+                                        class="p-space-md bg-surface-container-low rounded-xl flex flex-col gap-space-xs">
+                                        <p>• تُمنح شهادة إتمام المسار التدريبي للطلاب الذين أتموا نسبة مشاهدة لا تقل عن
+                                            80% من الدروس، وقاموا بتسليم المهام البرمجية والمشروع الختامي المعتمد من قبل
+                                            المعلمة.</p>
+                                        <p>• يتم التحقق من أصالة الكود المرفوع للمشروع للتأكد من مجهود الطالب الشخصي
+                                            وفهمه العميق للمفاهيم قبل اعتماد الشهادة المعتمدة برقم تسلسلي يمكن التحقق
+                                            منه إلكترونياً.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Clause 5 -->
+                            <div
+                                class="term-card bg-surface-container-lowest rounded-2xl shadow-sm transition-all overflow-hidden">
+                                <button
+                                    class="term-toggle w-full px-space-lg py-space-md flex items-center justify-between text-right gap-space-sm cursor-pointer select-none"
+                                    type="button">
+                                    <div class="flex items-center gap-space-sm">
+                                        <div
+                                            class="w-10 h-10 rounded-xl bg-surface-container flex items-center justify-center text-primary shrink-0">
+                                            <span class="material-symbols-outlined text-[22px]">cloud_sync</span>
+                                        </div>
+                                        <div>
+                                            <span
+                                                class="font-label-code-sm text-label-code-sm text-on-surface-variant">البند
+                                                05</span>
+                                            <h3 class="font-headline-sm text-headline-sm text-on-surface">استمرارية
+                                                الخدمة والدعم التقني</h3>
+                                        </div>
+                                    </div>
+                                    <span
+                                        class="material-symbols-outlined text-on-surface-variant transition-transform duration-300 term-arrow">expand_more</span>
+                                </button>
+                                <div
+                                    class="term-body px-space-lg pb-space-md text-right text-on-surface-variant font-body-md text-body-md leading-relaxed hidden">
+                                    <div
+                                        class="p-space-md bg-surface-container-low rounded-xl flex flex-col gap-space-xs">
+                                        <p>• تضمن المنصة عمل الخوادم بنسبة استقرار تفوق 99.8%، مع توفير سيرفرات بث سريعة
+                                            تتوافق مع سرعات الإنترنت المختلفة، مع حفظ تلقائي لمكان توقف الطالب في
+                                            الفيديو.</p>
+                                        <p>• فريق الدعم الفني متواجد يومياً لمعالجة أي صعوبات في تشغيل الأكواد، منصات
+                                            المحاكاة البرمجية، أو مشكلات بوابات الدفع الإلكتروني.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Section 5: Frequently Asked Questions (FAQ) -->
+                <section class="w-full px-margin-mobile md:px-margin py-space-xl" id="faq-section">
+                    <div class="max-w-4xl mx-auto flex flex-col gap-space-lg">
+                        <div class="text-center flex flex-col items-center">
+                            <span
+                                class="px-space-md py-space-xs rounded-full bg-surface-container-high font-caption text-caption text-primary font-semibold mb-space-xs">
+                                إجابات واضحة وسريعة
+                            </span>
+                            <h2 class="font-headline-lg text-headline-lg text-on-surface">الأسئلة الأكثر شيوعاً حول
+                                الاشتراك والدفع</h2>
+                            <p class="font-body-md text-body-md text-on-surface-variant max-w-xl mt-1">
+                                جمعنا لك إجابات تفصيلية لأهم الاستفسارات التي تردنا من الطالبات وأولياء الأمور لتسهيل
+                                انضمامكم.
+                            </p>
+                        </div>
+                        <!-- FAQ Grid / Accordion -->
+                        <div class="flex flex-col gap-space-sm" id="faq-container">
+                            <!-- Q1 -->
+                            <div
+                                class="faq-item p-space-md rounded-2xl bg-surface-container-lowest shadow-sm text-right cursor-pointer">
+                                <div class="faq-question flex items-center justify-between gap-space-sm">
+                                    <span class="font-headline-sm text-headline-sm text-on-surface">هل يمكنني تقسيط
+                                        الرسوم الدراسية بدون فوائد؟</span>
+                                    <span
+                                        class="material-symbols-outlined text-primary text-[20px] transition-transform duration-200 faq-icon">expand_more</span>
+                                </div>
+                                <div
+                                    class="faq-answer mt-space-sm pt-space-sm text-on-surface-variant font-body-md text-body-md hidden">
+                                    نعم بالتأكيد! توفر المنصة خيار التقسيط الميسر عبر خدمتي <span
+                                        class="text-primary font-semibold">تابي (Tabby)</span> و <span
+                                        class="text-primary font-semibold">تمارا (Tamara)</span>. يمكنك تقسيم قيمة
+                                    الدورة على 4 دفعات شهرية مريحة دون أي فوائد أو رسوم إضافية مخفية، وتتم الموافقة
+                                    فورياً عند إتمام الطلب.
+                                </div>
+                            </div>
+                            <!-- Q2 -->
+                            <div
+                                class="faq-item p-space-md rounded-2xl bg-surface-container-lowest shadow-sm text-right cursor-pointer">
+                                <div class="faq-question flex items-center justify-between gap-space-sm">
+                                    <span class="font-headline-sm text-headline-sm text-on-surface">كم تبقى الفيديوهات
+                                        والدروس متاحة في حسابي؟</span>
+                                    <span
+                                        class="material-symbols-outlined text-primary text-[20px] transition-transform duration-200 faq-icon">expand_more</span>
+                                </div>
+                                <div
+                                    class="faq-answer mt-space-sm pt-space-sm text-on-surface-variant font-body-md text-body-md hidden">
+                                    يبقى المحتوى متاحاً لك بالكامل طوال العام الدراسي الحالي بما يشمل فترات الاختبارات
+                                    النهائية ومراجعات نهاية الفصول. كما يمكن للطالب إعادة مشاهدة أي محاضرة وتطبيق
+                                    الأكواد في أي وقت يلائمه دون حد أقصى للتكرار.
+                                </div>
+                            </div>
+                            <!-- Q3 -->
+                            <div
+                                class="faq-item p-space-md rounded-2xl bg-surface-container-lowest shadow-sm text-right cursor-pointer">
+                                <div class="faq-question flex items-center justify-between gap-space-sm">
+                                    <span class="font-headline-sm text-headline-sm text-on-surface">هل يحصل الطالب على
+                                        مساعدة مباشرة من المعلمة عند التعثر في كتابة الكود؟</span>
+                                    <span
+                                        class="material-symbols-outlined text-primary text-[20px] transition-transform duration-200 faq-icon">expand_more</span>
+                                </div>
+                                <div
+                                    class="faq-answer mt-space-sm pt-space-sm text-on-surface-variant font-body-md text-body-md hidden">
+                                    هذه هي الميزة الجوهرية لأكاديميتنا! يحصل كل مشترك على وصول مباشر لمجموعة النقاش
+                                    بإشراف المعلمة، حيث يمكن رفع صورة الخطأ البرمجي وسيقوم فريق المعلمة بمراجعة الكود،
+                                    توضيح سبب الخطأ، وإرشاد الطالب للحل الصحيح خطوة بخطوة.
+                                </div>
+                            </div>
+                            <!-- Q4 -->
+                            <div
+                                class="faq-item p-space-md rounded-2xl bg-surface-container-lowest shadow-sm text-right cursor-pointer">
+                                <div class="faq-question flex items-center justify-between gap-space-sm">
+                                    <span class="font-headline-sm text-headline-sm text-on-surface">كيف أحصل على
+                                        الفاتورة الضريبية الرسمية بعد إتمام الدفع؟</span>
+                                    <span
+                                        class="material-symbols-outlined text-primary text-[20px] transition-transform duration-200 faq-icon">expand_more</span>
+                                </div>
+                                <div
+                                    class="faq-answer mt-space-sm pt-space-sm text-on-surface-variant font-body-md text-body-md hidden">
+                                    فور إتمام عملية الدفع الإلكتروني بنجاح، يتم إنشاء فاتورة إلكترونية معتمدة مطابقة
+                                    لاشتراطات هيئة الزكاة والضريبة والجمارك (ZATCA)، وتصلك نسخة منها فورياً عبر البريد
+                                    الإلكتروني مع إمكانية تحميلها بصيغة PDF مباشرة من لوحة التحكم في أي وقت.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Section 6: Direct Assistance Banner / CTA Support -->
+                <section class="w-full px-margin-mobile md:px-margin pb-space-xl">
+                    <div
+                        class="max-w-5xl mx-auto rounded-3xl bg-surface-container p-space-lg md:p-space-xl shadow-sm relative overflow-hidden text-right">
+                        <div class="flex flex-col lg:flex-row items-center justify-between gap-space-lg relative z-10">
+                            <div class="flex flex-col gap-space-xs max-w-xl">
+                                <div
+                                    class="inline-flex items-center gap-space-xs text-primary font-caption text-caption font-semibold">
+                                    <span class="material-symbols-outlined text-[18px]">support_agent</span>
+                                    <span>مركز خدمة ورعاية الطلاب</span>
+                                </div>
+                                <h2 class="font-headline-lg text-headline-lg text-on-surface font-bold">
+                                    هل لا زال لديك أي استفسار حول كيفية الاشتراك أو البنود؟
+                                </h2>
+                                <p class="font-body-md text-body-md text-on-surface-variant">
+                                    يسعد المعلمة وفريق القبول والتسجيل مساعدتك في تحديد المسار المناسب وإرشادك عبر كافة
+                                    خطوات السداد والتسجيل بكل سلاسة.
+                                </p>
+                            </div>
+                            <!-- Interactive Action Buttons -->
+                            <div class="flex flex-col sm:flex-row items-center gap-space-sm w-full lg:w-auto">
+                                <a class="w-full sm:w-auto px-space-lg py-space-sm bg-tertiary text-on-tertiary rounded-full font-body-md text-body-md font-semibold flex items-center justify-center gap-space-xs shadow-md hover:bg-tertiary-container transition-all hover:scale-[0.98]"
+                                    href="https://wa.me/966500000000" rel="noopener noreferrer" target="_blank">
+                                    <span class="material-symbols-outlined text-[20px]">chat</span>
+                                    <span>تواصل عبر واتساب المعلمة</span>
+                                </a>
+                                <a class="w-full sm:w-auto px-space-lg py-space-sm bg-surface-container-lowest text-on-surface rounded-full font-body-md text-body-md font-semibold flex items-center justify-center gap-space-xs shadow-sm hover:bg-surface-container-high transition-all"
+                                    data-path="contact-us" href="#">
+                                    <span class="material-symbols-outlined text-[20px]">contact_support</span>
+                                    <span>فتح تذكرة استفسار</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <!-- Simple Vanilla JS for Accordion Interaction -->
+        
+    </main>
+    <footer class="w-full bg-surface-container-lowest text-on-surface shadow-[0_-1px_12px_rgba(0,0,0,0.03)]">
+        <div class="w-full px-margin py-space-xl">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-gutter">
+                <div class="lg:col-span-4 flex flex-col gap-space-sm">
+                    <div class="flex items-center gap-space-sm">
+                        <div
+                            class="w-10 h-10 rounded-full bg-primary-container flex items-center justify-center text-on-primary-container font-headline-md text-headline-md">
+                            <span class="material-symbols-outlined">code</span></div><span
+                            class="font-headline-sm text-headline-sm text-primary font-bold">أكاديمية علوم الحاسب</span>
+                    </div>
+                    <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed text-right">بيئة تعليمية
+                        تفاعلية بإشراف معلمة متخصصة، تهدف إلى تمكين الطالبات والطلاب من إتقان مفاهيم علوم الحاسب
+                        والبرمجة الحديثة بأسلوب تطبيقي ميسر وبناء جيل تقني واعد.</p>
+                    <div class="flex items-center gap-space-xs pt-space-xs"><span
+                            class="px-space-sm py-space-xs rounded-full bg-surface-container font-caption text-caption text-primary font-semibold">إشراف
+                            أكاديمي مباشر</span><span
+                            class="px-space-sm py-space-xs rounded-full bg-surface-container-high font-caption text-caption text-secondary font-semibold">مشاريع
+                            عملية</span></div>
+                </div>
+                <div class="lg:col-span-3 flex flex-col gap-space-sm"><span
+                        class="font-headline-sm text-headline-sm text-on-surface font-semibold">المسارات والصفوف</span>
+                    <ul class="flex flex-col gap-space-xs font-body-sm text-body-sm text-on-surface-variant">
+                        <li class="hover:text-primary transition-colors"><a data-path="grade-first-secondary"
+                                href="#">الصف الأول الثانوي (تقنية 1)</a></li>
+                        <li class="hover:text-primary transition-colors"><a data-path="grade-second-secondary"
+                                href="#">الصف الثاني الثانوي (هندسة برمجيات)</a></li>
+                        <li class="hover:text-primary transition-colors"><a data-path="grade-third-secondary"
+                                href="#">الصف الثالث الثانوي (علم البيانات والذكاء)</a></li>
+                        <li class="hover:text-primary transition-colors"><a data-path="coding-foundation" href="#">مسار
+                                التأسيس البرمجي الشامل</a></li>
+                        <li class="hover:text-primary transition-colors"><a data-path="ai-python-track" href="#">معسكر
+                                بايثون والذكاء الاصطناعي</a></li>
+                    </ul>
+                </div>
+                <div class="lg:col-span-2 flex flex-col gap-space-sm"><span
+                        class="font-headline-sm text-headline-sm text-on-surface font-semibold">روابط سريعة</span>
+                    <ul class="flex flex-col gap-space-xs font-body-sm text-body-sm text-on-surface-variant">
+                        <li class="hover:text-primary transition-colors"><a data-path="home" href="#">الصفحة
+                                الرئيسية</a></li>
+                        <li class="hover:text-primary transition-colors"><a data-path="how-to-subscribe" href="#">طريقة
+                                التسجيل والاشتراك</a></li>
+                        <li class="hover:text-primary transition-colors"><a data-path="terms-and-policies"
+                                href="#">الشروط وسياسة الخصوصية</a></li>
+                        <li class="hover:text-primary transition-colors"><a data-path="support-and-complaints"
+                                href="#">مركز المساعدة والشكاوى</a></li>
+                        <li class="hover:text-primary transition-colors"><a data-path="contact-us" href="#">معلومات
+                                التواصل المباشر</a></li>
+                    </ul>
+                </div>
+                <div class="lg:col-span-3 flex flex-col gap-space-sm"><span
+                        class="font-headline-sm text-headline-sm text-on-surface font-semibold">تواصل مع المعلمة وفريق
+                        الدعم</span>
+                    <p class="font-body-sm text-body-sm text-on-surface-variant">نسعد بإجابة كافة استفساراتكم الأكاديمية
+                        والتقنية عبر القنوات الرسمية:</p>
+                    <div class="flex flex-col gap-space-xs"><a
+                            class="flex items-center gap-space-xs p-space-xs bg-surface-container rounded-lg hover:bg-surface-container-high text-on-surface transition-all"
+                            href="tel:01020937901"><span
+                                class="material-symbols-outlined text-primary">support_agent</span>
+                            <div class="flex flex-col text-right"><span
+                                    class="font-caption text-caption text-on-surface-variant">الهاتف الموحد والدعم
+                                    السريع</span><span class="font-label-code-lg text-label-code-lg font-semibold"
+                                    dir="ltr">01020937901</span></div>
+                        </a><a
+                            class="flex items-center gap-space-xs p-space-xs bg-surface-container rounded-lg hover:bg-surface-container-high text-on-surface transition-all"
+                            href="https://wa.me/966500000000"><span
+                                class="material-symbols-outlined text-tertiary">chat</span>
+                            <div class="flex flex-col text-right"><span
+                                    class="font-caption text-caption text-on-surface-variant">واتساب المعلمة
+                                    للإشراف</span><span class="font-label-code-lg text-label-code-lg font-semibold"
+                                    dir="ltr">01020937901</span></div>
+                        </a></div>
+                </div>
+            </div>
+            <div
+                class="mt-space-xl pt-space-md bg-surface-container-high/40 rounded-xl px-space-md flex flex-col sm:flex-row items-center justify-between gap-space-sm">
+                <span class="font-body-sm text-body-sm text-on-surface-variant text-center sm:text-right">جميع الحقوق
+                    محفوظة © 2025 منصة علوم الحاسب والبرمجة | إشراف المعلمة</span>
+                <div class="flex items-center gap-space-md"><a
+                        class="font-caption text-caption text-on-surface-variant hover:text-primary transition-colors"
+                        data-path="terms-and-policies" href="#">الخصوصية والشروط</a><span
+                        class="text-outline-variant">•</span><a
+                        class="font-caption text-caption text-on-surface-variant hover:text-primary transition-colors"
+                        data-path="support-and-complaints" href="#">المساعدة والدعم</a></div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

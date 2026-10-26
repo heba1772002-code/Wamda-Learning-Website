@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+
+<html dir="rtl" lang="ar">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="web_standard" name="shell-type" />
+    <title>أكاديمية البرمجة والتقنية | بإشراف المعلمة</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;600&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet" />
+    
+    
+    
+    
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+        id="tailwind-config">tailwind.config = {darkMode: "class", theme: {extend: {"colors": {"on-tertiary-fixed": "#002113", "on-error": "#ffffff", "on-secondary-container": "#665f78", "on-primary-fixed": "#3e001e", "surface-container-highest": "#e9dff3", "primary-fixed": "#ffd9e2", "on-tertiary": "#ffffff", "surface-container": "#f4eaff", "inverse-primary": "#ffb0c9", "error-container": "#ffdad6", "on-secondary-fixed": "#1e182e", "tertiary-fixed": "#6ffbbe", "background": "#fef7ff", "on-background": "#1e1927", "on-primary-container": "#fffbff", "surface-variant": "#e9dff3", "surface": "#fef7ff", "on-primary-fixed-variant": "#81204b", "outline-variant": "#dac0c6", "error": "#ba1a1a", "tertiary": "#006947", "tertiary-container": "#00855b", "surface-container-high": "#efe4f9", "surface-container-lowest": "#ffffff", "secondary-fixed-dim": "#ccc2df", "outline": "#877177", "on-secondary": "#ffffff", "secondary-fixed": "#e8defc", "secondary": "#625b74", "inverse-surface": "#342e3d", "secondary-container": "#e5dbf9", "on-surface": "#1e1927", "surface-bright": "#fef7ff", "on-secondary-fixed-variant": "#4a435b", "surface-tint": "#a03962", "primary-fixed-dim": "#ffb0c9", "on-surface-variant": "#554247", "tertiary-fixed-dim": "#4edea3", "on-primary": "#ffffff", "primary-container": "#bc4f79", "surface-dim": "#e0d6eb", "on-error-container": "#93000a", "primary": "#9d3660", "surface-container-low": "#f9f0ff", "on-tertiary-fixed-variant": "#005236", "on-tertiary-container": "#f5fff6", "inverse-on-surface": "#f7edff"}, "borderRadius": {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"}, "spacing": {"margin-mobile": "1.25rem", "gutter-mobile": "1rem", "space-md": "1.25rem", "space-xl": "3.5rem", "space-xs": "0.375rem", "space-lg": "2rem", "margin": "3rem", "space-sm": "0.75rem", "gutter": "1.5rem"}, "fontFamily": {"display-hero": ["IBM Plex Sans"], "caption": ["IBM Plex Sans"], "headline-md": ["IBM Plex Sans"], "label-code-lg": ["JetBrains Mono"], "headline-lg": ["IBM Plex Sans"], "label-code-sm": ["JetBrains Mono"], "body-sm": ["IBM Plex Sans"], "body-lg": ["IBM Plex Sans"], "headline-lg-mobile": ["IBM Plex Sans"], "headline-sm": ["IBM Plex Sans"], "display-hero-mobile": ["IBM Plex Sans"], "body-md": ["IBM Plex Sans"]}, "fontSize": {"display-hero": ["48px", {"lineHeight": "60px", "letterSpacing": "-0.02em", "fontWeight": "700"}], "caption": ["12px", {"lineHeight": "18px", "fontWeight": "500"}], "headline-md": ["24px", {"lineHeight": "34px", "fontWeight": "600"}], "label-code-lg": ["15px", {"lineHeight": "24px", "fontWeight": "500"}], "headline-lg": ["32px", {"lineHeight": "44px", "fontWeight": "600"}], "label-code-sm": ["12px", {"lineHeight": "18px", "fontWeight": "400"}], "body-sm": ["14px", {"lineHeight": "22px", "fontWeight": "400"}], "body-lg": ["18px", {"lineHeight": "30px", "fontWeight": "400"}], "headline-lg-mobile": ["24px", {"lineHeight": "34px", "fontWeight": "600"}], "headline-sm": ["20px", {"lineHeight": "28px", "fontWeight": "600"}], "display-hero-mobile": ["32px", {"lineHeight": "42px", "letterSpacing": "-0.01em", "fontWeight": "700"}], "body-md": ["16px", {"lineHeight": "26px", "fontWeight": "400"}]}}}};</script>
+    <link rel="stylesheet" href="sytle/index.css" />
+</head>
+
+<body class="bg-background text-on-surface antialiased selection:bg-primary-fixed selection:text-on-primary-fixed">
+    <header
+        class="fixed top-0 inset-x-0 z-50 bg-surface-bright/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]">
+        <div class="h-20 w-full px-margin flex items-center justify-between">
+            <div class="flex items-center gap-space-lg"><a class="flex items-center gap-space-sm group" data-path="home"
+                    href="index.html"><img alt="Profile"
+                        class="w-8 h-8 rounded-full object-cover shadow-[0_2px_10px_rgba(157,54,96,0.2)]"
+                        src="sytle/images/logo.png" />
+                    <div class="flex flex-col text-right"><span
+                            class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">أكاديمية
+                            الحاسب</span><span class="font-caption text-caption text-on-surface-variant">بإشراف المعلمة
+                            المتخصصة</span></div>
+                </a>
+                <nav class="hidden lg:flex items-center gap-space-sm"
+                    data-active-classes="bg-primary-container text-on-primary font-bold"><a
+                        class="px-space-sm py-space-xs rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container hover:text-primary transition-all text-right"
+                        data-path="home" href="index.html">الرئيسية</a>
+                    <div class="relative group"><button
+                            class="flex items-center gap-space-xs px-space-sm py-space-xs rounded-lg font-body-md text-body-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all"
+                            type="button"><span>الصفوف والمناهج</span><span
+                                class="material-symbols-outlined text-[18px] transition-transform duration-200 group-hover:rotate-180">expand_more</span></button>
+                        <div class="absolute right-0 top-full pt-space-xs hidden group-hover:block w-64">
+                            <div
+                                class="bg-surface-container-lowest rounded-xl shadow-[0_12px_32px_-4px_rgba(157,54,96,0.12)] p-space-xs flex flex-col gap-1">
+                                <a class="px-space-sm py-space-xs rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container hover:text-primary transition-all text-right"
+                                    data-path="grade-first-secondary" href="courses.html">الصف الأول الثانوي</a><a
+                                    class="px-space-sm py-space-xs rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container hover:text-primary transition-all text-right"
+                                    data-path="grade-second-secondary" href="course.html">الصف الثاني الثانوي</a><a
+                                    class="px-space-sm py-space-xs rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container hover:text-primary transition-all text-right"
+                                    data-path="grade-third-secondary" href="courses.html">الصف الثالث الثانوي</a>
+                                <div class="my-1 h-px bg-surface-variant"></div><a
+                                    class="px-space-sm py-space-xs rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container hover:text-primary transition-all text-right"
+                                    data-path="coding-foundation" href="courses.html">مرحلة التأسيس البرمجي</a><a
+                                    class="px-space-sm py-space-xs rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container hover:text-primary transition-all text-right"
+                                    data-path="ai-python-track" href="courses.html">مسار الذكاء الاصطناعي وبايثون</a>
+                            </div>
+                        </div>
+                    </div><a
+                        class="px-space-sm py-space-xs rounded-lg font-body-md text-body-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all"
+                        data-path="how-to-subscribe" href="subscription-info.html">كيفية الاشتراك</a><a
+                        class="px-space-sm py-space-xs rounded-lg font-body-md text-body-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all"
+                        data-path="contact-us" href="contact.html">تواصل معنا</a>
+                </nav>
+            </div>
+            <div class="flex items-center gap-space-sm"><a
+                    class="hidden sm:flex items-center gap-space-xs px-space-md py-space-xs bg-primary text-on-primary rounded-full shadow-[0_4px_16px_rgba(157,54,96,0.25)] hover:bg-primary-container transition-all hover:scale-[0.98]"
+                    href="tel:01020937901"><span class="material-symbols-outlined text-[18px]">call</span><span
+                        class="font-label-code-lg text-label-code-lg font-bold tracking-wider"
+                        dir="ltr">01020937901</span><span class="hidden xl:inline-block font-body-sm text-body-sm mr-1">|
+                        دعم مباشر</span></a><a aria-current="page"
+                    class="flex items-center gap-space-xs px-space-md py-space-xs bg-surface-container-high text-on-surface font-body-md text-body-md font-semibold rounded-full hover:bg-secondary-container hover:text-on-secondary-container transition-all nav-current"
+                    data-path="login" href="login.html"><span>حسابي</span><span
+                        class="material-symbols-outlined text-[20px]">account_circle</span></a></div>
+        </div>
+    </header>bg-background min-h-screen">
+        <div class="flex flex-col w-full">
+            <div class="relative w-full overflow-hidden px-margin-mobile md:px-margin py-space-lg lg:py-space-xl">
+                <div
+                    class="absolute -top-32 -right-24 w-96 h-96 bg-primary-fixed/40 rounded-full blur-3xl pointer-events-none">
+                </div>
+                <div
+                    class="absolute bottom-10 -left-20 w-80 h-80 bg-secondary-container/50 rounded-full blur-3xl pointer-events-none">
+                </div>
+                <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-gutter items-stretch relative z-10">
+                    <!-- Showcase & Inspiration Panel (Visual/Branding) -->
+                    <div
+                        class="lg:col-span-5 flex flex-col justify-between bg-inverse-surface text-inverse-on-surface rounded-xl p-space-md sm:p-space-lg lg:p-space-xl shadow-xl relative overflow-hidden order-2 lg:order-1">
+                        <div
+                            class="absolute -bottom-16 -right-16 w-64 h-64 bg-primary/20 rounded-full blur-2xl pointer-events-none">
+                        </div>
+                        <div
+                            class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-primary via-primary-container to-tertiary-fixed">
+                        </div>
+                        <div class="flex flex-col gap-space-md">
+                            <div class="flex items-center gap-space-xs">
+                                <span
+                                    class="inline-flex items-center justify-center p-space-xs rounded-full bg-primary/20 text-inverse-primary">
+                                    <span class="material-symbols-outlined text-[18px]">terminal</span>
+                                </span>
+                                <span
+                                    class="font-label-code-sm text-label-code-sm tracking-wider text-inverse-primary uppercase">Code
+                                    Academy :: Platform v3.4</span>
+                            </div>
+                            <div class="flex flex-col gap-space-xs">
+                                <h2
+                                    class="font-headline-lg text-headline-lg text-inverse-on-surface font-bold leading-tight">
+                                    أهلاً بكِ في مجتمع <br />
+                                    <span
+                                        class="text-transparent bg-clip-text bg-gradient-to-r from-inverse-primary via-primary-fixed to-tertiary-fixed">
+                                        مبرمجات ومبرمجي المستقبل
+                                    </span>
+                                </h2>
+                                <p class="font-body-md text-body-md text-surface-container-high leading-relaxed">
+                                    انضمي الآن لبيئة تفاعلية صُممت بحب وإشراف أكاديمي مباشر، لتمكينك من إتقان لغات
+                                    البرمجة والذكاء الاصطناعي وبناء مشاريع واقعية تفتخرين بها.
+                                </p>
+                            </div>
+                            <!-- Code Snippet Box (Soft Tech IDE) -->
+                            <div class="bg-[#1e182e] rounded-xl shadow-md overflow-hidden text-left" dir="ltr">
+                                <div
+                                    class="flex items-center justify-between px-space-md py-space-xs bg-[#161224]/80 text-surface-variant font-label-code-sm text-label-code-sm">
+                                    <div class="flex items-center gap-1.5">
+                                        <span class="w-3 h-3 rounded-full bg-[#ff5f56]/90 inline-block"></span>
+                                        <span class="w-3 h-3 rounded-full bg-[#ffbd2e]/90 inline-block"></span>
+                                        <span class="w-3 h-3 rounded-full bg-[#27c93f]/90 inline-block"></span>
+                                    </div>
+                                    <span
+                                        class="text-outline-variant font-label-code-sm text-[11px]">welcome_learner.py</span>
+                                </div>
+                                <div
+                                    class="p-space-md font-label-code-sm text-label-code-sm leading-relaxed text-[#f4eaff] overflow-x-auto selection:bg-primary-container">
+                                    <div><span class="text-[#ffb0c9]">from</span> academy <span
+                                            class="text-[#ffb0c9]">import</span> Student, Track</div>
+                                    <div class="mt-1"><span class="text-[#6ffbbe]"># إنشاء ملف الطالبة وبدء المسار
+                                            الذكي</span></div>
+                                    <div class="mt-1">learner = <span class="text-[#ffd9e2]">Student</span>(name=<span
+                                            class="text-[#6ffbbe]">"هبة العتيبي"</span>, level=<span
+                                            class="text-[#ffd9e2]">"الثانوي"</span>)</div>
+                                    <div>learner.<span class="text-[#ffd9e2]">select_track</span>(Track.AI_AND_PYTHON)
+                                    </div>
+                                    <div class="mt-2 text-outline-variant"># النتيجة المتوقعة:</div>
+                                    <div class="text-[#6ffbbe]">learner.<span
+                                            class="text-[#ffd9e2]">unlock_future</span>() <span
+                                            class="text-primary-fixed"># &gt;&gt; Ready to code! 🚀</span></div>
+                                </div>
+                            </div>
+                            <!-- Stats Bento Minimal -->
+                            <div class="grid grid-cols-2 gap-space-sm pt-space-xs">
+                                <div
+                                    class="bg-surface-container-highest/10 rounded-lg p-space-sm flex flex-col gap-0.5 backdrop-blur-sm">
+                                    <span class="font-headline-md text-headline-md font-bold text-inverse-primary"
+                                        dir="ltr">+14,500</span>
+                                    <span class="font-caption text-caption text-surface-dim">طالبة وطالب متفوق في
+                                        المنصة</span>
+                                </div>
+                                <div
+                                    class="bg-surface-container-highest/10 rounded-lg p-space-sm flex flex-col gap-0.5 backdrop-blur-sm">
+                                    <span class="font-headline-md text-headline-md font-bold text-tertiary-fixed"
+                                        dir="ltr">100%</span>
+                                    <span class="font-caption text-caption text-surface-dim">إشراف وتصحيح أكاديمي
+                                        مستمر</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Student Testimonial Micro-Card -->
+                        <div
+                            class="mt-space-lg bg-surface-container-lowest/10 rounded-xl p-space-sm flex items-center gap-space-sm backdrop-blur-md">
+                            <img class="w-12 h-12 rounded-full object-cover shrink-0 shadow-md"
+                                data-alt="A portrait of a smiling young Saudi female computer science high school student in a pastel hijab, warmly lit modern learning classroom background, cinematic soft aesthetic"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBlO8xKV65QtUx9Ihn4VNwPjM8lLVwwImjgjBWsPoAv9c1Glkh9nScC764L54wPcL72gtm9a7KaIaypha9sWNQeqFPC-2_r-R8gDj3kB5iS4Qke9gJUO7BSnDEYfRXJxyyzWjZwHrc3PT25rTdeXPq-5tHAyxdeMqmk_lg8HBuE242M0lj4s0z7wNHHqeWHKrpXyTgP8FCS0_vV3KFAzA9_yftWQ1cMKD0WmZk4m3YepjuLFQaA4A8" />
+                            <div class="flex flex-col text-right">
+                                <div class="flex items-center gap-1 text-tertiary-fixed">
+                                    <span class="material-symbols-outlined text-[16px] icon-filled">star</span>
+                                    <span class="material-symbols-outlined text-[16px] icon-filled">star</span>
+                                    <span class="material-symbols-outlined text-[16px] icon-filled">star</span>
+                                    <span class="material-symbols-outlined text-[16px] icon-filled">star</span>
+                                    <span class="material-symbols-outlined text-[16px] icon-filled">star</span>
+                                </div>
+                                <p class="font-caption text-caption text-inverse-on-surface font-medium line-clamp-2">
+                                    "بفضل توجيه المعلمة ومختبرات الأكواد، حققت الدرجة الكاملة في مشروع هندسة البرمجيات
+                                    وبدأت مشروعي الخاص."</p>
+                                <span class="font-caption text-caption text-surface-dim text-[11px] mt-0.5">ليان الشمري
+                                    • الصف الثاني ثانوي مسارات</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Interactive Form Container -->
+                    <div
+                        class="lg:col-span-7 bg-surface-container-lowest rounded-xl shadow-xl p-space-md sm:p-space-lg lg:p-space-xl flex flex-col justify-center order-1 lg:order-2">
+                        <!-- Toggle Tabs -->
+                        <div class="flex p-1 bg-surface-container rounded-lg mb-space-md">
+                            <button
+                                class="flex-1 py-space-xs rounded font-headline-sm text-body-md font-semibold text-center transition-all bg-surface-container-lowest text-primary shadow-sm"
+                                id="tab-login-btn" type="button">
+                                تسجيل الدخول
+                            </button>
+                            <button
+                                class="flex-1 py-space-xs rounded font-headline-sm text-body-md font-semibold text-center transition-all text-on-surface-variant hover:text-on-surface"
+                                id="tab-signup-btn" type="button">
+                                إنشاء حساب جديد
+                            </button>
+                        </div>
+                        <!-- ================= SIGN IN TAB ================= -->
+                        <div class="flex flex-col gap-space-md" id="login-view">
+                            <div class="flex flex-col gap-1 text-right">
+                                <h1 class="font-headline-md text-headline-md text-on-surface font-bold">تسجيل الدخول
+                                    لمنصتك الأكاديمية</h1>
+                                <p class="font-body-sm text-body-sm text-on-surface-variant">مرحباً بعودتك! تابعي دروسك
+                                    ومختبراتك البرمجية من حيث توقفتِ.</p>
+                            </div>
+                            <!-- Method Switcher (Password vs OTP) -->
+                            <div class="flex items-center gap-space-xs bg-surface-container-low p-1 rounded-lg">
+                                <button
+                                    class="flex-1 py-1.5 px-3 rounded text-caption font-semibold bg-surface-container-lowest text-primary shadow-sm transition-all"
+                                    id="method-pass-btn" type="button">
+                                    كلمة المرور
+                                </button>
+                                <button
+                                    class="flex-1 py-1.5 px-3 rounded text-caption font-semibold text-on-surface-variant hover:text-on-surface transition-all"
+                                    id="method-otp-btn" type="button">
+                                    الدخول السريع (رمز التحقق OTP)
+                                </button>
+                            </div>
+                            <form class="flex flex-col gap-space-md">
+                                <!-- Phone or Email Field -->
+                                <div class="flex flex-col gap-1.5 text-right">
+                                    <label
+                                        class="font-body-sm text-body-sm text-on-surface font-medium flex items-center justify-between"
+                                        for="login-identifier">
+                                        <span>رقم الجوال أو البريد الإلكتروني</span>
+                                        <span class="font-caption text-caption text-on-surface-variant"
+                                            id="identifier-hint">المسجل في المنصة</span>
+                                    </label>
+                                    <div class="relative flex items-center">
+                                        <input
+                                            class="w-full h-12 px-space-md pe-11 bg-surface-container-low rounded-lg text-on-surface font-body-md text-body-md placeholder:text-outline focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary/40 transition-all text-right"
+                                            dir="auto" id="login-identifier" placeholder="50xxxxxxx أو name@example.com"
+                                            required="" type="text" />
+                                        <span
+                                            class="material-symbols-outlined absolute left-3 text-outline pointer-events-none">alternate_email</span>
+                                    </div>
+                                </div>
+                                <!-- Password Field (Conditional for Password Method) -->
+                                <div class="flex flex-col gap-1.5 text-right" id="password-group">
+                                    <div class="flex items-center justify-between">
+                                        <label class="font-body-sm text-body-sm text-on-surface font-medium"
+                                            for="login-pass">كلمة المرور</label>
+                                        <a class="font-caption text-caption text-primary hover:underline" href="#">نسيتِ
+                                            كلمة المرور؟</a>
+                                    </div>
+                                    <div class="relative flex items-center">
+                                        <input
+                                            class="w-full h-12 px-space-md pe-11 bg-surface-container-low rounded-lg text-on-surface font-label-code-lg text-label-code-lg placeholder:text-outline focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary/40 transition-all text-left"
+                                            dir="ltr" id="login-pass" placeholder="••••••••" required=""
+                                            type="password" />
+                                        <button
+                                            class="absolute left-3 text-outline hover:text-primary transition-colors focus:outline-none flex items-center justify-center"
+                                            type="button">
+                                            <span class="material-symbols-outlined text-[20px]"
+                                                id="eye-icon-login">visibility_off</span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <!-- OTP Notice (Visible only in OTP Mode) -->
+                                <div class="hidden flex items-start gap-space-xs p-space-sm bg-surface-container rounded-lg text-right"
+                                    id="otp-group">
+                                    <span
+                                        class="material-symbols-outlined text-primary text-[20px] shrink-0 mt-0.5">sms</span>
+                                    <p class="font-caption text-caption text-on-surface-variant">سيتم إرسال رمز تحقق
+                                        مؤقت ومكون من 4 أرقام عبر رسالة نصية قصيرة SMS أو واتساب للرقم المدخل فور النقر.
+                                    </p>
+                                </div>
+                                <!-- Remember Me -->
+                                <div class="flex items-center justify-between">
+                                    <label class="flex items-center gap-space-xs cursor-pointer select-none">
+                                        <input checked=""
+                                            class="w-4 h-4 rounded text-primary focus:ring-primary/30 accent-primary"
+                                            type="checkbox" />
+                                        <span class="font-body-sm text-body-sm text-on-surface-variant">تذكر تسجيل دخولي
+                                            على هذا الجهاز</span>
+                                    </label>
+                                </div>
+                                <!-- Primary Action Button -->
+                                <button
+                                    class="w-full h-12 mt-space-xs bg-primary text-on-primary font-headline-sm text-body-md font-semibold rounded-lg shadow-md hover:bg-primary-container hover:shadow-lg transition-all flex items-center justify-center gap-space-xs hover:scale-[0.99] active:scale-[0.97]"
+                                    type="submit">
+                                    <span>تسجيل الدخول للمنصة</span>
+                                    <span class="material-symbols-outlined text-[20px]">cloud_upload</span>
+                                </button>
+                            </form>
+                            <!-- Divider -->
+                            <div class="relative flex items-center my-space-xs">
+                                <div class="flex-grow h-px bg-surface-variant"></div>
+                                <span
+                                    class="flex-shrink mx-space-sm font-caption text-caption text-on-surface-variant bg-surface-container-lowest px-2">أو
+                                    الدخول المعتمد عبر</span>
+                                <div class="flex-grow h-px bg-surface-variant"></div>
+                            </div>
+                            <!-- SSO Alternative Logins -->
+                            <div class="grid grid-cols-2 gap-space-sm">
+                                <button
+                                    class="h-11 px-space-sm rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-body-sm text-body-sm font-medium transition-all flex items-center justify-center gap-space-xs shadow-sm"
+                                    type="button">
+                                    <span
+                                        class="w-6 h-6 rounded-full bg-tertiary text-on-tertiary flex items-center justify-center text-[11px] font-bold">ن</span>
+                                    <span>النفاذ الوطني (نفاذ)</span>
+                                </button>
+                                <button
+                                    class="h-11 px-space-sm rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-body-sm text-body-sm font-medium transition-all flex items-center justify-center gap-space-xs shadow-sm"
+                                    type="button">
+                                    <svg class="w-4 h-4" viewbox="0 0 24 24">
+                                        <path
+                                            d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"
+                                            fill="#4285F4"></path>
+                                        <path
+                                            d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"
+                                            fill="#34A853"></path>
+                                        <path
+                                            d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z"
+                                            fill="#FBBC05"></path>
+                                        <path
+                                            d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z"
+                                            fill="#EA4335"></path>
+                                    </svg>
+                                    <span>حساب Google</span>
+                                </button>
+                            </div>
+                        </div>
+                        <!-- ================= SIGN UP TAB ================= -->
+                        <div class="hidden flex flex-col gap-space-md" id="signup-view">
+                            <div class="flex flex-col gap-1 text-right">
+                                <h1 class="font-headline-md text-headline-md text-on-surface font-bold">إنشاء حساب جديد
+                                </h1>
+                                <p class="font-body-sm text-body-sm text-on-surface-variant">انضمي إلينا في رحلة التأسيس
+                                    البرمجي والتميز الأكاديمي مع المعلمة.</p>
+                            </div>
+                            <form class="flex flex-col gap-space-md">
+                                <!-- User Role Segmented Switch -->
+                                <div class="flex flex-col gap-1.5 text-right">
+                                    <span class="font-body-sm text-body-sm text-on-surface font-medium">نوع
+                                        الحساب</span>
+                                    <div class="grid grid-cols-2 gap-space-xs">
+                                        <button
+                                            class="py-2.5 px-space-sm rounded-lg flex items-center justify-center gap-space-xs bg-primary text-on-primary font-body-sm font-semibold shadow-sm transition-all"
+                                            id="role-student-btn" type="button">
+                                            <span class="material-symbols-outlined text-[18px]">school</span>
+                                            <span>طالبة / طالب</span>
+                                        </button>
+                                        <button
+                                            class="py-2.5 px-space-sm rounded-lg flex items-center justify-center gap-space-xs bg-surface-container text-on-surface font-body-sm font-medium transition-all hover:bg-surface-container-high"
+                                            id="role-guardian-btn" type="button">
+                                            <span class="material-symbols-outlined text-[18px]">family_restroom</span>
+                                            <span>ولي أمر (متابعة الإنجاز)</span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <!-- Full Name -->
+                                <div class="flex flex-col gap-1.5 text-right">
+                                    <label class="font-body-sm text-body-sm text-on-surface font-medium"
+                                        for="reg-name">الاسم الثلاثي (بالعربية للشهادة)</label>
+                                    <div class="relative flex items-center">
+                                        <input
+                                            class="w-full h-12 px-space-md pe-11 bg-surface-container-low rounded-lg text-on-surface font-body-md text-body-md placeholder:text-outline focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary/40 transition-all text-right"
+                                            id="reg-name" placeholder="مثال: نورة محمد السديري" required=""
+                                            type="text" />
+                                        <span
+                                            class="material-symbols-outlined absolute left-3 text-outline pointer-events-none">badge</span>
+                                    </div>
+                                </div>
+                                <!-- Phone with country code prefix -->
+                                <div class="flex flex-col gap-1.5 text-right">
+                                    <label
+                                        class="font-body-sm text-body-sm text-on-surface font-medium flex items-center justify-between"
+                                        for="reg-phone">
+                                        <span>رقم الجوال الشخصي</span>
+                                        <span class="font-caption text-caption text-primary">ضروري للتنبيهات ومجموعة
+                                            الواتساب</span>
+                                    </label>
+                                    <div class="relative flex items-center">
+                                        <input
+                                            class="w-full h-12 px-space-md pe-24 bg-surface-container-low rounded-lg text-on-surface font-label-code-lg text-label-code-lg placeholder:text-outline focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary/40 transition-all text-left"
+                                            dir="ltr" id="reg-phone" placeholder="5xxxxxxxx" required="" type="tel" />
+                                        <div class="absolute left-3 flex items-center gap-1 font-label-code-sm text-label-code-sm font-semibold text-on-surface-variant pointer-events-none border-l border-outline-variant pl-2"
+                                            dir="ltr">
+                                            <span>🇸🇦</span>
+                                            <span>+966</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Email Address -->
+                                <div class="flex flex-col gap-1.5 text-right">
+                                    <label class="font-body-sm text-body-sm text-on-surface font-medium"
+                                        for="reg-email">البريد الإلكتروني</label>
+                                    <div class="relative flex items-center">
+                                        <input
+                                            class="w-full h-12 px-space-md pe-11 bg-surface-container-low rounded-lg text-on-surface font-body-md text-body-md placeholder:text-outline focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary/40 transition-all text-right"
+                                            dir="ltr" id="reg-email" placeholder="example@codeacademy.edu" required=""
+                                            type="email" />
+                                        <span
+                                            class="material-symbols-outlined absolute left-3 text-outline pointer-events-none">mail</span>
+                                    </div>
+                                </div>
+                                <!-- Grade & Learning Track -->
+                                <div class="flex flex-col gap-1.5 text-right">
+                                    <label class="font-body-sm text-body-sm text-on-surface font-medium"
+                                        for="reg-track">المسار أو المرحلة الدراسية المستهدفة</label>
+                                    <div class="relative flex items-center">
+                                        <select
+                                            class="w-full h-12 px-space-md pe-11 bg-surface-container-low rounded-lg text-on-surface font-body-md text-body-md focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary/40 transition-all appearance-none text-right cursor-pointer"
+                                            id="reg-track">
+                                            <option value="first-sec">الصف الأول الثانوي (التقنية الرقمية 1)</option>
+                                            <option value="cs-sec">الصف الثاني الثانوي (مسار علوم الحاسب والهندسة)
+                                            </option>
+                                            <option value="ai-sec">الصف الثالث الثانوي (علم البيانات والذكاء الاصطناعي)
+                                            </option>
+                                            <option value="foundations">مسار التأسيس البرمجي الشامل (بايثون وخوارزميات)
+                                            </option>
+                                            <option value="web-dev">مسار تصميم الويب وتطبيقات السحاب</option>
+                                            <option value="general">مهتمة وشغوفة بالبرمجة العامة والمستقلة</option>
+                                        </select>
+                                        <span
+                                            class="material-symbols-outlined absolute left-3 text-outline pointer-events-none">unfold_more</span>
+                                    </div>
+                                </div>
+                                <!-- Passwords & Strength indicator -->
+                                <div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm">
+                                    <div class="flex flex-col gap-1.5 text-right">
+                                        <label class="font-body-sm text-body-sm text-on-surface font-medium"
+                                            for="reg-pass">كلمة المرور</label>
+                                        <div class="relative flex items-center">
+                                            <input
+                                                class="w-full h-12 px-space-md pe-11 bg-surface-container-low rounded-lg text-on-surface font-label-code-lg text-label-code-lg placeholder:text-outline focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary/40 transition-all text-left"
+                                                dir="ltr" id="reg-pass"
+                                                placeholder="8 رموز على الأقل" required="" type="password" />
+                                            <button
+                                                class="absolute left-3 text-outline hover:text-primary transition-colors focus:outline-none"
+                                                type="button">
+                                                <span class="material-symbols-outlined text-[20px]"
+                                                    id="eye-icon-reg">visibility_off</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-col gap-1.5 text-right">
+                                        <label class="font-body-sm text-body-sm text-on-surface font-medium"
+                                            for="reg-pass-confirm">تأكيد كلمة المرور</label>
+                                        <div class="relative flex items-center">
+                                            <input
+                                                class="w-full h-12 px-space-md pe-11 bg-surface-container-low rounded-lg text-on-surface font-label-code-lg text-label-code-lg placeholder:text-outline focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary/40 transition-all text-left"
+                                                dir="ltr" id="reg-pass-confirm" placeholder="إعادة كتابة الرمز"
+                                                required="" type="password" />
+                                            <span
+                                                class="material-symbols-outlined absolute left-3 text-outline pointer-events-none">lock</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Password strength bars -->
+                                <div class="flex flex-col gap-1">
+                                    <div
+                                        class="grid grid-cols-4 gap-1.5 h-1.5 rounded-full overflow-hidden bg-surface-container">
+                                        <div class="h-full bg-surface-variant transition-colors" id="bar-1"></div>
+                                        <div class="h-full bg-surface-variant transition-colors" id="bar-2"></div>
+                                        <div class="h-full bg-surface-variant transition-colors" id="bar-3"></div>
+                                        <div class="h-full bg-surface-variant transition-colors" id="bar-4"></div>
+                                    </div>
+                                    <span class="font-caption text-caption text-on-surface-variant text-right"
+                                        id="strength-label">قوة كلمة المرور: ادخلي الرمز للتقييم</span>
+                                </div>
+                                <!-- Terms Checkbox -->
+                                <label class="flex items-start gap-space-xs cursor-pointer select-none text-right">
+                                    <input
+                                        class="w-4 h-4 mt-1 rounded text-primary focus:ring-primary/30 accent-primary shrink-0"
+                                        required="" type="checkbox" />
+                                    <span class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                                        أوافق على <a class="text-primary underline hover:text-primary-container"
+                                            href="#">شروط الاستخدام</a>، وميثاق الأمانة الأكاديمية و<a
+                                            class="text-primary underline hover:text-primary-container" href="#">سياسة
+                                            الخصوصية</a> الخاصة بأكاديمية الحاسب.
+                                    </span>
+                                </label>
+                                <!-- Submit Registration -->
+                                <button
+                                    class="w-full h-12 bg-primary text-on-primary font-headline-sm text-body-md font-semibold rounded-lg shadow-md hover:bg-primary-container hover:shadow-lg transition-all flex items-center justify-center gap-space-xs hover:scale-[0.99] active:scale-[0.97]"
+                                    type="submit">
+                                    <span>إنشاء الحساب وبدء رحلة التعلم</span>
+                                    <span class="material-symbols-outlined text-[20px]">rocket_launch</span>
+                                </button>
+                            </form>
+                        </div>
+                        <!-- Direct Academic Assistance Note -->
+                        <div
+                            class="mt-space-md pt-space-sm bg-surface-container-low/60 rounded-lg p-space-xs flex items-center justify-between text-right">
+                            <div class="flex items-center gap-space-xs">
+                                <span class="material-symbols-outlined text-primary text-[20px]">support_agent</span>
+                                <span class="font-caption text-caption text-on-surface-variant">واجهتِ صعوبة في الدخول
+                                    أو التسجيل؟</span>
+                            </div>
+                            <a class="font-caption text-caption text-primary font-semibold hover:underline flex items-center gap-1"
+                                href="https://wa.me/966500000000" target="_blank">
+                                <span>محادثة المعلمة المباشرة</span>
+                                <span class="material-symbols-outlined text-[14px]">open_in_new</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </main>
+    <footer class="w-full bg-surface-container-lowest text-on-surface shadow-[0_-1px_12px_rgba(0,0,0,0.03)]">
+        <div class="w-full px-margin py-space-xl">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-gutter">
+                <div class="lg:col-span-4 flex flex-col gap-space-sm">
+                    <div class="flex items-center gap-space-sm">
+                        <div
+                            class="w-10 h-10 rounded-full bg-primary-container flex items-center justify-center text-on-primary-container font-headline-md text-headline-md">
+                            <span class="material-symbols-outlined">code</span></div><span
+                            class="font-headline-sm text-headline-sm text-primary font-bold">أكاديمية علوم الحاسب</span>
+                    </div>
+                    <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed text-right">بيئة تعليمية
+                        تفاعلية بإشراف معلمة متخصصة، تهدف إلى تمكين الطالبات والطلاب من إتقان مفاهيم علوم الحاسب
+                        والبرمجة الحديثة بأسلوب تطبيقي ميسر وبناء جيل تقني واعد.</p>
+                    <div class="flex items-center gap-space-xs pt-space-xs"><span
+                            class="px-space-sm py-space-xs rounded-full bg-surface-container font-caption text-caption text-primary font-semibold">إشراف
+                            أكاديمي مباشر</span><span
+                            class="px-space-sm py-space-xs rounded-full bg-surface-container-high font-caption text-caption text-secondary font-semibold">مشاريع
+                            عملية</span></div>
+                </div>
+                <div class="lg:col-span-3 flex flex-col gap-space-sm"><span
+                        class="font-headline-sm text-headline-sm text-on-surface font-semibold">المسارات والصفوف</span>
+                    <ul class="flex flex-col gap-space-xs font-body-sm text-body-sm text-on-surface-variant">
+                        <li class="hover:text-primary transition-colors"><a data-path="grade-first-secondary"
+                                href="#">الصف الأول الثانوي (تقنية 1)</a></li>
+                        <li class="hover:text-primary transition-colors"><a data-path="grade-second-secondary"
+                                href="#">الصف الثاني الثانوي (هندسة برمجيات)</a></li>
+                        <li class="hover:text-primary transition-colors"><a data-path="grade-third-secondary"
+                                href="#">الصف الثالث الثانوي (علم البيانات والذكاء)</a></li>
+                        <li class="hover:text-primary transition-colors"><a data-path="coding-foundation" href="#">مسار
+                                التأسيس البرمجي الشامل</a></li>
+                        <li class="hover:text-primary transition-colors"><a data-path="ai-python-track" href="#">معسكر
+                                بايثون والذكاء الاصطناعي</a></li>
+                    </ul>
+                </div>
+                <div class="lg:col-span-2 flex flex-col gap-space-sm"><span
+                        class="font-headline-sm text-headline-sm text-on-surface font-semibold">روابط سريعة</span>
+                    <ul class="flex flex-col gap-space-xs font-body-sm text-body-sm text-on-surface-variant">
+                        <li class="hover:text-primary transition-colors"><a data-path="home" href="#">الصفحة
+                                الرئيسية</a></li>
+                        <li class="hover:text-primary transition-colors"><a data-path="how-to-subscribe" href="#">طريقة
+                                التسجيل والاشتراك</a></li>
+                        <li class="hover:text-primary transition-colors"><a data-path="terms-and-policies"
+                                href="#">الشروط وسياسة الخصوصية</a></li>
+                        <li class="hover:text-primary transition-colors"><a data-path="support-and-complaints"
+                                href="#">مركز المساعدة والشكاوى</a></li>
+                        <li class="hover:text-primary transition-colors"><a data-path="contact-us" href="#">معلومات
+                                التواصل المباشر</a></li>
+                    </ul>
+                </div>
+                <div class="lg:col-span-3 flex flex-col gap-space-sm"><span
+                        class="font-headline-sm text-headline-sm text-on-surface font-semibold">تواصل مع المعلمة وفريق
+                        الدعم</span>
+                    <p class="font-body-sm text-body-sm text-on-surface-variant">نسعد بإجابة كافة استفساراتكم الأكاديمية
+                        والتقنية عبر القنوات الرسمية:</p>
+                    <div class="flex flex-col gap-space-xs"><a
+                            class="flex items-center gap-space-xs p-space-xs bg-surface-container rounded-lg hover:bg-surface-container-high text-on-surface transition-all"
+                            href="tel:01020937901"><span
+                                class="material-symbols-outlined text-primary">support_agent</span>
+                            <div class="flex flex-col text-right"><span
+                                    class="font-caption text-caption text-on-surface-variant">الهاتف الموحد والدعم
+                                    السريع</span><span class="font-label-code-lg text-label-code-lg font-semibold"
+                                    dir="ltr">01020937901</span></div>
+                        </a><a
+                            class="flex items-center gap-space-xs p-space-xs bg-surface-container rounded-lg hover:bg-surface-container-high text-on-surface transition-all"
+                            href="https://wa.me/966500000000"><span
+                                class="material-symbols-outlined text-tertiary">chat</span>
+                            <div class="flex flex-col text-right"><span
+                                    class="font-caption text-caption text-on-surface-variant">واتساب المعلمة
+                                    للإشراف</span><span class="font-label-code-lg text-label-code-lg font-semibold"
+                                    dir="ltr">01020937901</span></div>
+                        </a></div>
+                </div>
+            </div>
+            <div
+                class="mt-space-xl pt-space-md bg-surface-container-high/40 rounded-xl px-space-md flex flex-col sm:flex-row items-center justify-between gap-space-sm">
+                <span class="font-body-sm text-body-sm text-on-surface-variant text-center sm:text-right">جميع الحقوق
+                    محفوظة © 2025 منصة علوم الحاسب والبرمجة | إشراف المعلمة</span>
+                <div class="flex items-center gap-space-md"><a
+                        class="font-caption text-caption text-on-surface-variant hover:text-primary transition-colors"
+                        data-path="terms-and-policies" href="#">الخصوصية والشروط</a><span
+                        class="text-outline-variant">•</span><a
+                        class="font-caption text-caption text-on-surface-variant hover:text-primary transition-colors"
+                        data-path="support-and-complaints" href="#">المساعدة والدعم</a></div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
